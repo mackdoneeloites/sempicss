@@ -2198,7 +2198,7 @@ body.day .firma32 {
 .content.clearfix .singi .ntm>b {
     -webkit-text-stroke: 1px var(--acento);
     font-size: 38px;
-    color: transparent;
+    color: transparent!important;
     display: block;
     line-height: 43px;
     font-weight: 700;
