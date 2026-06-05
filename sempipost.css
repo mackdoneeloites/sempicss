@@ -2022,7 +2022,7 @@ body.day .e-sppp5-superior {
   background: -webkit-linear-gradient(0deg, var(--acento), var(--acentob));
 }
 
-.content.clearfix .post5>span>i {
+.content.clearfix .post5>span i {
   position: absolute;
   top: 5px;
   font-size: 120px;
