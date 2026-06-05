@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+    --background-2: var(--bckg-2);
+    --background-1: var(--bckg-1);
+    --background-3: var(--bckg-3);
+    --accent: var(--acc-1);
+    --cborder: var(--brd-c);
+    --color-icon: var(--cicon);
+    --g1: var(--staff);
+    --g2: var(--ciudadanos);
+    --g3: var(--celebridades);
+    --g4: var(--sanidad);
+    --g5: var(--seguridad);
+    --g6: var(--empresarios);
+    --g7: var(--criminales);
+    --g8: var(--pesca);
+    --g9: var(--refineria);
+    --g10: var(--sami);
+    --g11: var(--pnj);
+    --g12: var(--inactivos);
+    --color: var(--ctext);
+    word-break: auto-phrase;
+}
+
+dl.codebox {
+    font-size: 14px;
+}
+
+.content.clearfix {
+    max-width: 1045px;
+}
+
+.ery {
+    --blancorgb: 255, 255, 255;
+    --negrorgb: 0, 0, 0;
+}
+
+body.day .ery {
+    --ctext: #666;
+}
+
+body.night .ery {}
+
+/**PELICULAS & SERIES**/
+.spcast *,
+.spcast *::before,
+.spcast *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.day .spcast {
+    --negrorgb: 255, 255, 255;
+    --blancorgb: 0, 0, 0;
+}
+
+body.day .spcast-ifihr {
+    color: #cc823e;
+}
+
+.spcast {
+    width: 515px;
+    background: var(--bckg-2);
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    outline: 3px solid rgba(var(--negrorgb), 0.25);
+    font-family: "Poppins", sans-serif;
+    text-shadow: var(--txsh);
+}
+
+.spcast:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 50% 30%, var(--accent) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.spcast fnd {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fill-available;
+    padding: 45px;
+}
+
+.spcast fnd>i {
+    font-size: 220px;
+    padding: 10px;
+    color: var(--accent);
+    opacity: 0.05;
+    -webkit-text-stroke: 5px var(--bckg-2);
+}
+
+.spcast-c {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 5px 10px;
+    gap: 15px;
+}
+
+.spcast-cs,
+.spcast-ci {
+    border-radius: 100%;
+    overflow: hidden;
+    outline: 3px solid rgba(var(--negrorgb), 0.25);
+    background: var(--brd-c);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spcast-cs {
+    width: 85px;
+    height: 85px;
+}
+
+.spcast-ci {
+    width: 125px;
+    height: 125px;
+}
+
+.spcastb {
+    background: linear-gradient(45deg, var(--accent), hsl(from var(--accent) calc(h + var(--hsl)) s l));
+    padding: 7px;
+}
+
+.spcast-cs>div,
+.spcast-ci>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.spcast-cs.spcastb>div {
+    filter: grayscale(0.6);
+}
+
+.spcast-i {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 10px 25px 15px;
+}
+
+.spcast-in {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    display: block;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(0deg, var(--accent), hsl(from var(--accent) calc(h + var(--hsl)) s l));
+    text-shadow: none;
+    line-height: 1.55rem;
+}
+
+.spcast-ia {
+    font-size: 0.65rem;
+    margin-top: 5px;
+    letter-spacing: 0.02em;
+    display: block;
+}
+
+.actor-awards strong,
+.actor-awards b {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.spcast-b {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.spcast-b>span {
+    border: 1px solid rgba(var(--negrorgb), 0.3);
+    border-radius: 8px;
+    padding: 10px 35px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background: rgba(var(--negrorgb), 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.spcast-if {
+    position: relative;
+    z-index: 1;
+    margin: 20px 0;
+    border-top: 1px solid rgba(var(--blancorgb), 0.04);
+}
+
+.spcast-ifi {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-bottom: 1px solid rgba(var(--blancorgb), 0.04);
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+}
+
+.spcast-ifi:hover {
+    background: rgba(var(--negrorgb), 0.25);
+    transition: all 0.7s ease-in-out;
+}
+
+.spcast-ifi:hover .spcast-ifih {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.7s ease-in-out;
+}
+
+.spcast-ifi:hover .spcast-ifiy {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.spcast-ifi:hover .spcast-ifip {
+    filter: grayscale(0) brightness(1);
+    transition: all 0.7s ease-in-out;
+}
+
+.spcast-ifip {
+    width: 48px;
+    height: 70px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    outline: 1px solid rgba(var(--negrorgb), 0.3);
+    filter: grayscale(0.4) brightness(0.6);
+    transition: all 0.7s ease-in-out;
+}
+
+.spcast-ifim {
+    flex: 1;
+    min-width: 0;
+}
+
+.spcast-ifit {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.7s ease-in-out;
+}
+
+.spcast-ifir {
+    font-size: 0.55rem;
+    color: var(--accent);
+    margin-top: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    width: 150px;
+}
+
+.spcast-ifiy {
+    font-size: 0.6rem;
+    font-weight: 500;
+    flex-shrink: 0;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.spcast-ifih {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 285px;
+    background: linear-gradient(90deg, transparent 0%, rgba(var(--negrorgb), 0.7) 30%);
+    padding: 8px 10px 8px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.7s ease-in-out;
+    z-index: 2;
+    overflow: auto;
+}
+
+.spcast-ifihr {
+    font-size: 0.55rem;
+    color: #e8c870;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    line-height: 0.56rem;
+}
+
+.spcast-ifihg {
+    font-size: 0.56rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 0.56rem;
+}
+
+.spcast-ifihd {
+    font-size: 0.54rem;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.spcast br {
+    display: none;
+}
+
+.spcast-ia br, .spcast-ifihd br {
+    display: inline;
+}
+
+/**Clases**/
+.civil,
+.ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: var(--criminales);
+}
+
+.cele,
+.celebridad {
+    --acento: var(--g3);
+    --acentob: var(--criminales);
+}
+
+.sanidad {
+    --acento: var(--sanidad);
+    --acentob: var(--refineria);
+}
+
+.polis,
+.seguridad {
+    --acento: var(--seguridad);
+    --acentob: var(--empresarios);
+}
+
+.empre,
+.empresario {
+    --acento: var(--empresarios);
+    --acentob: var(--sami);
+}
+
+.crimi,
+.criminal {
+    --acento: var(--criminales);
+    --acentob: var(--ciudadanos);
+}
+
+.pesca,
+.pescador {
+    --acento: var(--pesca);
+    --acentob: var(--criminales);
+}
+
+.petro,
+.refineria {
+    --acento: var(--refineria);
+    --acentob: var(--sanidad);
+}
+
+.sami {
+    --acento: var(--sami);
+    --acentob: var(--empresarios);
+}
+
+.pnj, .npc {
+    --acento: var(--pnj);
+    --acentob: var(--ciudadanos);
+}
+
+.comercio {
+    --acento: var(--comercio-industria);
+    --acentob: var(--seguridad);
+}
