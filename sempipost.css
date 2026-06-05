@@ -1790,6 +1790,843 @@ body.day .e-sppp5-superior {
     line-height: 1rem;
 }
 
+.poste1 {
+  width: 500px;
+  margin: 20px auto;
+  line-height: 1.15rem;
+  font-size: 0.8rem;
+  font-family: arial, sans-serif;
+  text-align: justify;
+  position: relative;
+  background: var(--bckg-2);
+  outline: 1px solid var(--cborder);
+  box-sizing: content-box;
+  outline-offset: 5px;
+}
+
+.poste1-sup {
+  border: 1px solid var(--acento);
+  padding: 25px 25px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  position: relative;
+}
+
+.poste1-tit {
+  text-align: center;
+  font-family: var(--font);
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.poste1-ava {
+  position: absolute;
+  bottom: -41px;
+  width: 75px;
+  height: 75px;
+  outline: 1px solid var(--acento);
+  border: 5px solid var(--bckg-2);
+}
+
+.poste1-txt {
+  border: 1px solid var(--acento);
+  border-top: none;
+  padding: 60px 35px 10px;
+}
+
+.poste1-dts {
+  padding: 15px;
+  text-align: center;
+  margin: 20px 0 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.poste1-dts:before,
+.poste1-dts:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: var(--cborder);
+}
+
+.poste1-dts:before {
+  top: 0;
+}
+
+.poste1-dts:after {
+  bottom: 0;
+}
+
+.poste1-dts>span:after {
+  content: "—";
+  margin-left: 10px;
+  color: var(--acento);
+  -webkit-text-stroke: 1px var(--acento);
+}
+
+.poste1-dts>span:last-of-type:after {
+  content: "";
+  margin-left: 0;
+}
+
+.post3 {
+  width: 575px;
+  margin: 10px auto;
+  line-height: 1.15rem;
+  text-align: justify;
+  background: var(--bckg-2);
+  overflow: hidden;
+  position: relative;
+  border: 10px solid var(--background-2);
+  outline: 1px solid var(--cborder);
+  outline-offset: -10px;
+  box-shadow: 0 0 0 1px var(--cborder);
+  border-radius: 15px;
+}
+
+.post3-cabecera {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  background: var(--background-2);
+  border-bottom: 1px solid var(--cborder);
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.post3-cabecera:before {
+  position: absolute;
+  content: "";
+  width: 350px;
+  height: 255px;
+  background: url(https://i.postimg.cc/RZNy21dL/635ba49c7e1b7.png);
+  bottom: 0;
+  background-size: cover;
+  opacity: 0.2;
+  mix-blend-mode: exclusion;
+}
+
+.post3-tit {
+  display: block;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 2rem;
+  letter-spacing: -2px;
+  color: var(--acento);
+  text-align: center;
+  text-shadow: 1px 1px var(--cborder);
+  position: relative;
+  line-height: 2.3rem;
+  z-index: 1;
+}
+
+.post3-datos {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+  margin: 0px 5px;
+  z-index: 1;
+}
+
+.post3-datos span {
+  background: var(--cborder);
+  border: var(--borde);
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  outline: 1px solid var(--cborder);
+  outline-offset: 2px;
+}
+
+.post3-txt {
+  border: 25px solid var(--background-1);
+  outline: 1px solid var(--cborder);
+  outline-offset: -25px;
+  padding: 25px;
+}
+
+.post5 {
+  width: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  font-family: arial;
+  text-align: justify;
+  background: var(--bckg-2);
+  overflow: hidden;
+}
+
+.post5>span {
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 30px 15px 15px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  background: var(--background-2);
+  border: 1px solid var(--cborder);
+  font-family: var(--font);
+  position: relative;
+  min-height: 90px;
+}
+
+.post5>span:before,
+.post5>span:after,
+.post5-wat:before,
+.post5-wat:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--cborder);
+  border-radius: 100px;
+  background: var(--background-1);
+  position: absolute;
+}
+
+.post5>span:before {
+  left: -25px;
+  top: -25px;
+}
+
+.post5>span:after {
+  right: -25px;
+  top: -25px;
+}
+
+.post5>span>span {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+  position: relative;
+  width: -webkit-fill-available;
+  text-align: center;
+  letter-spacing: -1.5px;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acento), var(--acentob));
+}
+
+.content.clearfix .post5>span>i {
+  position: absolute;
+  top: 5px;
+  font-size: 120px;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acento), var(--acentob));
+  -webkit-text-stroke: 2px var(--background-1);
+  opacity: 0.25;
+}
+
+.post5-wat {
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
+  border: 1px solid var(--cborder);
+  font-family: var(--font);
+  background: linear-gradient(45deg, var(--acento), var(--acentob));
+  position: relative;
+  color: #eee;
+}
+
+.post5-wat:before {
+  left: -25px;
+  bottom: -25px;
+}
+
+.post5-wat:after {
+  right: -25px;
+  bottom: -25px;
+}
+
+.post5-wat>span {
+  background: rgba(255, 255, 255, 0.10);
+  padding: 7px 10px 5px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 9px;
+  font-weight: 900;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.post5-int {
+  border: 1px solid var(--cborder);
+  border-top: none;
+  border-bottom: none;
+}
+
+.post5-int txt {
+  display: block;
+  border: 40px solid transparent;
+  line-height: 20px;
+}
+
+.post4 {
+  width: 550px;
+  box-sizing: content-box;
+  margin: 10px auto;
+  background: var(--bckg-2);
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.post4-cab {
+  padding: 40px 15px 15px;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.post4-cab>span {
+  display: block;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 10px 15px;
+  line-height: 25px;
+  color: var(--acento);
+}
+
+.post4-cab>dts {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--ddd);
+  font-weight: 600;
+  display: block;
+  padding: 0 30px 20px;
+}
+
+.post4-sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.post4-sep:before,
+.post4-sep:after {
+  content: "";
+  width: 100%;
+  background: linear-gradient(270deg, var(--acento), var(--acentob));
+  height: 1px;
+}
+
+.post4-sep:after {
+  background: linear-gradient(90deg, var(--acento), var(--acentob));
+}
+
+.post4-sep>i {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin: 0 -1px;
+  background: var(--acento);
+  height: 40px;
+  width: 40px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--background-3);
+}
+
+.post4-txt {
+  margin: 10px 50px 40px;
+}
+
+.post4-dats {
+  background: linear-gradient(90deg, var(--acento), var(--acentob), var(--acento));
+  padding: 5px;
+}
+
+.content.clearfix .poste1-txt u,
+.content.clearfix .post1-txt u,
+.content.clearfix .post3-txt u,
+.content.clearfix .post4-txt u,
+.content.clearfix .post5-int txt u,
+.content.clearfix .post2-txt u,
+.content.clearfix .post6-txt u,
+.content.clearfix .post7-texto u {
+  position: relative;
+  background: var(--background-2);
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, var(--acento), var(--acentob)) 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0 3px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+.content.clearfix .poste1-txt i,
+.content.clearfix .poste1-txt strike,
+.content.clearfix .poste1-txt a,
+.content.clearfix .post1-txt i,
+.content.clearfix .post1-txt strike,
+.content.clearfix .post1-txt a,
+.content.clearfix .post3-txt i,
+.content.clearfix .post3-txt strike,
+.content.clearfix .post3-txt a,
+.content.clearfix .post4-txt i,
+.content.clearfix .post4-txt strike,
+.content.clearfix .post4-txt a,
+.content.clearfix .post5-int txt i,
+.content.clearfix .post5-int txt strike,
+.content.clearfix .post5-int txt a,
+.content.clearfix .post2-txt i,
+.content.clearfix .post2-txt strike,
+.content.clearfix .post2-txt a,
+.content.clearfix .post6-txt i,
+.content.clearfix .post6-txt strike,
+.content.clearfix .post6-txt a,
+.content.clearfix .post7-texto a,
+.content.clearfix .post7-texto i,
+.content.clearfix .post7-texto strike {
+  color: var(--acento);
+  font-weight: 500;
+  font-family: var(--font);
+  font-size: 13px;
+}
+
+.content.clearfix .poste1-txt i,
+.content.clearfix .post5-int txt i,
+.content.clearfix .post3-txt i,
+.content.clearfix .post4-txt i,
+.content.clearfix .post2-txt i,
+.content.clearfix .post1-txt i,
+.content.clearfix .post6-txt i,
+.content.clearfix .post7-texto i {
+  font-style: italic;
+}
+
+.poste1-txt a,
+.post3-txt a,
+.post4-txt a,
+.post5-int txt a,
+.post2-txt a,
+.post1-txt a,
+.post6-txt a,
+.post7-texto a {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
+  background-size: 100%;
+  font-weight: 800;
+  transition: all .7s ease-in-out;
+}
+
+.poste1-txt a:hover,
+.post3-txt a:hover,
+.post4-txt a:hover,
+.post5-int txt a:hover,
+.post2-txt a:hover,
+.post1-txt a:hover,
+.post6-txt a:hover,
+.post7-texto a:hover {
+  background-size: 500%;
+  transition: all .7s ease-in-out;
+}
+
+.post2 {
+  width: 575px;
+  margin: 10px auto;
+  line-height: 1.15rem;
+  text-align: justify;
+  overflow: hidden;
+  position: relative;
+  border: 10px solid var(--background-2);
+  outline: 1px solid var(--cborder);
+  outline-offset: -10px;
+  box-shadow: 0 0 0 1px var(--cborder);
+  border-radius: 15px;
+}
+
+.post2-superior {
+  background-color: var(--acento);
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  font-family: var(--font);
+  background-attachment: fixed;
+}
+
+.post2-titulo {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  border-bottom: 1px solid var(--cborder);
+  display: flex;
+  padding: 40px;
+  overflow: hidden;
+  align-items: center;
+  font-family: var(--font);
+  font-size: 35px;
+  line-height: 28px;
+  text-shadow: 2px -2px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+.post2-titulo i,
+.post2-titulo em,
+.post2-titulo b,
+.post2-titulo strong,
+.post2-titulo strike,
+.post2-titulo span {
+  display: contents;
+  color: var(--acento);
+}
+
+.post2-txt {
+  padding: 35px;
+}
+
+.post2-dts {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  background-color: var(--acento);
+  color: #ccc;
+  border-top: 1px solid var(--cborder);
+  background-attachment: fixed;
+}
+
+.post1 {
+  width: 525px;
+  margin: 15px auto 10px;
+  line-height: 1.15rem;
+  text-align: justify;
+  position: relative;
+  background: var(--bckg-2);
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+.post1:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background: url(https://i.postimg.cc/9F53PkLs/44b6f0bc722278419ce84bd7965aeedd.jpg);
+  width: 450px;
+  height: 850px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: color-burn;
+  opacity: 0.3;
+}
+
+body.day .post1:before {
+  mix-blend-mode: darken;
+}
+
+.post1-cabecera {
+  background: #222;
+  padding: 30px;
+  text-align: center;
+  color: #ccc;
+  border-top: 5px solid var(--acento);
+  font-size: 40px;
+  font-family: var(--font);
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.post1-titulo,
+.post1-cabecera {
+  position: relative;
+  z-index: 1;
+}
+
+.post1-titulo b {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(40deg, var(--acento), var(--acentob));
+  font-weight: 800;
+}
+
+.post1-txt {
+  position: relative;
+  margin: 30px;
+  padding: 25px;
+  background: var(--bckg-2);
+}
+
+.post1-extra {
+  background: #222;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ccc;
+  border-bottom: 5px solid var(--acento);
+  font-size: 0.6rem;
+  font-family: var(--font);
+  line-height: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+.post6 {
+  width: 470px;
+  margin: 15px auto 10px;
+  line-height: 1.15rem;
+  text-align: justify;
+  position: relative;
+  background: var(--bckg-2);
+  border: 10px solid var(--bckg-1);
+  outline: 1px solid var(--cborder);
+  box-sizing: content-box;
+}
+
+.post6 blockquote br {
+  display: block;
+}
+
+.post6>blockquote {
+  margin: 0 30px;
+}
+
+.post6:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  inset: 15px;
+  border: 1px solid var(--cborder);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.post6-cabecera {
+  height: 140px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background: var(--background-2);
+  position: relative;
+  margin-bottom: 20px;
+  align-content: flex-end;
+  color: var(--eee);
+  text-transform: uppercase;
+}
+
+.post6-cabecera:before,
+.post6-cabecera:after {
+  content: "";
+  inset: 0;
+  background: #111;
+  position: absolute;
+}
+
+.post6-cabecera:before {
+  mix-blend-mode: color;
+}
+
+.post6-cabecera:after {
+  opacity: 0.7;
+  mix-blend-mode: darken;
+}
+
+.post6-titulo {
+  position: relative;
+  z-index: 1;
+  font-size: 2.1rem;
+  line-height: 2rem;
+  font-family: var(--font);
+  font-weight: 300;
+  letter-spacing: -2px;
+  color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post6-titulo i {
+  font-weight: 700;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(40deg, var(--acento), var(--acentob));
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0px;
+}
+
+.post6-extra {
+  background: var(--cborder);
+  padding: 2px 8px;
+  position: absolute;
+  bottom: -10px;
+  z-index: 1;
+  outline: 1px solid var(--background-2);
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.post6-txt {
+  padding: 15px 30px 30px;
+  margin: 10px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.post7 {
+  width: 550px;
+  margin: 10px auto;
+  line-height: 1.15rem;
+  font-size: 0.8rem;
+  text-align: justify;
+  overflow: hidden;
+  position: relative;
+  background: var(--bckg-2);
+  --negrorgb: 0, 0, 0;
+}
+
+.post7-superior {
+  padding: 50px;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  text-shadow: 2px 2px rgba(var(--negrorgb), 0.5);
+  text-transform: uppercase;
+}
+
+.post7-superior:before,
+.post7-superior:after,
+.post7-texto:before,
+.post7-texto:after {
+  content: "";
+  position: absolute;
+}
+
+.post7-superior:before,
+.post7-superior:after {
+  inset: 0;
+}
+
+.post7-superior:before {
+  background: var(--bckg-2);
+  mix-blend-mode: color;
+}
+
+.post7-superior:after {
+  background: linear-gradient(360deg, var(--bckg-2) 15%, transparent);
+}
+
+.post7-titulo,
+.post7-subti {
+  position: relative;
+  z-index: 1;
+}
+
+.post7-titulo {
+  font-family: var(--font);
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.post7-titulo b,
+.post7-titulo i,
+.post7-titulo strong,
+.post7-titulo em {
+  color: var(--acento);
+}
+
+.post7-texto {
+  margin: 50px;
+  margin-top: 25px;
+  font-size:0.9rem;
+  position: relative;
+}
+
+.post7-texto:before,
+.post7-texto:after {
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
+}
+
+.post7-texto:before {
+  top: -20px;
+  left: -1px;
+  border-top: 1px solid var(--cborder);
+  border-left: 1px solid var(--cborder);
+}
+
+.post7-texto:after {
+  bottom: -20px;
+  right: -1px;
+  border-bottom: 1px solid var(--cborder);
+  border-right: 1px solid var(--cborder);
+}
+
+.post7-txt {
+  position: relative;
+  z-index: 1;
+  margin: 25px;
+}
+
+.post7-datos {
+  margin: 0 15px 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.post7-datos>span {
+  font-family: var(--font);
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 9px;
+  text-transform: uppercase;
+  background: var(--cborder);
+  padding: 0 4px 0 6px;
+  line-height: 18px;
+}
+
 /**Extras**/
 .e-sppp8-txt u,
 .e-sppp7-txt u,
@@ -1935,6 +2772,13 @@ body.day .e-sppp5-superior {
 
 
 
+.poste1 br,
+.post6 br,
+.post1 br,
+.post2 br,
+.post3 br,
+.post4 br,
+.post5 br,
 .poste8 br,
 .poste7 br,
 .spps br,
@@ -1946,6 +2790,14 @@ body.day .e-sppp5-superior {
     display: none;
 }
 
+.poste1-txt br,
+.post6-titulo br,
+.post6-txt br,
+.post1-txt br,
+.post2-txt br,
+.post3-txt br,
+.post4-txt br,
+.post5-int txt br,
 .poste7-tx br,
 .poste8-tx br,
 .poste6-tx br,
