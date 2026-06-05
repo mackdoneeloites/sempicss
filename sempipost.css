@@ -2785,7 +2785,15 @@ body.day .post1:before {
 .poste5 br,
 .poste2 br,
 .poste3 br,
-.poste4 br {
+.poste4 br, 
+.e-sppp8 br,
+.e-sppp7 br,
+.e-sppp6 br,
+.e-sppp5 br,
+.e-sppp4 br,
+.e-sppp3 br,
+.e-sppp2 br,
+.e-sppp br {
     display: none;
 }
 
@@ -2804,7 +2812,15 @@ body.day .post1:before {
 .poste4-r br,
 .poste2-tx br,
 .poste3-tx br,
-.poste4-tx br {
+.poste4-tx br, 
+.e-sppp8-txt br,
+.e-sppp7-txt br,
+.e-sppp6-txt br,
+.e-sppp5-txt br,
+.e-sppp4-txt br,
+.e-sppp3-txt br,
+.e-sppp2-txt br,
+.e-sppp-txt br {
     display: inline;
 }
 
