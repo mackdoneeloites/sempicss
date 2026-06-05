@@ -2195,7 +2195,7 @@ body.day .firma32 {
     left: 0;
 }
 
-.content.clearfix .singi .ntm>b {
+.content.clearfix .singi .ntm>b,.singi .ntm>b {
     -webkit-text-stroke: 1px var(--acento);
     font-size: 38px;
     color: transparent!important;
@@ -2321,7 +2321,7 @@ body.day .singy .ntm:before {
     opacity: 0.5;
 }
 
-.content.clearfix div .singo>div strong {
+.content.clearfix div .singo>div strong,.singo>div strong {
     color: var(--acento) !important;
 }
 
@@ -2454,7 +2454,7 @@ body.day .singy .ntm:before {
     font-weight: 700;
 }
 
-.content.clearfix .firma1 .txt>span>b {
+.content.clearfix .firma1 .txt>span>b,.firma1 .txt>span>b {
     -webkit-text-stroke: 1px var(--acento);
     color: transparent;
     font-family: arial;
@@ -2567,7 +2567,9 @@ body.day .singy .ntm:before {
 }
 
 .content.clearfix .firma3 .dt-tt>b,
-.content.clearfix .hr-tt>p>b {
+.firma3 .dt-tt>b,
+.content.clearfix .hr-tt>p>b,
+.hr-tt>p>b {
     padding: 0px 4px;
     background: var(--acento);
     transform: skewX(-10deg);
@@ -3188,9 +3190,9 @@ body.day .singy .ntm:before {
     bottom: -12px;
 }
 
-.content.clearfix .firma10 i,
-.content.clearfix .firma10 b,
-.content.clearfix .firma10 strong {
+.content.clearfix .firma10 i,.firma10 i,
+.content.clearfix .firma10 b,.firma10 b,
+.content.clearfix .firma10 strong,.firma10 strong {
     color: var(--acento);
     font-weight: 600;
 }
@@ -3288,14 +3290,14 @@ body.day .singy .ntm:before {
     line-height: 12px;
 }
 
-.content.clearfix .firma11 .vs i,
-.content.clearfix .firma11 .vs b,
-.content.clearfix .firma11 .vs strong,
-.content.clearfix .firma11 .vs u,
-.content.clearfix .firma12 .late>span i,
-.content.clearfix .firma12 .late>span b,
-.content.clearfix .firma12 .late>span strong,
-.content.clearfix .firma12 .late>span u {
+.content.clearfix .firma11 .vs i,.firma11 .vs i,
+.content.clearfix .firma11 .vs b,.firma11 .vs b,
+.content.clearfix .firma11 .vs strong,.firma11 .vs strong,
+.content.clearfix .firma11 .vs u,.firma11 .vs u,
+.content.clearfix .firma12 .late>span i,.firma12 .late>span i,
+.content.clearfix .firma12 .late>span b,.firma12 .late>span b,
+.content.clearfix .firma12 .late>span strong,.firma12 .late>span strong,
+.content.clearfix .firma12 .late>span u,.firma12 .late>span u {
     color: var(--acento);
 }
 
@@ -3434,7 +3436,7 @@ body.day .firma12 .late .icn audio {
     position: relative;
 }
 
-.content.clearfix .firma13 .lft>b {
+.content.clearfix .firma13 .lft>b,.firma13 .lft>b {
     margin: 8px;
     padding: 5px;
     font-size: 25px;
@@ -3522,9 +3524,9 @@ body.day .firma12 .late .icn audio {
     line-height: 18px;
 }
 
-.content.clearfix .firma13 .rgt p>b,
-.content.clearfix .firma13 .rgt p>strong,
-.content.clearfix .firma13 .rgt p>i {
+.content.clearfix .firma13 .rgt p>b,.firma13 .rgt p>b,
+.content.clearfix .firma13 .rgt p>strong,.firma13 .rgt p>strong,
+.content.clearfix .firma13 .rgt p>i,.firma13 .rgt p>i {
     color: var(--acento);
     font-weight: 600;
 }
@@ -3534,7 +3536,7 @@ body.day .firma12 .late .icn audio {
     font-weight: 800;
 }
 
-.content.clearfix .firma13 .rgt p>u {
+.content.clearfix .firma13 .rgt p>u,.firma13 .rgt p>u {
     color: #888;
     position: relative;
     text-decoration: none;
@@ -3542,11 +3544,11 @@ body.day .firma12 .late .icn audio {
     border-bottom: none;
 }
 
-.content.clearfix .firma13 .rgt p strong, .content.clearfix .firma13 .rgt p a {
+.content.clearfix .firma13 .rgt p strong, .rgt p strong, .content.clearfix .firma13 .rgt p a,.firma13 .rgt p a {
     color: var(--acento);
 }
 
-.content.clearfix .firma13 .rgt p>u:before {
+.content.clearfix .firma13 .rgt p>u:before,.firma13 .rgt p>u:before  {
     bottom: 0;
     content: "";
     height: 2px;
@@ -3697,7 +3699,7 @@ body.day .firma12 .late .icn audio {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.content.clearfix .firma16>span>b {
+.content.clearfix .firma16>span>b,.firma16>span>b {
     color: transparent;
     -webkit-text-stroke: 1px var(--acento);
     text-shadow: none;
@@ -3722,7 +3724,7 @@ body.day .firma12 .late .icn audio {
 
 }
 
-.content.clearfix .firma16>p.txt>b {
+.content.clearfix .firma16>p.txt>b,.firma16>p.txt>b {
     display: inline-flex;
     background: var(--acento);
     padding: 0 3px;
@@ -3731,14 +3733,14 @@ body.day .firma12 .late .icn audio {
     text-align-last: justify;
 }
 
-.content.clearfix .firma16>p.txt>strike,
-.content.clearfix .firma16>p.txt>u,
-.content.clearfix .firma16>p.txt>i {
+.content.clearfix .firma16>p.txt>strike,.firma16>p.txt>strike,
+.content.clearfix .firma16>p.txt>u,.firma16>p.txt>u,
+.content.clearfix .firma16>p.txt>i,.firma16>p.txt>i {
     color: var(--acento);
     border-bottom: none !important;
 }
 
-.content.clearfix .firma16>p.txt>u {
+.content.clearfix .firma16>p.txt>u,.firma16>p.txt>u {
     color: #8c8c8c;
     position: relative;
     text-decoration: none;
@@ -3755,7 +3757,7 @@ body.day .firma12 .late .icn audio {
     right: -2px;
 }
 
-.content.clearfix .firma16>p.txt>b {
+.content.clearfix .firma16>p.txt>b,.firma16>p.txt>b {
     display: inline-flex;
     background: var(--acento);
     padding: 0 3px;
@@ -3850,9 +3852,9 @@ body.day .firma12 .late .icn audio {
     transition: 0.7s ease-in-out;
 }
 
-.content.clearfix .firma17 .txt>p>i,
-.content.clearfix .firma17 .txt>p>b,
-.content.clearfix .firma17 .txt>p>u {
+.content.clearfix .firma17 .txt>p>i,.firma17 .txt>p>i,
+.content.clearfix .firma17 .txt>p>b,.firma17 .txt>p>b,
+.content.clearfix .firma17 .txt>p>u,.firma17 .txt>p>u {
     color: var(--acento);
     filter: brightness(1.8);
 }
@@ -3869,7 +3871,7 @@ body.day .firma12 .late .icn audio {
     transition: 0.7s ease-in-out;
 }
 
-.content.clearfix .firma17 .txt>span>i {
+.content.clearfix .firma17 .txt>span>i,.firma17 .txt>span>i {
     font-weight: 500;
     -webkit-text-stroke: transparent;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
@@ -3894,7 +3896,10 @@ body.day .firma12 .late .icn audio {
     transition-delay: 0.45s;
 }
 
-.content.clearfix .firma17 .txt>span>i, .firma17 .txt, .firma15, .singo,
+.content.clearfix .firma17 .txt>span>i, 
+.firma17 .txt>span>i, 
+.firma17 .txt, 
+.firma15, .singo,
 .singa,
 .singe,
 .singi,
