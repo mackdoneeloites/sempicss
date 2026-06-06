@@ -31,18 +31,6 @@ dl.codebox {
     max-width: 1045px;
 }
 
-.ery {
-    --blancorgb: 255, 255, 255;
-    --negrorgb: 0, 0, 0;
-}
-
-body.day .ery {
-    --ctext: #666;
-}
-
-body.night .ery {}
-
-
 /*MULETITAS*/
 .sp-rol {
     background: var(--accent);
