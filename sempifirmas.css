@@ -209,14 +209,2105 @@ body.day .smptram-title>span {
 
 
 /**FIRMAS**/
+.content.clearfix .firma17 .txt>span>i, 
+.firma17 .txt>span>i, 
+.firma17 .txt, 
+.firma15, 
+.singo,
+.singa,
+.singe,
+.singi,
+.singu,
+.singy {
+    color: #ddd;
+}
+
+.firma16,
+.firma15,
+.firma14,
+.firma12,
+.firma10,
+.firma8,
+.firma7,
+.firma6,
+.firma5,
+.firma3,
+.signa {
+    --bk: #111;
+}
+
+body.day .firma16,
+body.day .firma15,
+body.day .firma14,
+body.day .firma12,
+body.day .firma10,
+body.day .firma8,
+body.day .firma7,
+body.day .firma6,
+body.day .firma5,
+body.day .firma3,
+body.day .signa {
+    --bk: #e5e5e5;
+}
+
+.firma1,
+.firma2,
+.firma3,
+.firma4,
+.firma5,
+.firma6,
+.firma7,
+.firma8,
+.firma9,
+.firma10,
+.firma11,
+.firma12,
+.firma13,
+.firma14,
+.firma15,
+.firma16,
+.firma17,
+.firma18,
+.firma19,
+.firma20,
+.firma21,
+.firma22,
+.firma23,
+.firma24,
+.firma25,
+.firma26,
+.firma27,
+.firma28,
+.firma29,
+.firma30,
+.firma31,
+.firma32,
+.firma33,
+.firma34,
+.firma35,
+.firma36
+ {
+    position: relative;
+    margin: 25px auto;
+    transition: all ease-in-out 0.7s;
+}
+
+/**FIRMA 001**/
+.singo,
+.singa,
+.singe,
+.singi,
+.singu,
+.singy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    outline: 1px solid var(--acento);
+    transition: all ease-in-out 0.7s;
+}
+
+.singi,
+.singi>img,
+.singo,
+.singo>img,
+.singo>div,
+.singa,
+.singa>img,
+.singe,
+.singe>img,
+.singy,
+.singy>.img {
+    width: 280px;
+    height: 180px;
+    position: relative;
+    object-fit: cover;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.7s;
+}
+
+.singo:hover {
+    outline-offset: 5px;
+    transition: all ease-in-out 0.7s;
+}
+
+.singo>div,
+.lta {
+    position: absolute;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+    text-align-last: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+    gap: 5px;
+    scale: 0;
+}
+
+.singo:hover div,
+.singa:hover .lta {
+    scale: 1;
+}
+
+.singo>div>b {
+    display: block;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--acento);
+}
+
+.content.clearfix .singo>div i,
+.singo>div i,
+.content.clearfix .singo>div strong,
+.singo>div strong,
+.content.clearfix .singo>div u,
+.singo>div u,
+.content.clearfix .singe>div i,
+.singe>div i,
+.content.clearfix .singe>div u,
+.singe>div u,
+.content.clearfix .singe>div strong,
+.singe>div strong,
+.content.clearfix .singe>div b,
+.singe>div b {
+    display: contents;
+    color: var(--acento);
+    border-bottom: none !important;
+}
+
+.singo>div u {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/**FIRMA 002**/
+.singa {
+    outline: 1px solid var(--cborder);
+    margin: 25px auto;
+}
+
+.singa .sto,
+.singa .sbo {
+    position: absolute;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: 278px;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.7s;
+    color: var(--color);
+}
+
+.singa .sto {
+    top: -16px;
+}
+
+.singa .sbo {
+    bottom: -19px;
+}
+
+.singa .sto:after,
+.singa .sbo:before {
+    content: "";
+    flex: auto;
+    background: var(--acento);
+    height: 1px;
+}
+
+.singa .sto:after {
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+.singa .sbo:before {
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.singa:hover .lta {
+    scale: 1;
+    opacity: 1;
+}
+
+.singa .lta {
+    scale: 1;
+    opacity: 0;
+    inset: 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    transition: all ease-in-out 0.7s;
+}
+
+.singa .lta>b,
+.singa .lta>i {
+    display: block;
+}
+
+.content.clearfix .singa .lta>b,
+.singa .lta>b {
+    display: block;
+    font-size: 21px;
+    color: var(--acento);
+    text-transform: math-auto;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.content.clearfix .singa .lta>i,
+.lta>i {
+    background: var(--acento);
+    text-align: center;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: var(--background-3);
+    font-size: 14px;
+    outline: 1px solid var(--acento);
+    outline-offset: 3px;
+    margin: 5px auto;
+    scale: 0.8;
+}
+
+/**FIRMA 003**/
+
+.singe {
+    outline-offset: 5px;
+    outline: 2px solid var(--acento);
+    transition: all ease-in-out 0.7s;
+}
+
+.singe:before {
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    z-index: 1;
+}
+
+.singe>div {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    padding: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-align-last: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.5), -1px 1px rgba(0, 0, 0, 0.5), 1px -1px rgba(0, 0, 0, 0.5);
+}
+
+.singe,
+.singe>img,
+.singi,
+.singi>.img {
+    width: 350px;
+    height: 200px;
+}
+
+.singe>img {
+    outline-offset: -15px;
+    outline: 1px solid var(--acento);
+}
+
+.singe>div i,
+.singe>div u,
+.singe>div strong,
+.singe>div b {
+    display: inline-flex;
+    position: relative;
+}
+
+.content.clearfix .singe>div u, 
+.singe>div u {
+    text-decoration: none;
+    margin: 0 0 2px;
+    color: #ccc;
+}
+
+.content.clearfix .singe>div u:before, 
+.singe>div u:before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    background: var(--acento);
+    bottom: 0;
+    height: 2px;
+}
+
+.singi .img:before,
+.singi .img:after,
+.singu>.img:before,
+.singu>.img:after,
+.singy>.img:before,
+.singy>.img:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.singi .img:before,
+.singu>.img:before,
+.singy>.img:before {
+    background: #000;
+    mix-blend-mode: color;
+}
+
+.singi .img:after,
+.singu>.img:after,
+.singy>.img:after {
+    background: #000;
+    opacity: 0.8;
+}
+
+/**FIRMA 004**/
+.singi .ntm {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    top: 0;
+    left: 0;
+}
+
+.content.clearfix .singi .ntm>b,
+.singi .ntm>b {
+    -webkit-text-stroke: 1px var(--acento);
+    font-size: 38px;
+    color: transparent!important;
+    display: block;
+    line-height: 43px;
+    font-weight: 700;
+    font-family: arial;
+}
+
+.singi .ntm>i {
+    font-size: 9px;
+    line-height: 9px;
+    display: block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.singi .ntm>i:before {
+    content: "";
+    left: -9px;
+    top: -2px;
+    bottom: -2px;
+    width: 2px;
+    background: var(--acento);
+    position: absolute;
+}
+
+.singu,
+.singu>.img {
+    width: 305px;
+    height: 175px;
+    position: relative;
+}
+
+/**FIRMA 005**/
+.singu {
+    border-left: 20px solid var(--acento);
+}
+
+.singu .ntm {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    left: 0;
+    bottom: 0;
+}
+
+.singu .ntm b {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    position: relative;
+}
+
+.singu .ntm b:before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: var(--acento);
+    margin-right: 5px;
+}
+
+.singu .ntm p {
+    position: relative;
+    padding: 0 7px;
+    border-left: 2px solid var(--acento);
+    margin: 5px 10px;
+    font-size: 10px;
+    color: #b3b3b3;
+    line-height: 12px;
+}
+
+/**FIRMA 006**/
+.singy {
+    box-shadow: 0 0 0 6px var(--background-3);
+    outline: 1px solid var(--cborder);
+}
+
+.singy .ntm {
+    position: absolute;
+    padding: 15px 25px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid var(--cborder);
+}
+
+.singy .ntm:before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: var(--acento);
+    mix-blend-mode: color;
+    opacity: 0.4;
+}
+
+.singy .ntm>p {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3), -1px -1px rgba(0, 0, 0, 0.3), -1px 1px rgba(0, 0, 0, 0.3), 1px -1px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.singy .ntm>p>u,
+.signa .ntm>p>u {
+    text-decoration: none;
+    border-bottom: 1px solid var(--acento);
+}
+
+body.day .singy {
+    box-shadow: 0 0 0 6px #ddd;
+}
+
+body.day .singy>.img:after {
+    background: #fff;
+    opacity: 0.4;
+}
+
+body.day .singy .ntm:before {
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+.content.clearfix div .singo>div strong,
+.singo>div strong {
+    color: var(--acento) !important;
+}
+
+.signa {
+    display: flex;
+    width: 325px;
+    height: 170px;
+    margin: 18px auto;
+    position: relative;
+    align-items: center;
+}
+
+.signa .img {
+    width: 285px;
+    height: 170px;
+    position: relative;
+}
+
+.signa .img:after,
+.signa .img:before {
+    content: "";
+    position: absolute;
+    background: var(--bk);
+    height: 4px;
+    right: 0;
+    left: -40px;
+}
+
+.signa .img:before {
+    top: -8px;
+}
+
+.signa .img:after {
+    bottom: -8px;
+}
+
+.signa>span {
+    writing-mode: vertical-rl;
+    scale: -1;
+    text-align: center;
+    padding: 5px;
+    background: var(--bk);
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    gap: 5px;
+    height: -webkit-fill-available;
+}
+
+.signa>span>b,
+.signa .ntm>p>b,
+.signa .ntm>p>i {
+    color: var(--acento);
+    letter-spacing: 1px;
+}
+
+.signa .ntm {
+    position: absolute;
+    right: -60px;
+    width: 115px;
+    background: var(--bk);
+    padding: 10px;
+}
+
+.signa .ntm>p {
+    margin: 0;
+    text-align: justify;
+    text-align-last: justify;
+    font-size: 12px;
+}
+
+.signa .ntm>p>u {
+    text-decoration: none;
+    border-bottom: 1px solid var(--acento);
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/**FIRMA 007**/
+.firma1 {
+    height: 200px;
+    width: 315px;
+}
+
+.firma1:before,
+.firma1:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+
+.firma1:before {
+    border-left: 1px solid var(--acento);
+    border-top: 1px solid var(--acento);
+    top: -10px;
+    left: -10px;
+}
+
+.firma1:after {
+    border-right: 1px solid var(--acento);
+    border-bottom: 1px solid var(--acento);
+    bottom: -10px;
+    right: -10px;
+}
+
+.firma1 .txt {
+    padding: 20px;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: end;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    color: #ccc;
+}
+
+.firma1 .txt>span {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.content.clearfix .firma1 .txt>span>b,
+.firma1 .txt>span>b {
+    -webkit-text-stroke: 1px var(--acento);
+    color: transparent;
+    font-family: arial;
+    font-weight: 900;
+}
+
+.firma1 .txt>pp {
+    font-family: roboto, sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/**FIRMA 008**/
+.firma2 {
+    display: flex;
+    height: 215px;
+    outline: 1px solid var(--cborder);
+    outline-offset: 7px;
+    width: 315px;
+    gap: 9px;
+}
+
+.firma2 .ima-lt {
+    width: 50px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    outline: 1px solid var(--cborder);
+    outline-offset: 1px;
+}
+
+.firma2 .ima-lt:before,
+.firma2 .ima-lt:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.firma2 .ima-lt:before {
+    background: black;
+    mix-blend-mode: color;
+}
+
+.firma2 .ima-lt:after {
+    background: var(--acento);
+    mix-blend-mode: multiply;
+}
+
+.firma2 .ima-lt>span {
+    writing-mode: vertical-rl;
+    scale: -1;
+    text-align: center;
+    padding: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    height: -webkit-fill-available;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.firma2 .ima-rt {
+    width: 206px;
+    height: 215px;
+    outline: 1px solid var(--cborder);
+    outline-offset: 1px;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma2:hover .ima-rt {
+    filter: grayscale(1);
+    transition: all ease-in-out 0.7s;
+}
+
+/**FIRMA 009**/
+.firma3 {
+    height: 215px;
+    width: 345px;
+    border: 10px solid var(--bk);
+    outline: 1px solid var(--cborder);
+    outline-offset: -11px;
+    overflow: hidden;
+}
+
+.firma3 .dt-tt {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    text-align: justify;
+    text-align-last: justify;
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all ease-in-out 0.7s;
+}
+
+.content.clearfix .firma3 .dt-tt>b,
+.firma3 .dt-tt>b,
+.content.clearfix .hr-tt>p>b,
+.hr-tt>p>b {
+    padding: 0px 4px;
+    background: var(--acento);
+    transform: skewX(-10deg);
+    display: inline-flex;
+    color: #eee;
+}
+
+.firma3:hover .dt-tt {
+    transform: translate(-200px, 200px);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma3 .hr-tt {
+    position: absolute;
+    inset: 1px;
+}
+
+.firma3 .hr-tt>p {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    text-align: center;
+    width: -webkit-fill-available;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translate(0px, 500px);
+    transition: all ease-in-out 0.7s;
+    z-index: 1;
+}
+
+.firma3 .hr-tt:before,
+.firma3 .hr-tt:after {
+    content: "";
+    position: absolute;
+    height: 213px;
+    width: 343px;
+    transform: translate(0px, 500px);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma3 .hr-tt:before {
+    background: black;
+    mix-blend-mode: color;
+}
+
+.firma3 .hr-tt:after {
+    background: var(--acento);
+    mix-blend-mode: multiply;
+}
+
+.firma3:hover .hr-tt>p {
+    transform: translate(0px, 0px);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma3:hover .hr-tt:before,
+.firma3:hover .hr-tt:after {
+    transform: translate(0px, 0px);
+    transition: all ease-in-out 0.7s;
+}
+
+/**FIRMA 010**/
+.firma4 {
+    height: 200px;
+    width: 315px;
+    outline: 1px solid var(--acento);
+    outline-offset: 7px;
+}
+
+.firma4:before {
+    content: "";
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+    position: absolute;
+    inset: 0;
+}
+
+.firma4 .tt-bx {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 235px;
+    box-sizing: content-box;
+    margin: 15px;
+    text-align: right;
+    border-right: 2px solid var(--acento);
+    padding: 5px 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ccc;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+.firma4 .tt-bx>b {
+    color: var(--acento);
+}
+
+.firma4 .tt-bx>u {
+    text-decoration-line: grammar-error;
+    text-decoration-color: var(--acento);
+}
+
+.firma4 .tt-bx>i.fas,
+.firma4 .tt-bx>i.fal,
+.firma4 .tt-bx>i.far {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-size: 30px;
+    color: var(--acento);
+    opacity: 0.8;
+}
+
+.agitar {
+    animation: agitar 1.0s infinite both;
+}
+
+/**FIRMA 011**/
+.firma5 {
+    height: 200px;
+    width: 325px;
+    display: flex;
+    border: 10px solid var(--bk);
+    outline: 1px solid var(--cborder);
+    outline-offset: -11px;
+    overflow: hidden;
+}
+
+.firma5:before,
+.firma5:after,
+.firma5>div,
+.tt-oy:before,
+.tt-oy:after,
+.firma8:before,
+.firma8:after {
+    content: "";
+    position: absolute;
+    height: 198px;
+    width: 323px;
+    transform: translate(0px, 500px);
+    transition: all ease-in-out 0.7s;
+    inset: 1px;
+}
+
+.firma5:before,
+.tt-oy:before,
+.firma8:before {
+    background: black;
+    mix-blend-mode: color;
+}
+
+.firma5:after,
+.tt-oy:after,
+.firma8:after {
+    background: var(--acento);
+    mix-blend-mode: multiply;
+}
+
+.firma5:hover:before,
+.firma5:hover:after,
+.firma5:hover>div {
+    transform: translate(0px, 0px);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma5>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    z-index: 1;
+    font-size: 10px;
+    color: #ccc;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    transition: all ease-in-out 0.7s;
+    backdrop-filter: blur(3px);
+}
+
+.firma5 .l2 {
+    font-weight: 900;
+    font-size: 23px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.firma5 .l2>b {
+    color: var(--acento);
+    font-weight: 800;
+}
+
+.firma5 .l1 {
+    font-style: italic;
+    font-size: 9px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+/**FIRMA 012**/
+.firma5, 
+.firma6,
+.firma7,
+.firma8 {
+    height: 200px;
+    width: 325px;
+    display: flex;
+    border: 10px solid var(--bk);
+    outline: 1px solid var(--cborder);
+    outline-offset: -11px;
+    overflow: hidden;
+}
+
+.tt-oy {
+    position: absolute;
+    padding: 25px;
+    inset: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tt-oy:before,
+.tt-oy:after {
+    transform: none;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    scale: 0;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma6:hover .tt-oy:before,
+.firma6:hover .tt-oy:after {
+    transition: all ease-in-out 0.7s;
+    scale: 1;
+}
+
+.tt-oy>span {
+    text-align: justify;
+    text-align-last: justify;
+    width: 195px;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.7s;
+    scale: 0;
+    color: #ccc;
+}
+
+.firma6:hover .tt-oy>span {
+    transition: all ease-in-out 0.7s;
+    scale: 1;
+}
+
+.tt-oy:after {
+    inset: 0;
+}
+
+.tt-oy>span>b,
+.tt-oy>span>i {
+    color: var(--acento);
+}
+
+.tt-oy>span>b {
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.tt-oy>span>u {
+    color: #8c8c8c;
+    position: relative;
+    text-decoration: none;
+    border-bottom: none !important;
+}
+
+.tt-oy>span>u:before {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    display: block;
+    position: absolute;
+    background: var(--acento);
+    left: -2px;
+    right: -2px;
+}
+
+/**FIRMA 013**/
+.firma6 ln,
+.firma6 ln2 {
+    position: absolute;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma6 ln:before,
+.firma6 ln:after {
+    position: absolute;
+    content: "";
+    width: 325px;
+    height: 1px;
+    z-index: 3;
+    background: var(--cborder);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma6 ln:before {
+    top: 50px;
+    transform: translateX(400px);
+}
+
+.firma6 ln:after {
+    top: 150px;
+    transform: translateX(-400px);
+}
+
+.firma6:hover ln:before,
+.firma6:hover ln:after {
+    transform: translateX(0);
+    transition: all ease-in-out 0.7s;
+    transition-delay: .8s;
+}
+
+.firma6 ln2:before,
+.firma6 ln2:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 200px;
+    z-index: 3;
+    background: var(--cborder);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma6 ln2:before {
+    left: 50px;
+    transform: translateY(400px);
+}
+
+.firma6 ln2:after {
+    left: 275px;
+    transform: translateY(-400px);
+}
+
+.firma6:hover ln2:before,
+.firma6:hover ln2:after {
+    transform: translateY(0);
+    transition: all ease-in-out 0.7s;
+    transition-delay: 1s;
+}
+
+/**FIRMA 014**/
+.firma7 {
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.firma7 .vt {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.firma7 .vt>span {
+    background: var(--bk);
+    padding: 6px 8px;
+}
+
+.firma7 .vt>span>b,
+.firma7 .vt>span>i {
+    color: var(--acento);
+}
+
+.firma7 .vt>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--acento);
+    padding: 4px 6px;
+    font-size: 12px;
+    text-shadow: none;
+    color: var(--bk);
+}
+
+/**FIRMA 015**/
+.firma8 {
+    align-items: end;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma8:hover {
+    filter: hue-rotate(360deg);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma8:before,
+.firma8:after {
+    transform: none;
+    top: 1px;
+    left: 1px;
+}
+
+.firma8 .tt-bx {
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    -webkit-text-stroke: 1px #999;
+    color: transparent;
+    font-family: arial;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    width: -webkit-fill-available;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    mix-blend-mode: hard-light;
+    cursor: context-menu;
+}
+
+.firma8 .tt-bx:before {
+    content: "[";
+    margin-top: -5px;
+}
+
+.firma8 .tt-bx:after {
+    content: "]";
+    margin-top: -5px;
+}
+
+.firma8 .hrtt {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    text-transform: uppercase;
+    transition: all ease-in-out 0.7s;
+    transform: scaleY(0);
+}
+
+.firma8 .hrtt>span {
+    font-size: 21px;
+    width: 85px;
+    padding: 5px 7px 5px 0;
+    border-right: 2.5px solid var(--acento);
+    -webkit-text-stroke: 1px #ccc;
+    color: transparent;
+    font-family: arial;
+    font-weight: 900;
+    line-height: 1;
+    word-break: break-all;
+    text-align: right;
+    text-align-last: right;
+}
+
+.hrtt>p {
+    color: #ccc;
+    padding-left: 7px;
+    width: 175px;
+    margin: 0;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: justify;
+    text-align-last: justify;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.firma8:hover .hrtt {
+    transition: all ease-in-out 0.7s;
+    transition-delay: 1s;
+    transform: scaleY(1);
+}
+
+/**FIRMA 016**/
+.firma9 {
+    height: 200px;
+    width: 325px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0);
+    justify-content: flex-end;
+}
+
+.firma9:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.firma9:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    outline: 8px solid var(--acento);
+    outline-offset: 1px;
+    opacity: 0.5;
+}
+
+.firma9 .i-s {
+    width: 100px;
+    padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    color: #aaa;
+}
+
+.firma9 .i-s .is {
+    border: 1px solid rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.firma9 .i-s .is>i {
+    font-size: 25px;
+}
+
+.firma9 .i-s .is i,
+.firma9 .i-s .is b,
+.firma9 .i-s .is strong,
+.firma9 .i-s .is u {
+    color: var(--acento);
+}
+
+.firma9 .i-s .is u {
+    text-decoration-line: grammar-error;
+    border-bottom: none;
+}
+
+/**FIRMA 017**/
+.firma10 {
+    height: 170px;
+    width: 270px;
+    display: flex;
+    border: 15px solid var(--background-1);
+}
+
+.firma10:before,
+.firma10:after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.firma10:before {
+    border-top: 1px solid var(--acento);
+    border-left: 1px solid var(--acento);
+    top: -15px;
+    left: -15px;
+}
+
+.firma10:after {
+    border-bottom: 1px solid var(--acento);
+    border-right: 1px solid var(--acento);
+    bottom: -15px;
+    right: -15px;
+}
+
+.firma10 .ot,
+.firma10 .ot2 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 8px;
+    width: -webkit-fill-available;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1;
+}
+
+.firma10 .ot {
+    top: -10px;
+}
+
+.firma10 .ot2 {
+    bottom: -12px;
+}
+
+.content.clearfix .firma10 i,
+.firma10 i,
+.content.clearfix .firma10 b,
+.firma10 b,
+.content.clearfix .firma10 strong,
+.firma10 strong {
+    color: var(--acento);
+    font-weight: 600;
+}
+
+/**FIRMA 018**/
+.firma11 {
+    height: 200px;
+    width: 325px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-content: baseline;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.firma11:before {
+    content: "";
+    top: -25px;
+    left: -65px;
+    width: 250px;
+    background: rgba(15, 15, 15, 0.8);
+    position: absolute;
+    height: 250px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.firma11:after {
+    content: "";
+    height: 180px;
+    width: 165px;
+    border-bottom: 1px solid var(--acento);
+    border-right: 1px solid var(--acento);
+    border-top: 1px solid var(--acento);
+    position: absolute;
+    right: 10px;
+}
+
+.firma11 .icn,
+.firma12 .late .icn {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    background: #f1f3f4;
+    outline: 1px solid #f1f3f4;
+    outline-offset: 5px;
+    border-radius: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.70;
+    margin-left: 10%;
+}
+
+.firma11 .icn>i,
+.firma12 .late .icn>i {
+    font-size: 25px;
+    color: var(--acento);
+}
+
+.firma11 .icn audio,
+.firma12 .late .icn audio {
+    position: absolute;
+    left: 33px;
+    transform: scale(1.25);
+    opacity: 0;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma11:hover .icn audio,
+.firma12:hover .late .icn audio {
+    opacity: 1;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma11 .vs {
+    position: relative;
+    width: 95px;
+    border-left: 3px solid var(--acento);
+    border-bottom: 3px solid var(--acento);
+    padding: 5px;
+    text-align: justify;
+    text-align-last: justify;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 700;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    color: #ccc;
+    line-height: 12px;
+}
+
+.content.clearfix .firma11 .vs i,
+.firma11 .vs i,
+.content.clearfix .firma11 .vs b,
+.firma11 .vs b,
+.content.clearfix .firma11 .vs strong,
+.firma11 .vs strong,
+.content.clearfix .firma11 .vs u,
+.firma11 .vs u,
+.content.clearfix .firma12 .late>span i,
+.firma12 .late>span i,
+.content.clearfix .firma12 .late>span b,
+.firma12 .late>span b,
+.content.clearfix .firma12 .late>span strong,
+.firma12 .late>span strong,
+.content.clearfix .firma12 .late>span u,
+.firma12 .late>span u {
+    color: var(--acento);
+}
+
+/**FIRMA 019**/
+.firma12 {
+    height: 200px;
+    width: 325px;
+    display: flex;
+    border: 10px solid var(--bk);
+    outline: 1px solid var(--cborder);
+    outline-offset: -11px;
+    overflow: hidden;
+}
+
+.firma12 .img {
+    width: 205px;
+    border-right: 1px solid var(--cborder);
+}
+
+.firma12 .late {
+    width: 100px;
+    overflow: hidden;
+    padding: 10px;
+    background: #0b0d0e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firma12 .late .icn {
+    background: #0b0d0e;
+    outline: 4px solid var(--acento);
+    outline-offset: 0px;
+    margin: 0;
+}
+
+.firma12 .late .icn audio {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body.day .firma12 .late .icn,
+body.day .firma12 .late {
+    background: #f1f3f4;
+}
+
+body.day .firma12 .late .icn audio {
+    filter: invert(0) hue-rotate(0);
+}
+
+.firma12 .late>span {
+    margin: 8px 10px;
+    text-align: justify;
+    text-align-last: justify;
+    text-transform: uppercase;
+    font-size: 9.5px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 1px;
+}
+
+/**FIRMA 020**/
+.firma13 {
+    height: 225px;
+    width: 350px;
+    border: 1px solid var(--cborder);
+    outline: 1px solid var(--cborder);
+    outline-offset: 9px;
+    overflow: hidden;
+    color: #ccc;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.firma13:before {
+    content: "";
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.firma13:after {
+    content: "";
+    background: #000;
+    mix-blend-mode: color;
+    position: absolute;
+    width: 350px;
+    height: 225px;
+    scale: 0;
+    top: 0;
+    z-index: 1;
+    transition: ease-in-out 0.7s;
+    transition-delay: 0.15s;
+}
+
+.firma13:hover:after {
+    scale: 1;
+    transition: ease-in-out 0.7s;
+    transition-delay: 0.15s;
+
+}
+
+.firma13 pics {
+    height: 225px;
+    position: absolute;
+    width: 350px;
+    display: block;
+    z-index: 0;
+    transition: ease-in-out 0.7s;
+}
+
+.firma13:hover pics {
+    scale: 1.5;
+    rotate: 2.5deg;
+    filter: blur(1px);
+    transition: ease-in-out 0.7s;
+}
+
+.firma13 .lft {
+    width: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: wrap;
+    transform: translate(230px, 0px);
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    height: 205px;
+    font-family: Montserrat, sans-serif;
+    transition: ease-in-out 0.7s;
+    position: relative;
+}
+
+.content.clearfix .firma13 .lft>b,
+.firma13 .lft>b {
+    margin: 8px;
+    padding: 5px;
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    background: var(--acento);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid var(--cborder);
+    outline-offset: 5px;
+    position: relative;
+    color: #eee;
+}
+
+.firma13 .lft>span {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 9px;
+    margin: 10px 0;
+
+    position: relative;
+}
+
+.firma13:hover .lft {
+    transform: translate(5px, 0px);
+    transition: ease-in-out 0.7s;
+}
+
+.firma13 colores:before {
+    content: "";
+    height: 225px;
+    width: 130px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    background: var(--acento);
+    z-index: 2;
+    transform: translate(-205px, 0px);
+    transition: ease-in-out 0.7s;
+}
+
+.firma13:hover colores:before {
+    transform: translate(0px, 0px);
+    transition: ease-in-out 0.7s;
+}
+
+.firma13 .rgt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 159px;
+    top: 0;
+    translate: 355px 0px;
+    height: 165px;
+    padding: 30px;
+    border-left: 1px solid var(--cborder);
+    z-index: 2;
+    transition: ease-in-out 0.7s;
+}
+
+.firma13:hover .rgt {
+    translate: 130px 0px;
+    transition: ease-in-out 0.7s;
+}
+
+.firma13 .rgt:before {
+    content: "";
+    background: #000;
+    position: absolute;
+    inset: 0;
+    opacity: 0.65;
+}
+
+.firma13 .rgt p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: justify;
+    font-size: 13px;
+    font-family: montserrat;
+    line-height: 18px;
+}
+
+.content.clearfix .firma13 .rgt p>b,
+.firma13 .rgt p>b,
+.content.clearfix .firma13 .rgt p>strong,
+.firma13 .rgt p>strong,
+.content.clearfix .firma13 .rgt p>i,
+.firma13 .rgt p>i {
+    color: var(--acento);
+    font-weight: 600;
+}
+
+.firma13 .rgt p>b {
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.content.clearfix .firma13 .rgt p>u,
+.firma13 .rgt p>u {
+    color: #888;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+.content.clearfix .firma13 .rgt p strong, 
+.rgt p strong, 
+.content.clearfix .firma13 .rgt p a,
+.firma13 .rgt p a {
+    color: var(--acento);
+}
+
+.content.clearfix .firma13 .rgt p>u:before,
+.firma13 .rgt p>u:before  {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: var(--acento);
+    left: -2px;
+    right: -2px;
+}
+
+/**FIRMA 021**/
+.firma14 {
+    height: 200px;
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 15px solid var(--bk);
+    overflow: hidden;
+}
+
+.firma14 pics {
+    display: block;
+    height: 154px;
+    width: 325px;
+    border-top: 1px dotted var(--acento);
+}
+
+.firma14>span {
+    position: absolute;
+    height: 155px;
+    display: flex;
+    align-items: end;
+    padding: 0 15px;
+    width: -webkit-fill-available;
+    font-family: "Anton SC", sans-serif;
+    font-size: 35px;
+    line-height: 25px;
+    color: var(--acento);
+    text-shadow: 1px -1px var(--bk);
+}
+
+.firma14 .btm {
+    color: var(--bk);
+    background: var(--acento);
+    height: 34px;
+    padding: 5px 10px;
+    border-bottom: 1px dotted var(--bk);
+    width: 100%;
+}
+
+.firma14 .btm>span {
+    font-size: 7.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    display: block;
+    line-height: 8px;
+    letter-spacing: 1px;
+    height: 15px;
+}
+
+/**FIRMA 022**/
+.firma15 {
+    height: 215px;
+    width: 370px;
+    display: flex;
+    align-items: end;
+    border: 10px solid var(--bk);
+    outline: 1px solid var(--cborder);
+    outline-offset: -11px;
+    overflow: hidden;
+}
+
+.firma15 .txt {
+    padding: 25px;
+    display: block;
+    width: -webkit-fill-available;
+}
+
+.firma15 .txt>b {
+    font-family: satisfy;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 15px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.firma15 .txt>span {
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 2px 4px;
+    background: var(--acento);
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    transform: translate(-45px, 5px) skewX(-10deg);
+    line-height: 9px;
+}
+
+/**FIRMA 023**/
+.firma16 {
+    height: 200px;
+    width: 385px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 10px solid var(--bk);
+    overflow: hidden;
+}
+
+.firma16:before {
+    content: "";
+    inset: 0;
+    background: var(--bk);
+    position: absolute;
+    opacity: 0.5;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma16:after {
+    content: "";
+    inset: 0;
+    background: var(--bk);
+    position: absolute;
+    mix-blend-mode: color;
+    transition: all ease-in-out 0.7s;
+}
+
+.firma16>span {
+    padding: 25px 0 25px 25px;
+    width: 160px;
+    font-family: "Anton SC", sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    display: block;
+    color: #ccc;
+    position: relative;
+    z-index: 1;
+    transition: all ease-in-out 0.7s;
+    transition-delay: 0.7s;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.content.clearfix .firma16>span>b,
+.firma16>span>b {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--acento);
+    text-shadow: none;
+}
+
+.firma16>span>i {
+    font-style: normal;
+}
+
+.firma16>p.txt {
+    position: absolute;
+    z-index: 1;
+    width: 125px;
+    margin: 0 0 0 25px;
+    padding: 15px;
+    background: var(--bk);
+    font-size: 10.5px;
+    text-align: justify;
+    text-align-last: justify;
+    transform: scaleY(0);
+    transition: all ease-in-out 0.7s;
+
+}
+
+.content.clearfix .firma16>p.txt>b,
+.firma16>p.txt>b {
+    display: inline-flex;
+    background: var(--acento);
+    padding: 0 3px;
+    color: #ccc !important;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.content.clearfix .firma16>p.txt>strike,
+.firma16>p.txt>strike,
+.content.clearfix .firma16>p.txt>u,
+.firma16>p.txt>u,
+.content.clearfix .firma16>p.txt>i,
+.firma16>p.txt>i {
+    color: var(--acento);
+    border-bottom: none !important;
+}
+
+.content.clearfix .firma16>p.txt>u,
+.firma16>p.txt>u {
+    color: #8c8c8c;
+    position: relative;
+    text-decoration: none;
+}
+
+.firma16>p.txt>u:before {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    display: block;
+    position: absolute;
+    background: var(--acento);
+    left: -2px;
+    right: -2px;
+}
+
+.content.clearfix .firma16>p.txt>b,
+.firma16>p.txt>b {
+    display: inline-flex;
+    background: var(--acento);
+    padding: 0 3px;
+}
+
+.firma16:hover>span {
+    transform: scaleY(0);
+    transition: all ease-in-out 0.7s;
+}
+
+.firma16:hover>p.txt {
+    transform: scaleY(1);
+    transition: all ease-in-out 0.7s;
+    transition-delay: 0.7s;
+}
+
+/**FIRMA 024**/
+.firma17 {
+    height: 170px;
+    width: 270px;
+    display: flex;
+    outline: 1px solid var(--cborder);
+    outline-offset: 10px;
+}
+
+.firma17>span:first-of-type {
+    position: absolute;
+    top: -18px;
+    background: var(--background-1);
+    padding: 0 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.firma17>span:last-of-type {
+    position: absolute;
+    bottom: 0px;
+    background: var(--background-1);
+    padding: 3px;
+    right: -17px;
+    font-size: 23px;
+}
+
+.firma17 .txt {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 170px;
+    width: 270px;
+    position: relative;
+    transition: 0.7s ease-in-out;
+}
+
+.firma17 .txt:before,
+.firma17 .txt:after {
+    content: "";
+    height: 170px;
+    width: 270px;
+    position: absolute;
+    transition: 0.7s ease-in-out;
+}
+
+.firma17 .txt:before {
+    background: #000;
+    mix-blend-mode: color;
+    translate: 0 175px;
+}
+
+.firma17 .txt:after {
+    background: var(--acento);
+    mix-blend-mode: multiply;
+    translate: 0 175px;
+}
+
+.firma17 .txt>p {
+    position: relative;
+    z-index: 1;
+    padding: 15px 45px 5px;
+    margin: 0;
+    text-align: justify;
+    text-align-last: justify;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    translate: 0 175px;
+    transition: 0.7s ease-in-out;
+}
+
+.content.clearfix .firma17 .txt>p>i,
+.firma17 .txt>p>i,
+.content.clearfix .firma17 .txt>p>b,
+.firma17 .txt>p>b,
+.content.clearfix .firma17 .txt>p>u,
+.firma17 .txt>p>u {
+    color: var(--acento);
+    filter: brightness(1.8);
+}
+
+.firma17 .txt>span {
+    position: relative;
+    z-index: 1;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #ddd;
+    translate: 0 175px;
+    transition: 0.7s ease-in-out;
+}
+
+.content.clearfix .firma17 .txt>span>i,
+.firma17 .txt>span>i {
+    font-weight: 500;
+    -webkit-text-stroke: transparent;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.firma17:hover .txt:before,
+.firma17:hover .txt:after,
+.firma17:hover .txt>span,
+.firma17:hover .txt>p {
+    translate: 0 0;
+}
+
+.firma17:hover .txt:after {
+    transition-delay: 0.25s;
+}
+
+.firma17:hover .txt>span {
+    transition-delay: 0.65s;
+}
+
+.firma17:hover .txt>p {
+    transition-delay: 0.45s;
+}
+
+/**FIRMA 025**/
 .firma18 {
     width: 315px;
     height: 185px;
-    margin: 25px auto;
     border: 1px solid var(--cborder);
-    position: relative;
     overflow: hidden;
-    transition: 0.7s ease-in-out;
 }
 
 .firma18:before {
@@ -334,12 +2425,11 @@ body.day .smptram-title>span {
     transition: 0.7s ease-in-out;
 }
 
+/**FIRMA 026**/
 .firma19 {
     width: 325px;
     height: 180px;
-    margin: 25px auto;
     background: #0a0a0a;
-    position: relative;
     overflow: hidden;
     border: 1px dotted var(--cborder);
     outline: 1px dotted var(--cborder);
@@ -377,13 +2467,11 @@ body.day .smptram-title>span {
     padding: 4px 5px 2px;
 }
 
-
+/**FIRMA 027**/
 .firma20 {
     width: 350px;
     height: 200px;
     background: #0c0c0c;
-    margin: 25px auto;
-    position: relative;
     overflow: hidden;
 }
 
@@ -445,15 +2533,13 @@ body.day .smptram-title>span {
     font-family: serif;
 }
 
-
+/**FIRMA 028**/
 .firma21 {
     width: 320px;
     height: 190px;
     background: #060606;
-    margin: 25px auto;
     border: 1px solid var(--acento);
     outline: var(--cborder) 2px solid;
-    position: relative;
     overflow: hidden;
 }
 
@@ -506,8 +2592,6 @@ body.day .smptram-title>span {
     color: #ccc;
 }
 
-
-
 .firma21-n {
     position: absolute;
     bottom: 24px;
@@ -524,14 +2608,13 @@ body.day .smptram-title>span {
     text-shadow: -1px -1px rgba(0, 0, 0, 0.5), 1px -1px rgba(0, 0, 0, 0.7);
 }
 
+/**FIRMA 029**/
 .firma22 {
     width: 350px;
     height: 225px;
-    margin: 25px auto;
     background: var(--background-3);
     border: 2px solid var(--background-3);
     outline: 1px solid var(--acento);
-    position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
 }
@@ -602,15 +2685,13 @@ body.day .smptram-title>span {
     transition: all 0.4s ease;
 }
 
+/**FIRMA 030**/
 .firma23 {
     width: 360px;
     height: 215px;
-    margin: 25px auto;
     background: #080a0c;
     border: 2px solid var(--cborder);
-    position: relative;
     overflow: hidden;
-    transition: all 0.7s ease;
     text-shadow: -1px -1px rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -685,14 +2766,12 @@ body.day .smptram-title>span {
     transition: all 0.7s ease;
 }
 
+/**FIRMA 031**/
 .firma24 {
     width: 360px;
     height: 195px;
-    margin: 25px auto;
     background: #0c0d12;
-    position: relative;
     overflow: hidden;
-    transition: all 0.7s ease;
 }
 
 .firma24:before {
@@ -775,11 +2854,10 @@ body.day .smptram-title>span {
     z-index: 3;
 }
 
+/**FIRMA 032**/
 .firma25 {
     width: 450px;
     height: 290px;
-    position: relative;
-    margin: 25px auto;
 }
 
 .firma25-t {
@@ -836,16 +2914,12 @@ body.day .smptram-title>span {
     animation: rotte 12s linear infinite;
 }
 
-
-
+/**FIRMA 033**/
 .firma26 {
     width: 380px;
     height: 205px;
-    margin: 25px auto;
     border: 2px solid var(--cborder);
     outline: 1px solid var(--background-1);
-    position: relative;
-    transition: all 0.7s ease-in-out;
 }
 
 .firma26:before {
@@ -933,15 +3007,13 @@ body.day .smptram-title>span {
     height: 183px;
 }
 
+/**FIRMA 034**/
 .firma27 {
     width: 375px;
     height: 205px;
-    margin: 25px auto;
     border: 2px solid var(--cborder);
     outline: 1px solid var(--background-1);
-    position: relative;
     overflow: hidden;
-    transition: all 0.7s ease-in-out;
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
@@ -1058,16 +3130,14 @@ body.day .firma27 span.firma27p {
     translate: 0px 0;
 }
 
+/**FIRMA 035**/
 .firma28 {
     width: 375px;
     height: 190px;
-    margin: 25px auto;
     border: 2px solid var(--cborder);
     outline: 1px solid var(--background-1);
-    position: relative;
     overflow: hidden;
     color: #eee;
-    transition: all 0.7s ease-in-out;
     --cborder: #2c2c2c;
 }
 
@@ -1143,14 +3213,12 @@ body.day .firma27 span.firma27p {
     text-align-last: justify;
 }
 
-
+/**FIRMA 036**/
 .firma29 {
     width: 375px;
     height: 225px;
-    margin: 25px auto;
     background: var(--background-3);
     overflow: hidden;
-    position: relative;
     cursor: default;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
@@ -1210,11 +3278,10 @@ body.day .firma27 span.firma27p {
     text-transform: uppercase;
 }
 
-
+/**FIRMA 037**/
 .firma30 {
     width: 375px;
     height: 205px;
-    margin: 25px auto;
     background: var(--background-3);
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
@@ -1304,12 +3371,10 @@ dot.g {
     display: contents;
 }
 
-
-
+/**FIRMA 038**/
 .firma31 {
     width: 355px;
     height: 205px;
-    margin: 25px auto;
     background: var(--background-3);
     font-family: 'Poppins', sans-serif;
     border-radius: 6px;
@@ -1443,12 +3508,10 @@ body.day .firma31 {
     font-size: 7px;
 }
 
-
+/**FIRMA 039**/
 .firma32 {
     width: 380px;
     height: 190px;
-    margin: 10px auto;
-    position: relative;
     border: 3px solid #222;
     outline: 3px solid var(--cborder);
     outline-offset: -6px;
@@ -1461,7 +3524,6 @@ body.day .firma31 {
     box-sizing: border-box;
     color: #eee;
     gap: 2.5px;
-    transition: all 0.7s ease-in-out;
 }
 
 body.day .firma32 {
@@ -1531,17 +3593,14 @@ body.day .firma32 {
 .firma35-m>p strike {
     color: var(--acento);
 }
-
+/**FIRMA 040**/
 .firma33 {
     width: 280px;
     height: 180px;
-    margin: 20px auto;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #eee;
-    transition: all 0.7s ease-in-out;
 }
 
 .firma33-f {
@@ -1656,15 +3715,13 @@ body.day .firma32 {
     opacity: 0.5;
 }
 
+/**FIRMA 041**/
 .firma34 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 340px;
     height: 150px;
-    margin: 20px auto;
-    position: relative;
-    transition: all 0.7s ease-in-out;
 }
 
 .firma34:before {
@@ -1710,7 +3767,7 @@ body.day .firma32 {
     z-index: 3;
 }
 
-
+/**FIRMA 042**/
 .firma35 {
     width: 345px;
     height: 180px;
@@ -1718,14 +3775,11 @@ body.day .firma32 {
     align-items: end;
     flex-wrap: wrap;
     gap: 10px;
-    position: relative;
     overflow: hidden;
-    margin: 10px auto;
     border: 2px solid var(--cborder);
     box-sizing: border-box;
     padding: 15px;
     color: #eee;
-    transition: all 0.7s ease-in-out;
 }
 
 .firma35-n {
@@ -1846,14 +3900,13 @@ body.day .firma32 {
     text-align-last: justify;
 }
 
+/**FIRMA 043**/
 .firma36 {
     width: 380px;
     height: 200px;
     display: flex;
     align-items: center;
     gap: 0;
-    position: relative;
-    margin: 10px auto;
 }
 
 .firma36-h {
@@ -1903,2027 +3956,9 @@ body.day .firma32 {
     font-weight: 700;
 }
 
-.singo,
-.singa,
-.singe,
-.singi,
-.singu,
-.singy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px auto;
-    outline: 1px solid var(--acento);
-    transition: all ease-in-out 0.7s;
-}
+/**FIRMA 043**/
+/**FIRMA 043**/
 
-.singi,
-.singi>img,
-.singo,
-.singo>img,
-.singo>div,
-.singa,
-.singa>img,
-.singe,
-.singe>img,
-.singy,
-.singy>.img {
-    width: 280px;
-    height: 180px;
-    position: relative;
-    object-fit: cover;
-    box-sizing: border-box;
-    transition: all ease-in-out 0.7s;
-}
-
-.singo:hover {
-    outline-offset: 5px;
-    transition: all ease-in-out 0.7s;
-}
-
-.singo>div,
-.lta {
-    position: absolute;
-    padding: 25px;
-    background: rgba(0, 0, 0, 0.8);
-    text-align: justify;
-    text-align-last: center;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    flex-flow: wrap;
-    gap: 5px;
-    scale: 0;
-}
-
-.singo:hover div,
-.singa:hover .lta {
-    scale: 1;
-}
-
-.singo>div>b {
-    display: block;
-    font-size: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--acento);
-}
-
-.singo>div i,
-.singo>div strong,
-.singo>div u,
-.singe>div i,
-.singe>div u,
-.singe>div strong,
-.singe>div b {
-    display: contents;
-    color: var(--acento);
-    border-bottom: none !important;
-}
-
-.singo>div u {
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.singa {
-    outline: 1px solid var(--cborder);
-    margin: 25px auto;
-}
-
-.sto,
-.sbo {
-    position: absolute;
-    display: flex;
-    text-transform: uppercase;
-    font-size: 8px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    width: 278px;
-    align-items: center;
-    justify-content: center;
-    transition: all ease-in-out 0.7s;
-    color: var(--color);
-}
-
-.sto {
-    top: -16px;
-}
-
-.sbo {
-    bottom: -19px;
-}
-
-.sto:after,
-.sbo:before {
-    content: "";
-    flex: auto;
-    background: var(--acento);
-    height: 1px;
-}
-
-.sto:after {
-    margin-left: 5px;
-    margin-top: -2px;
-}
-
-.sbo:before {
-    margin-right: 5px;
-    margin-top: 1px;
-}
-
-.singa:hover .lta {
-    scale: 1;
-    opacity: 1;
-}
-
-.lta {
-    scale: 1;
-    opacity: 0;
-    inset: 0;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 9px;
-    letter-spacing: 1px;
-    line-height: 12px;
-    transition: all ease-in-out 0.7s;
-}
-
-.lta>b,
-.lta>i {
-    display: block;
-}
-
-.lta>b {
-    display: block;
-    font-size: 21px;
-    color: var(--acento);
-    text-transform: math-auto;
-    line-height: 20px;
-    margin-bottom: 5px;
-}
-
-.lta>i {
-    background: var(--acento);
-    text-align: center;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    color: var(--background-3);
-    font-size: 14px;
-    outline: 1px solid var(--acento);
-    outline-offset: 3px;
-    margin: 5px auto;
-    scale: 0.8;
-}
-
-.singe>div {
-    position: absolute;
-    z-index: 1;
-    display: block;
-    padding: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-align: justify;
-    text-align-last: center;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.5), -1px 1px rgba(0, 0, 0, 0.5), 1px -1px rgba(0, 0, 0, 0.5);
-}
-
-.singe:before {
-    content: "";
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    position: absolute;
-    z-index: 1;
-}
-
-.singe,
-.singe>img,
-.singi,
-.singi>.img {
-    width: 350px;
-    height: 200px;
-}
-
-.singe {
-    outline-offset: 5px;
-    outline: 2px solid var(--acento);
-    transition: all ease-in-out 0.7s;
-}
-
-.singe>img {
-    outline-offset: -15px;
-    outline: 1px solid var(--acento);
-}
-
-.singe>div i,
-.singe>div u,
-.singe>div strong,
-.singe>div b {
-    display: inline-flex;
-    position: relative;
-}
-
-.singe>div u {
-    text-decoration: none;
-    margin: 0 0 2px;
-    color: #ccc;
-}
-
-.singe>div u:before {
-    content: "";
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    background: var(--acento);
-    bottom: 0;
-    height: 2px;
-}
-
-.singi .img:before,
-.singi .img:after,
-.singu>.img:before,
-.singu>.img:after,
-.singy>.img:before,
-.singy>.img:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-}
-
-.singi .img:before,
-.singu>.img:before,
-.singy>.img:before {
-    background: #000;
-    mix-blend-mode: color;
-}
-
-.singi .img:after,
-.singu>.img:after,
-.singy>.img:after {
-    background: #000;
-    opacity: 0.8;
-}
-
-.singi .ntm {
-    position: absolute;
-    padding: 20px;
-    width: 200px;
-    top: 0;
-    left: 0;
-}
-
-.content.clearfix .singi .ntm>b,.singi .ntm>b {
-    -webkit-text-stroke: 1px var(--acento);
-    font-size: 38px;
-    color: transparent!important;
-    display: block;
-    line-height: 43px;
-    font-weight: 700;
-    font-family: arial;
-}
-
-.singi .ntm>i {
-    font-size: 9px;
-    line-height: 9px;
-    display: block;
-    margin: 0 15px;
-    position: relative;
-}
-
-.singi .ntm>i:before {
-    content: "";
-    left: -9px;
-    top: -2px;
-    bottom: -2px;
-    width: 2px;
-    background: var(--acento);
-    position: absolute;
-}
-
-.singu,
-.singu>.img {
-    width: 305px;
-    height: 175px;
-    position: relative;
-}
-
-.singu {
-    border-left: 20px solid var(--acento);
-}
-
-.singu .ntm {
-    position: absolute;
-    padding: 20px;
-    width: 200px;
-    left: 0;
-    bottom: 0;
-}
-
-.singu .ntm b {
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 16px;
-    position: relative;
-}
-
-.singu .ntm b:before {
-    content: "\f105";
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    color: var(--acento);
-    margin-right: 5px;
-}
-
-.singu .ntm p {
-    position: relative;
-    padding: 0 7px;
-    border-left: 2px solid var(--acento);
-    margin: 5px 10px;
-    font-size: 10px;
-    color: #b3b3b3;
-    line-height: 12px;
-}
-
-.singy {
-    box-shadow: 0 0 0 6px var(--background-3);
-    outline: 1px solid var(--cborder);
-}
-
-.singy .ntm {
-    position: absolute;
-    padding: 15px 25px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-top: 1px solid var(--cborder);
-}
-
-.singy .ntm:before {
-    content: "";
-    inset: 0;
-    position: absolute;
-    background: var(--acento);
-    mix-blend-mode: color;
-    opacity: 0.4;
-}
-
-.singy .ntm>p {
-    position: relative;
-    margin: 0;
-    text-align: center;
-    font-size: 10px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.3), -1px -1px rgba(0, 0, 0, 0.3), -1px 1px rgba(0, 0, 0, 0.3), 1px -1px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.singy .ntm>p>u,
-.signa .ntm>p>u {
-    text-decoration: none;
-    border-bottom: 1px solid var(--acento);
-}
-
-body.day .singy {
-    box-shadow: 0 0 0 6px #ddd;
-}
-
-body.day .singy>.img:after {
-    background: #fff;
-    opacity: 0.4;
-}
-
-body.day .singy .ntm:before {
-    mix-blend-mode: multiply;
-    opacity: 0.5;
-}
-
-.content.clearfix div .singo>div strong,.singo>div strong {
-    color: var(--acento) !important;
-}
-
-.signa {
-    display: flex;
-    width: 325px;
-    height: 170px;
-    margin: 18px auto;
-    position: relative;
-    align-items: center;
-}
-
-.signa .img {
-    width: 285px;
-    height: 170px;
-    position: relative;
-}
-
-.signa .img:after,
-.signa .img:before {
-    content: "";
-    position: absolute;
-    background: var(--bk);
-    height: 4px;
-    right: 0;
-    left: -40px;
-}
-
-.signa .img:before {
-    top: -8px;
-}
-
-.signa .img:after {
-    bottom: -8px;
-}
-
-.signa>span {
-    writing-mode: vertical-rl;
-    scale: -1;
-    text-align: center;
-    padding: 5px;
-    background: var(--bk);
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9px;
-    text-transform: uppercase;
-    gap: 5px;
-    height: -webkit-fill-available;
-}
-
-.signa>span>b,
-.signa .ntm>p>b,
-.signa .ntm>p>i {
-    color: var(--acento);
-    letter-spacing: 1px;
-}
-
-.signa .ntm {
-    position: absolute;
-    right: -60px;
-    width: 115px;
-    background: var(--bk);
-    padding: 10px;
-}
-
-.signa .ntm>p {
-    margin: 0;
-    text-align: justify;
-    text-align-last: justify;
-    font-size: 12px;
-}
-
-.signa .ntm>p>u {
-    text-decoration: none;
-    border-bottom: 1px solid var(--acento);
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 700;
-}
-
-.firma1 {
-    height: 200px;
-    position: relative;
-    width: 315px;
-    margin: 25px auto;
-}
-
-.firma1:before,
-.firma1:after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 50px;
-}
-
-.firma1:before {
-    border-left: 1px solid var(--acento);
-    border-top: 1px solid var(--acento);
-    top: -10px;
-    left: -10px;
-}
-
-.firma1:after {
-    border-right: 1px solid var(--acento);
-    border-bottom: 1px solid var(--acento);
-    bottom: -10px;
-    right: -10px;
-}
-
-.firma1 .txt {
-    padding: 20px;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: end;
-    text-transform: uppercase;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    color: #ccc;
-}
-
-.firma1 .txt>span {
-    font-family: "montserrat", sans-serif;
-    font-size: 20px;
-    letter-spacing: -1px;
-    font-weight: 700;
-}
-
-.content.clearfix .firma1 .txt>span>b,.firma1 .txt>span>b {
-    -webkit-text-stroke: 1px var(--acento);
-    color: transparent;
-    font-family: arial;
-    font-weight: 900;
-}
-
-.firma1 .txt>pp {
-    font-family: roboto, sans-serif;
-    font-size: 9px;
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-
-.firma2 {
-    display: flex;
-    height: 215px;
-    outline: 1px solid var(--cborder);
-    outline-offset: 7px;
-    width: 315px;
-    gap: 9px;
-    margin: 25px auto;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma2 .ima-lt {
-    width: 50px;
-    padding: 25px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ccc;
-    outline: 1px solid var(--cborder);
-    outline-offset: 1px;
-}
-
-.firma2 .ima-lt:before,
-.firma2 .ima-lt:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-}
-
-.firma2 .ima-lt:before {
-    background: black;
-    mix-blend-mode: color;
-}
-
-.firma2 .ima-lt:after {
-    background: var(--acento);
-    mix-blend-mode: multiply;
-}
-
-.firma2 .ima-lt>span {
-    writing-mode: vertical-rl;
-    scale: -1;
-    text-align: center;
-    padding: 5px;
-    font-size: 11px;
-    text-transform: uppercase;
-    height: -webkit-fill-available;
-    font-family: roboto, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 1;
-}
-
-.firma2 .ima-rt {
-    width: 206px;
-    height: 215px;
-    outline: 1px solid var(--cborder);
-    outline-offset: 1px;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma2:hover .ima-rt {
-    filter: grayscale(1);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma3 {
-    height: 215px;
-    width: 345px;
-    position: relative;
-    margin: 25px auto;
-    border: 10px solid var(--bk);
-    outline: 1px solid var(--cborder);
-    outline-offset: -11px;
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma3 .dt-tt {
-    position: absolute;
-    padding: 20px;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    text-align: justify;
-    text-align-last: justify;
-    font-family: 'Montserrat', sans-serif;
-    color: #ccc;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all ease-in-out 0.7s;
-}
-
-.content.clearfix .firma3 .dt-tt>b,
-.firma3 .dt-tt>b,
-.content.clearfix .hr-tt>p>b,
-.hr-tt>p>b {
-    padding: 0px 4px;
-    background: var(--acento);
-    transform: skewX(-10deg);
-    display: inline-flex;
-    color: #eee;
-}
-
-.firma3:hover .dt-tt {
-    transform: translate(-200px, 200px);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma3 .hr-tt {
-    position: absolute;
-    inset: 1px;
-}
-
-.firma3 .hr-tt>p {
-    position: absolute;
-    padding: 20px;
-    bottom: 0;
-    text-align: center;
-    width: -webkit-fill-available;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #ccc;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transform: translate(0px, 500px);
-    transition: all ease-in-out 0.7s;
-    z-index: 1;
-}
-
-.firma3 .hr-tt:before,
-.firma3 .hr-tt:after {
-    content: "";
-    position: absolute;
-    height: 213px;
-    width: 343px;
-    transform: translate(0px, 500px);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma3 .hr-tt:before {
-    background: black;
-    mix-blend-mode: color;
-}
-
-.firma3 .hr-tt:after {
-    background: var(--acento);
-    mix-blend-mode: multiply;
-}
-
-.firma3:hover .hr-tt>p {
-    transform: translate(0px, 0px);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma3:hover .hr-tt:before,
-.firma3:hover .hr-tt:after {
-    transform: translate(0px, 0px);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma4 {
-    height: 200px;
-    position: relative;
-    width: 315px;
-    margin: 25px auto;
-    outline: 1px solid var(--acento);
-    outline-offset: 7px;
-}
-
-.firma4:before {
-    content: "";
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
-    position: absolute;
-    inset: 0;
-}
-
-.firma4 .tt-bx {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 235px;
-    box-sizing: content-box;
-    margin: 15px;
-    text-align: right;
-    border-right: 2px solid var(--acento);
-    padding: 5px 10px;
-    font-size: 9px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #ccc;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    letter-spacing: 1px;
-    line-height: 15px;
-}
-
-.firma4 .tt-bx>b {
-    color: var(--acento);
-}
-
-.firma4 .tt-bx>u {
-    text-decoration-line: grammar-error;
-    text-decoration-color: var(--acento);
-}
-
-.firma4 .tt-bx>i.fas,
-.firma4 .tt-bx>i.fal,
-.firma4 .tt-bx>i.far {
-    position: absolute;
-    top: -35px;
-    right: 0;
-    font-size: 30px;
-    color: var(--acento);
-    opacity: 0.8;
-}
-
-.agitar {
-    animation: agitar 1.0s infinite both;
-}
-
-.firma5 {
-    height: 200px;
-    width: 325px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    border: 10px solid var(--bk);
-    outline: 1px solid var(--cborder);
-    outline-offset: -11px;
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma5:before,
-.firma5:after,
-.firma5>div,
-.tt-oy:before,
-.tt-oy:after,
-.firma8:before,
-.firma8:after {
-    content: "";
-    position: absolute;
-    height: 198px;
-    width: 323px;
-    transform: translate(0px, 500px);
-    transition: all ease-in-out 0.7s;
-    inset: 1px;
-}
-
-.firma5:before,
-.tt-oy:before,
-.firma8:before {
-    background: black;
-    mix-blend-mode: color;
-}
-
-.firma5:after,
-.tt-oy:after,
-.firma8:after {
-    background: var(--acento);
-    mix-blend-mode: multiply;
-}
-
-.firma5:hover:before,
-.firma5:hover:after,
-.firma5:hover>div {
-    transform: translate(0px, 0px);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma5>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 10px;
-    z-index: 1;
-    font-size: 10px;
-    color: #ccc;
-    letter-spacing: 1px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    transition: all ease-in-out 0.7s;
-    backdrop-filter: blur(3px);
-}
-
-.firma5 .l2 {
-    font-weight: 900;
-    font-size: 23px;
-    letter-spacing: -1px;
-    line-height: 1;
-}
-
-.firma5 .l2>b {
-    color: var(--acento);
-    font-weight: 800;
-}
-
-.firma5 .l1 {
-    font-style: italic;
-    font-size: 9px;
-    font-weight: 700;
-    opacity: 0.8;
-}
-
-.firma5, 
-.firma6,
-.firma7,
-.firma8 {
-    height: 200px;
-    width: 325px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    border: 10px solid var(--bk);
-    outline: 1px solid var(--cborder);
-    outline-offset: -11px;
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.tt-oy {
-    position: absolute;
-    padding: 25px;
-    inset: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tt-oy:before,
-.tt-oy:after {
-    transform: none;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    scale: 0;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma6:hover .tt-oy:before,
-.firma6:hover .tt-oy:after {
-    transition: all ease-in-out 0.7s;
-    scale: 1;
-}
-
-.tt-oy>span {
-    text-align: justify;
-    text-align-last: justify;
-    width: 195px;
-    position: relative;
-    z-index: 1;
-    backdrop-filter: blur(3px);
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 10px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    transition: all ease-in-out 0.7s;
-    scale: 0;
-    color: #ccc;
-}
-
-.firma6:hover .tt-oy>span {
-    transition: all ease-in-out 0.7s;
-    scale: 1;
-}
-
-.tt-oy:after {
-    inset: 0;
-}
-
-.tt-oy>span>b,
-.tt-oy>span>i {
-    color: var(--acento);
-}
-
-.tt-oy>span>b {
-    letter-spacing: 2px;
-    font-weight: 800;
-}
-
-.tt-oy>span>u {
-    color: #8c8c8c;
-    position: relative;
-    text-decoration: none;
-    border-bottom: none !important;
-}
-
-.tt-oy>span>u:before {
-    bottom: 0;
-    content: "";
-    height: 1px;
-    display: block;
-    position: absolute;
-    background: var(--acento);
-    left: -2px;
-    right: -2px;
-}
-
-.firma6 ln,
-.firma6 ln2 {
-    position: absolute;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma6 ln:before,
-.firma6 ln:after {
-    position: absolute;
-    content: "";
-    width: 325px;
-    height: 1px;
-    z-index: 3;
-    background: var(--cborder);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma6 ln:before {
-    top: 50px;
-    transform: translateX(400px);
-}
-
-.firma6 ln:after {
-    top: 150px;
-    transform: translateX(-400px);
-}
-
-.firma6:hover ln:before,
-.firma6:hover ln:after {
-    transform: translateX(0);
-    transition: all ease-in-out 0.7s;
-    transition-delay: .8s;
-}
-
-.firma6 ln2:before,
-.firma6 ln2:after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 200px;
-    z-index: 3;
-    background: var(--cborder);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma6 ln2:before {
-    left: 50px;
-    transform: translateY(400px);
-}
-
-.firma6 ln2:after {
-    left: 275px;
-    transform: translateY(-400px);
-}
-
-.firma6:hover ln2:before,
-.firma6:hover ln2:after {
-    transform: translateY(0);
-    transition: all ease-in-out 0.7s;
-    transition-delay: 1s;
-}
-
-.firma7 {
-    justify-content: center;
-    align-items: end;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.firma7 .vt {
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-    font-size: 9px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.firma7 .vt>span {
-    background: var(--bk);
-    padding: 6px 8px;
-}
-
-.firma7 .vt>span>b,
-.firma7 .vt>span>i {
-    color: var(--acento);
-}
-
-.firma7 .vt>i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--acento);
-    padding: 4px 6px;
-    font-size: 12px;
-    text-shadow: none;
-    color: var(--bk);
-}
-
-.firma8 {
-    align-items: end;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma8:hover {
-    filter: hue-rotate(360deg);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma8:before,
-.firma8:after {
-    transform: none;
-    top: 1px;
-    left: 1px;
-}
-
-.firma8 .tt-bx {
-    padding: 15px;
-    font-size: 20px;
-    position: relative;
-    z-index: 1;
-    -webkit-text-stroke: 1px #999;
-    color: transparent;
-    font-family: arial;
-    font-weight: 900;
-    line-height: 1;
-    text-transform: uppercase;
-    width: -webkit-fill-available;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    mix-blend-mode: hard-light;
-    cursor: context-menu;
-}
-
-.firma8 .tt-bx:before {
-    content: "[";
-    margin-top: -5px;
-}
-
-.firma8 .tt-bx:after {
-    content: "]";
-    margin-top: -5px;
-}
-
-.firma8 .hrtt {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    z-index: 1;
-    backdrop-filter: blur(3px);
-    text-transform: uppercase;
-    transition: all ease-in-out 0.7s;
-    transform: scaleY(0);
-}
-
-.firma8 .hrtt>span {
-    font-size: 21px;
-    width: 85px;
-    padding: 5px 7px 5px 0;
-    border-right: 2.5px solid var(--acento);
-    -webkit-text-stroke: 1px #ccc;
-    color: transparent;
-    font-family: arial;
-    font-weight: 900;
-    line-height: 1;
-    word-break: break-all;
-    text-align: right;
-    text-align-last: right;
-}
-
-.hrtt>p {
-    color: #ccc;
-    padding-left: 7px;
-    width: 175px;
-    margin: 0;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-align: justify;
-    text-align-last: justify;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
-}
-
-.firma8:hover .hrtt {
-    transition: all ease-in-out 0.7s;
-    transition-delay: 1s;
-    transform: scaleY(1);
-}
-
-.firma9 {
-    height: 200px;
-    width: 325px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    border: 1px solid rgba(0, 0, 0);
-    justify-content: flex-end;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma9:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
-}
-
-.firma9:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    outline: 8px solid var(--acento);
-    outline-offset: 1px;
-    opacity: 0.5;
-}
-
-.firma9 .i-s {
-    width: 100px;
-    padding: 10px;
-    border-left: 1px solid rgba(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 1;
-    color: #aaa;
-}
-
-.firma9 .i-s .is {
-    border: 1px solid rgba(0, 0, 0);
-    background: rgba(0, 0, 0, 0.8);
-    height: -webkit-fill-available;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    text-align: justify;
-    text-align-last: justify;
-}
-
-.firma9 .i-s .is>i {
-    font-size: 25px;
-}
-
-.firma9 .i-s .is i,
-.firma9 .i-s .is b,
-.firma9 .i-s .is strong,
-.firma9 .i-s .is u {
-    color: var(--acento);
-}
-
-.firma9 .i-s .is u {
-    text-decoration-line: grammar-error;
-    border-bottom: none;
-}
-
-.firma10 {
-    height: 170px;
-    width: 270px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    border: 15px solid var(--background-1);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma10:before,
-.firma10:after {
-    content: "";
-    position: absolute;
-    height: 50px;
-    width: 50px;
-}
-
-.firma10:before {
-    border-top: 1px solid var(--acento);
-    border-left: 1px solid var(--acento);
-    top: -15px;
-    left: -15px;
-}
-
-.firma10:after {
-    border-bottom: 1px solid var(--acento);
-    border-right: 1px solid var(--acento);
-    bottom: -15px;
-    right: -15px;
-}
-
-.firma10 .ot,
-.firma10 .ot2 {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 8px;
-    width: -webkit-fill-available;
-    text-align: center;
-    letter-spacing: 1.5px;
-    line-height: 1;
-}
-
-.firma10 .ot {
-    top: -10px;
-}
-
-.firma10 .ot2 {
-    bottom: -12px;
-}
-
-.content.clearfix .firma10 i,.firma10 i,
-.content.clearfix .firma10 b,.firma10 b,
-.content.clearfix .firma10 strong,.firma10 strong {
-    color: var(--acento);
-    font-weight: 600;
-}
-
-.firma11 {
-    height: 200px;
-    width: 325px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    transition: all ease-in-out 0.7s;
-    overflow: hidden;
-    flex-wrap: wrap;
-    align-content: baseline;
-    justify-content: center;
-    padding: 25px;
-    box-sizing: border-box;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.firma11:before {
-    content: "";
-    top: -25px;
-    left: -65px;
-    width: 250px;
-    background: rgba(15, 15, 15, 0.8);
-    position: absolute;
-    height: 250px;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-
-.firma11:after {
-    content: "";
-    height: 180px;
-    width: 165px;
-    border-bottom: 1px solid var(--acento);
-    border-right: 1px solid var(--acento);
-    border-top: 1px solid var(--acento);
-    position: absolute;
-    right: 10px;
-}
-
-.firma11 .icn,
-.firma12 .late .icn {
-    width: 35px;
-    height: 35px;
-    overflow: hidden;
-    background: #f1f3f4;
-    outline: 1px solid #f1f3f4;
-    outline-offset: 5px;
-    border-radius: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scale: 0.70;
-    margin-left: 10%;
-}
-
-.firma11 .icn>i,
-.firma12 .late .icn>i {
-    font-size: 25px;
-    color: var(--acento);
-}
-
-.firma11 .icn audio,
-.firma12 .late .icn audio {
-    position: absolute;
-    left: 33px;
-    transform: scale(1.25);
-    opacity: 0;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma11:hover .icn audio,
-.firma12:hover .late .icn audio {
-    opacity: 1;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma11 .vs {
-    position: relative;
-    width: 95px;
-    border-left: 3px solid var(--acento);
-    border-bottom: 3px solid var(--acento);
-    padding: 5px;
-    text-align: justify;
-    text-align-last: justify;
-    text-transform: uppercase;
-    font-size: 9px;
-    font-weight: 700;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    color: #ccc;
-    line-height: 12px;
-}
-
-.content.clearfix .firma11 .vs i,.firma11 .vs i,
-.content.clearfix .firma11 .vs b,.firma11 .vs b,
-.content.clearfix .firma11 .vs strong,.firma11 .vs strong,
-.content.clearfix .firma11 .vs u,.firma11 .vs u,
-.content.clearfix .firma12 .late>span i,.firma12 .late>span i,
-.content.clearfix .firma12 .late>span b,.firma12 .late>span b,
-.content.clearfix .firma12 .late>span strong,.firma12 .late>span strong,
-.content.clearfix .firma12 .late>span u,.firma12 .late>span u {
-    color: var(--acento);
-}
-
-.firma12 {
-    height: 200px;
-    width: 325px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    border: 10px solid var(--bk);
-    outline: 1px solid var(--cborder);
-    outline-offset: -11px;
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma12 .img {
-    width: 205px;
-    border-right: 1px solid var(--cborder);
-}
-
-.firma12 .late {
-    width: 100px;
-    overflow: hidden;
-    padding: 10px;
-    background: #0b0d0e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.firma12 .late .icn {
-    background: #0b0d0e;
-    outline: 4px solid var(--acento);
-    outline-offset: 0px;
-    margin: 0;
-}
-
-.firma12 .late .icn audio {
-    filter: invert(1) hue-rotate(180deg);
-}
-
-body.day .firma12 .late .icn,
-body.day .firma12 .late {
-    background: #f1f3f4;
-}
-
-body.day .firma12 .late .icn audio {
-    filter: invert(0) hue-rotate(0);
-}
-
-.firma12 .late>span {
-    margin: 8px 10px;
-    text-align: justify;
-    text-align-last: justify;
-    text-transform: uppercase;
-    font-size: 9.5px;
-    font-weight: 600;
-    line-height: 12px;
-    letter-spacing: 1px;
-}
-
-.firma13 {
-    height: 225px;
-    position: relative;
-    width: 350px;
-    margin: 15px auto;
-    border: 1px solid var(--cborder);
-    outline: 1px solid var(--cborder);
-    outline-offset: 9px;
-    overflow: hidden;
-    color: #ccc;
-    transition: ease-in-out 0.7s;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.firma13:before {
-    content: "";
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-}
-
-.firma13:after {
-    content: "";
-    background: #000;
-    mix-blend-mode: color;
-    position: absolute;
-    width: 350px;
-    height: 225px;
-    scale: 0;
-    top: 0;
-    z-index: 1;
-    transition: ease-in-out 0.7s;
-    transition-delay: 0.15s;
-}
-
-.firma13:hover:after {
-    scale: 1;
-    transition: ease-in-out 0.7s;
-    transition-delay: 0.15s;
-
-}
-
-.firma13 pics {
-    height: 225px;
-    position: absolute;
-    width: 350px;
-    display: block;
-    z-index: 0;
-    transition: ease-in-out 0.7s;
-}
-
-.firma13:hover pics {
-    scale: 1.5;
-    rotate: 2.5deg;
-    filter: blur(1px);
-    transition: ease-in-out 0.7s;
-}
-
-.firma13 .lft {
-    width: 100px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-flow: wrap;
-    transform: translate(230px, 0px);
-    padding: 10px;
-    position: absolute;
-    z-index: 2;
-    height: 205px;
-    font-family: Montserrat, sans-serif;
-    transition: ease-in-out 0.7s;
-    position: relative;
-}
-
-.content.clearfix .firma13 .lft>b,.firma13 .lft>b {
-    margin: 8px;
-    padding: 5px;
-    font-size: 25px;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    background: var(--acento);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: 1px solid var(--cborder);
-    outline-offset: 5px;
-    position: relative;
-    color: #eee;
-}
-
-.firma13 .lft>span {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1px;
-    font-size: 9px;
-    margin: 10px 0;
-
-    position: relative;
-}
-
-.firma13:hover .lft {
-    transform: translate(5px, 0px);
-    transition: ease-in-out 0.7s;
-}
-
-.firma13 colores:before {
-    content: "";
-    height: 225px;
-    width: 130px;
-    mix-blend-mode: multiply;
-    position: absolute;
-    background: var(--acento);
-    z-index: 2;
-    transform: translate(-205px, 0px);
-    transition: ease-in-out 0.7s;
-}
-
-.firma13:hover colores:before {
-    transform: translate(0px, 0px);
-    transition: ease-in-out 0.7s;
-}
-
-.firma13 .rgt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 159px;
-    top: 0;
-    translate: 355px 0px;
-    height: 165px;
-    padding: 30px;
-    border-left: 1px solid var(--cborder);
-    z-index: 2;
-    transition: ease-in-out 0.7s;
-}
-
-.firma13:hover .rgt {
-    translate: 130px 0px;
-    transition: ease-in-out 0.7s;
-}
-
-.firma13 .rgt:before {
-    content: "";
-    background: #000;
-    position: absolute;
-    inset: 0;
-    opacity: 0.65;
-}
-
-.firma13 .rgt p {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: justify;
-    font-size: 13px;
-    font-family: montserrat;
-    line-height: 18px;
-}
-
-.content.clearfix .firma13 .rgt p>b,.firma13 .rgt p>b,
-.content.clearfix .firma13 .rgt p>strong,.firma13 .rgt p>strong,
-.content.clearfix .firma13 .rgt p>i,.firma13 .rgt p>i {
-    color: var(--acento);
-    font-weight: 600;
-}
-
-.firma13 .rgt p>b {
-    letter-spacing: 2px;
-    font-weight: 800;
-}
-
-.content.clearfix .firma13 .rgt p>u,.firma13 .rgt p>u {
-    color: #888;
-    position: relative;
-    text-decoration: none;
-    font-weight: 700;
-    border-bottom: none;
-}
-
-.content.clearfix .firma13 .rgt p strong, .rgt p strong, .content.clearfix .firma13 .rgt p a,.firma13 .rgt p a {
-    color: var(--acento);
-}
-
-.content.clearfix .firma13 .rgt p>u:before,.firma13 .rgt p>u:before  {
-    bottom: 0;
-    content: "";
-    height: 2px;
-    display: block;
-    position: absolute;
-    background: var(--acento);
-    left: -2px;
-    right: -2px;
-}
-
-.firma15 {
-    height: 215px;
-    width: 370px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    align-items: end;
-    border: 10px solid var(--bk);
-    outline: 1px solid var(--cborder);
-    outline-offset: -11px;
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma15 .txt {
-    padding: 25px;
-    display: block;
-    width: -webkit-fill-available;
-}
-
-.firma15 .txt>b {
-    font-family: satisfy;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 15px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.firma15 .txt>span {
-    font-size: 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 2px 4px;
-    background: var(--acento);
-    display: inline-block;
-    font-family: Montserrat, sans-serif;
-    transform: translate(-45px, 5px) skewX(-10deg);
-    line-height: 9px;
-}
-
-.firma14 {
-    height: 200px;
-    width: 325px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 15px solid var(--bk);
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma14 pics {
-    display: block;
-    height: 154px;
-    width: 325px;
-    border-top: 1px dotted var(--acento);
-}
-
-.firma14>span {
-    position: absolute;
-    height: 155px;
-    display: flex;
-    align-items: end;
-    padding: 0 15px;
-    width: -webkit-fill-available;
-    font-family: "Anton SC", sans-serif;
-    font-size: 35px;
-    line-height: 25px;
-    color: var(--acento);
-    text-shadow: 1px -1px var(--bk);
-}
-
-.firma14 .btm {
-    color: var(--bk);
-    background: var(--acento);
-    height: 34px;
-    padding: 5px 10px;
-    border-bottom: 1px dotted var(--bk);
-    width: 100%;
-}
-
-.firma14 .btm>span {
-    font-size: 7.5px;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px;
-    display: block;
-    line-height: 8px;
-    letter-spacing: 1px;
-    height: 15px;
-}
-
-.firma16 {
-    height: 200px;
-    width: 385px;
-    position: relative;
-    margin: 25px auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 10px solid var(--bk);
-    overflow: hidden;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma16:before {
-    content: "";
-    inset: 0;
-    background: var(--bk);
-    position: absolute;
-    opacity: 0.5;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma16:after {
-    content: "";
-    inset: 0;
-    background: var(--bk);
-    position: absolute;
-    mix-blend-mode: color;
-    transition: all ease-in-out 0.7s;
-}
-
-.firma16>span {
-    padding: 25px 0 25px 25px;
-    width: 160px;
-    font-family: "Anton SC", sans-serif;
-    font-size: 35px;
-    line-height: 35px;
-    display: block;
-    color: #ccc;
-    position: relative;
-    z-index: 1;
-    transition: all ease-in-out 0.7s;
-    transition-delay: 0.7s;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.content.clearfix .firma16>span>b,.firma16>span>b {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--acento);
-    text-shadow: none;
-}
-
-.firma16>span>i {
-    font-style: normal;
-}
-
-.firma16>p.txt {
-    position: absolute;
-    z-index: 1;
-    width: 125px;
-    margin: 0 0 0 25px;
-    padding: 15px;
-    background: var(--bk);
-    font-size: 10.5px;
-    text-align: justify;
-    text-align-last: justify;
-    transform: scaleY(0);
-    transition: all ease-in-out 0.7s;
-
-}
-
-.content.clearfix .firma16>p.txt>b,.firma16>p.txt>b {
-    display: inline-flex;
-    background: var(--acento);
-    padding: 0 3px;
-    color: #ccc !important;
-    text-align: justify;
-    text-align-last: justify;
-}
-
-.content.clearfix .firma16>p.txt>strike,.firma16>p.txt>strike,
-.content.clearfix .firma16>p.txt>u,.firma16>p.txt>u,
-.content.clearfix .firma16>p.txt>i,.firma16>p.txt>i {
-    color: var(--acento);
-    border-bottom: none !important;
-}
-
-.content.clearfix .firma16>p.txt>u,.firma16>p.txt>u {
-    color: #8c8c8c;
-    position: relative;
-    text-decoration: none;
-}
-
-.firma16>p.txt>u:before {
-    bottom: 0;
-    content: "";
-    height: 1px;
-    display: block;
-    position: absolute;
-    background: var(--acento);
-    left: -2px;
-    right: -2px;
-}
-
-.content.clearfix .firma16>p.txt>b,.firma16>p.txt>b {
-    display: inline-flex;
-    background: var(--acento);
-    padding: 0 3px;
-}
-
-.firma16:hover>span {
-    transform: scaleY(0);
-    transition: all ease-in-out 0.7s;
-}
-
-.firma16:hover>p.txt {
-    transform: scaleY(1);
-    transition: all ease-in-out 0.7s;
-    transition-delay: 0.7s;
-}
-
-.firma17 {
-    height: 170px;
-    width: 270px;
-    position: relative;
-    display: flex;
-    margin: 25px auto;
-    outline: 1px solid var(--cborder);
-    outline-offset: 10px;
-    transition: 0.7s ease-in-out;
-}
-
-.firma17>span:first-of-type {
-    position: absolute;
-    top: -18px;
-    background: var(--background-1);
-    padding: 0 10px;
-    font-size: 9px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.firma17>span:last-of-type {
-    position: absolute;
-    bottom: 0px;
-    background: var(--background-1);
-    padding: 3px;
-    right: -17px;
-    font-size: 23px;
-}
-
-.firma17 .txt {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    height: 170px;
-    width: 270px;
-    position: relative;
-    transition: 0.7s ease-in-out;
-}
-
-.firma17 .txt:before,
-.firma17 .txt:after {
-    content: "";
-    height: 170px;
-    width: 270px;
-    position: absolute;
-    transition: 0.7s ease-in-out;
-}
-
-.firma17 .txt:before {
-    background: #000;
-    mix-blend-mode: color;
-    translate: 0 175px;
-}
-
-.firma17 .txt:after {
-    background: var(--acento);
-    mix-blend-mode: multiply;
-    translate: 0 175px;
-}
-
-.firma17 .txt>p {
-    position: relative;
-    z-index: 1;
-    padding: 15px 45px 5px;
-    margin: 0;
-    text-align: justify;
-    text-align-last: justify;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    translate: 0 175px;
-    transition: 0.7s ease-in-out;
-}
-
-.content.clearfix .firma17 .txt>p>i,.firma17 .txt>p>i,
-.content.clearfix .firma17 .txt>p>b,.firma17 .txt>p>b,
-.content.clearfix .firma17 .txt>p>u,.firma17 .txt>p>u {
-    color: var(--acento);
-    filter: brightness(1.8);
-}
-
-.firma17 .txt>span {
-    position: relative;
-    z-index: 1;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: transparent;
-    -webkit-text-stroke: 1px #ddd;
-    translate: 0 175px;
-    transition: 0.7s ease-in-out;
-}
-
-.content.clearfix .firma17 .txt>span>i,.firma17 .txt>span>i {
-    font-weight: 500;
-    -webkit-text-stroke: transparent;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.firma17:hover .txt:before,
-.firma17:hover .txt:after,
-.firma17:hover .txt>span,
-.firma17:hover .txt>p {
-    translate: 0 0;
-}
-
-.firma17:hover .txt:after {
-    transition-delay: 0.25s;
-}
-
-.firma17:hover .txt>span {
-    transition-delay: 0.65s;
-}
-
-.firma17:hover .txt>p {
-    transition-delay: 0.45s;
-}
-
-.content.clearfix .firma17 .txt>span>i, 
-.firma17 .txt>span>i, 
-.firma17 .txt, 
-.firma15, .singo,
-.singa,
-.singe,
-.singi,
-.singu,
-.singy {
-    color: #ddd;
-}
-
-.firma16,
-.firma15,
-.firma14,
-.firma12,
-.firma10,
-.firma8,
-.firma7,
-.firma6,
-.firma5,
-.firma3,
-.signa {
-    --bk: #111;
-}
-
-body.day .firma16,
-body.day .firma15,
-body.day .firma14,
-body.day .firma12,
-body.day .firma10,
-body.day .firma8,
-body.day .firma7,
-body.day .firma6,
-body.day .firma5,
-body.day .firma3,
-body.day .signa {
-    --bk: #e5e5e5;
-}
 
 /*Kieran firma*/
 .kier {
