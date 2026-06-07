@@ -23,6 +23,10 @@ body {
   word-break: auto-phrase;
 }
 
+.content.clearfix {
+    max-width: 1045px;
+}
+
 /*Wynn*/
 .wynn {
   border: var(--border);
