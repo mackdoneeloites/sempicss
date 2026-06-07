@@ -16,6 +16,9 @@ body {
     word-break: auto-phrase;
 }
 
+.content.clearfix {
+    max-width: 1045px;
+}
 
 /*Ingrid*/
 body.day .ingrid {
