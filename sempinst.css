@@ -16,8 +16,6 @@ body {
     word-break: auto-phrase;
 }
 
-
-
 /**INSTAGRAM**/
 .sphone {
     width: 425px;
@@ -621,6 +619,49 @@ body.day .sstory-reply>input {
     flex: none;
 }
 
+/**TELEFONO DISC**/
+.sphone.dis,
+.sphone.sprofile,
+.sphone.spost,
+.sphone.sstory {
+    border: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+body.day .sphone.dis,
+body.day .sphone.sprofile,
+body.day .sphone.spost,
+body.day .sphone.sstory {
+    --background-3: #e8e8e8;
+    border: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+.df-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background: var(--background-3);
+}
+
+.df-head span.df--h-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.df-head>i {
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.df-head>i:hover,
+.df-h-ntitle span.df-f-mname:hover,
+.dfchat-m-area>span>i:hover {
+    opacity: 0.5;
+    transition: 0.7s ease-in-out;
+}
 
 .sphone br{
   display: none;
