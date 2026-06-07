@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+  --g1: var(--staff);
+  --g2: var(--ciudadanos);
+  --g3: var(--celebridades);
+  --g4: var(--sanidad);
+  --g5: var(--seguridad);
+  --g6: var(--empresarios);
+  --g7: var(--criminales);
+  --g8: var(--pesca);
+  --g9: var(--refineria);
+  --g10: var(--sami);
+  --g11: var(--pnj);
+  --g12: var(--inactivos);
+  word-break: auto-phrase;
+}
+
+
+.hissel {
+  width: 350px;
+  margin: 5px auto;
+  border: 1px solid var(--brd-c);
+  overflow: hidden;
+  font: 12px Montserrat;
+  color: var(--ctext);
+  background: var(--bckg-2);
+  border-radius: 5px;
+}
+
+.hissel-cab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 2px solid var(--brd-c);
+  position: relative;
+}
+
+.hissel-img,
+.hissel-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.hissel-img {
+  border: 1px solid var(--fondo-foro);
+  outline: 1px solid var(--acento);
+  outline-offset: 3px;
+}
+
+.hissel-cab span {
+  padding: 5px;
+  width: -webkit-fill-available;
+  display: flex;
+  gap: 10px;
+}
+
+.hissel-cab span>b,
+.hissel-com>span>b {
+  color: var(--acento);
+  cursor: pointer;
+  transition: all .7s ease-in-out;
+}
+
+.hissel-cab span>b:hover,
+.hissel-cab>st>i:hover,
+.hissel-com>span>b:hover,
+.hissel-com>b:hover {
+  opacity: 0.6;
+  transition: all .7s ease-in-out;
+}
+
+.hissel-cab span>b:before,
+.hissel-com>span>b:before {
+  content: "@";
+}
+
+.hissel-cab span>i {
+  font-style: normal;
+  font-weight: 800;
+  cursor: context-menu;
+}
+
+.hissel-cab>st {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hissel-cab>st>i {
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .7s ease-in-out;
+}
+
+.fal.fa-times {
+  font-size: 20px;
+}
+
+.hissel-cab line {
+  background: rgba(255, 255, 255, 0.3);
+  width: 320px;
+  position: absolute;
+  bottom: -15px;
+  height: 3px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hissel-cab line:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  height: 3px;
+  border-radius: 10px;
+  animation: fillLine 15s forwards;
+}
+
+@keyframes fillLine {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 320px;
+  }
+}
+
+.hissel-vid>video {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.hissel-com {
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+.hissel-com>p {
+  margin: 10px 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.hissel-com>p>b,
+.hissel-com>p>strong {
+  color: var(--acento);
+}
+
+.hissel-com>p>u {
+  color: #999;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hissel-com>p>u:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  height: 2px;
+  background: var(--acento);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.hissel-com>span,
+.hissel-com>b {
+  font-weight: 700;
+  transition: all .7s ease-in-out;
+}
+
+.hissel-com>span>b,
+.hissel-com>b {
+  cursor: pointer;
+}
+
+.hissel br{
+  display: none;
+}
+.hissel-com>p br{
+  display: inline;
+}
