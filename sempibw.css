@@ -69,7 +69,9 @@ body {
 }
 
 .content.clearfix .wynn-nom i,
-.content.clearfix .wynn-nom b {
+.wynn-nom i,
+.content.clearfix .wynn-nom b,
+.wynn-nom b{
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background: -webkit-linear-gradient(0deg, var(--acentoa), var(--acentob));
@@ -269,11 +271,13 @@ body {
   letter-spacing: 1.25px;
 }
 
-.content.clearfix .wynn-txt b {
+.content.clearfix .wynn-txt b,
+.wynn-txt b {
   color: var(--acentoa);
 }
 
-.content.clearfix .wynn-txt u {
+.content.clearfix .wynn-txt u,
+.wynn-txt u {
   position: relative;
   text-decoration: none;
   font-weight: 700;
@@ -291,7 +295,8 @@ body {
   position: absolute;
 }
 
-.content.clearfix .wynn-txt strike {
+.content.clearfix .wynn-txt strike,
+.wynn-txt strike{
   color: var(--acentob);
 }
 
@@ -359,7 +364,8 @@ body {
   margin-right: 5px;
 }
 
-.content.clearfix .wynn-tt b {
+.content.clearfix .wynn-tt b, 
+.wynn-tt b {
   display: table;
   font-size: 24px;
   font-weight: 600;
@@ -413,7 +419,8 @@ body {
   font-size: 23px;
 }
 
-.content.clearfix .wynn-temas span.titulo b{
+.content.clearfix .wynn-temas span.titulo b,
+.wynn-temas span.titulo b{
   color: var(--blanco);
 }
 
@@ -424,7 +431,8 @@ body {
   letter-spacing: 1px;
 }
 
-.content.clearfix .wynn-temas span>strong {
+.content.clearfix .wynn-temas span>strong,
+.wynn-temas span>strong{
   width: -webkit-fill-available;
   font-weight: 400;
   text-align: right;
