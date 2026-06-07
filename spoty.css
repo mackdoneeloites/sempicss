@@ -1,0 +1,522 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+  --g1: var(--staff);
+  --g2: var(--ciudadanos);
+  --g3: var(--celebridades);
+  --g4: var(--sanidad);
+  --g5: var(--seguridad);
+  --g6: var(--empresarios);
+  --g7: var(--criminales);
+  --g8: var(--pesca);
+  --g9: var(--refineria);
+  --g10: var(--sami);
+  --g11: var(--pnj);
+  --g12: var(--inactivos);
+  word-break: auto-phrase;
+}
+
+/*SPOTIFY*/
+.spoti {
+  background-color: var(--bckg-1);
+  padding: 24px;
+  border-radius: 12px;
+  width: 650px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin: 15px auto;
+  font-family: "Poppins";
+  position: relative;
+}
+
+.spoti:before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: linear-gradient(180deg, var(--acento), transparent);
+  opacity: 0.5;
+  border-radius: 12px;
+}
+
+.spt-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.spt-header>span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sp-profile {
+  display: flex;
+  align-items: center;
+  background-color: var(--bckg-2);
+  padding: 6px 12px 6px 6px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #ddd;
+  font-size: 12px;
+  transition: all .7s ease-in-out;
+}
+
+.day .sp-profile {
+  background-color: #eee;
+  color: var(--ctext);
+}
+
+.sp-profile:hover {
+  transition: all .7s ease-in-out;
+  opacity: 0.6;
+}
+
+.sp-pro-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.sp-fvcan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+  position: relative;
+}
+
+.sp-cns {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 208px;
+  flex: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all .7s ease-in-out;
+}
+
+.day .sp-cns {
+  background-color: rgba(50, 50, 50, 0.1);
+}
+
+.sp-cns:hover {
+  transition: all .7s ease-in-out;
+  opacity: 0.6;
+}
+
+.sp-cns.liked {
+  background: linear-gradient(135deg, var(--purple-light), var(--purple-dark));
+}
+
+.heart-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+  background-size: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px 0 0 4px;
+  flex-shrink: 0;
+}
+
+.sp-cns-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.sp-cns>span {
+  padding: 0 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sp-play {
+  margin-top: 25px;
+  position: relative;
+}
+
+.sp-play>span {
+  font-size: 21px;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0 15px;
+}
+
+.sp-played {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+  position: relative;
+}
+
+.sp-playlist {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 174px;
+  flex: auto;
+  transition: all .7s ease-in-out;
+  overflow: hidden;
+}
+
+.day .sp-playlist {
+  background-color: rgba(50, 50, 50, 0.1);
+}
+
+.sp-playlist:hover {
+  transition: all .7s ease-in-out;
+  opacity: 0.6;
+}
+
+.playlist-img {
+  width: -webkit-fill-available;
+  height: 174px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.sp-playlist>span {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+
+.sp-playlist>p {
+  font-size: 11px;
+  color: var(--placeholder-color);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.8;
+}
+
+.spoti a {
+  text-decoration: none;
+  color: inherit !important;
+  display: contents;
+}
+
+/*Playlist*/
+.sp-playlists {
+  width: 450px;
+  background-color: var(--bckg-2);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin: 15px auto;
+  font-family: "Poppins";
+  position: relative;
+}
+
+.pl-header {
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(180deg, var(--acento), transparent);
+  padding: 20px 20px 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.pl-header-img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--bckg-1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pl-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: end;
+  width: 290px;
+}
+
+.pl-info>span {
+  font-size: 9px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 2px;
+  display: block;
+  width: 100%;
+}
+
+.pl-info>h {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.pl-user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+
+.artist-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.pl-user>h {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pl-user>span:before {
+  content: "•";
+  margin-right: 5px;
+}
+
+
+.sg-list {
+  padding: 10px;
+}
+
+.sg-cancion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--bckg-1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all .7s ease-in-out;
+  margin: 10px;
+}
+
+.day .sg-cancion {
+  background-color: #eee;
+}
+
+.sg-cancion:hover {
+  transition: all .7s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.day .sg-cancion:hover {
+  transition: all .7s ease-in-out;
+  background-color: rgba(50, 50, 50, 0.1);
+}
+
+.sg-cancion>b {
+  font-size: 13px;
+  width: 30px;
+  text-align: center;
+  color: var(--ctext) !important;
+}
+
+.song-cover {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.sg-det {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sg-det>p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+
+.sg-cancion>span {
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.sg-cancion>.udps {
+  position: absolute;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 100%;
+  height: 30px;
+}
+
+.sg-cancion>.udps audio.audio-player {
+  opacity: 0;
+  width: -webkit-fill-available;
+  transition: all .7s ease-in-out;
+  width: 100px;
+  margin: -11.5px 0 0 -10.5px;
+}
+
+.sg-cancion:hover audio.audio-player {
+  opacity: 1;
+  transition-delay: 1.5s;
+  transition: all .7s ease-in-out;
+}
+
+.sp-playlists img {
+  object-fit: cover;
+}
+
+/* Tarjeta superior */
+.sp-noti {
+  font-family: "Poppins";
+  background: var(--bckg-1);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 300px;
+  margin: 15px auto;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sp-noti:before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: linear-gradient(180deg, var(--acento), transparent);
+  opacity: 0.5;
+  border-radius: 12px;
+}
+
+.sp-noti>i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--acento);
+  font-size: 21px;
+}
+
+.sp-noti img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.sp-txt {
+  position: relative;
+}
+
+.sp-noti span {
+  font-weight: 800;
+}
+
+/* Tarjeta reproductor */
+.sp-individual {
+  font-family: "Poppins";
+  background: linear-gradient(180deg, var(--acento), var(--bckg-1));
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  margin: 15px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sp-ca-im {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sp-individual>span {
+  font-weight: bold;
+  margin: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 25px;
+  display: block;
+}
+
+.sp-individual>p {
+  font-size: 10px;
+  margin: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.8;
+  display: block;
+}
+
+.controladores {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.controladores>i {
+  opacity: 0.5;
+  transition: all .7s ease-in-out;
+}
+
+.controladores>i:hover {
+  opacity: 1;
+  transition: all .7s ease-in-out;
+}
+
+.controladores .udps {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.controladores .udps audio.audio-player {
+  width: 100px;
+  margin: -1.5px;
+}
+
+.day .sp-noti,
+.day .sp-individual,
+.day .sp-playlists,
+.day .spoti {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
