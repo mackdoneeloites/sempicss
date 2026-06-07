@@ -423,6 +423,7 @@ body.day .signa {
     display: contents;
     color: var(--acento);
     border-bottom: none !important;
+    position:relative;
 }
 
 .singo>div u {
