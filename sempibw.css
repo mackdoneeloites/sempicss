@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+  --background-2: var(--bckg-2);
+  --background-1: var(--bckg-1);
+  --background-3: var(--bckg-3);
+  --accent: var(--acc-1);
+  --cborder: var(--brd-c);
+  --color-icon: var(--cicon);
+  --g1: var(--staff);
+  --g2: var(--ciudadanos);
+  --g3: var(--celebridades);
+  --g4: var(--sanidad);
+  --g5: var(--seguridad);
+  --g6: var(--empresarios);
+  --g7: var(--criminales);
+  --g8: var(--pesca);
+  --g9: var(--refineria);
+  --g10: var(--sami);
+  --g11: var(--pnj);
+  --g12: var(--inactivos);
+  --color: var(--ctext);
+  word-break: auto-phrase;
+}
+
+/*Wynn*/
+.wynn {
+  border: var(--border);
+  padding: 10px;
+  background: var(--background-2);
+  width: 650px;
+  margin: 10px auto;
+  border-radius: 5px;
+  --blanco: #eee;
+  --negro: #222;
+  --acentoa: var(--g3);
+  --acentob: var(--g7);
+  font-size: 14px;
+}
+
+.wynn-int {
+  background: var(--background-3);
+  border: var(--border);
+  border-radius: 3px;
+}
+
+.flx {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+/*Perfil*/
+.wynn-nom,
+.wynn-frase {
+  padding: 30px;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  justify-content: space-between;
+  background: var(--background-1);
+  border-bottom: var(--border);
+}
+
+.content.clearfix .wynn-nom i,
+.content.clearfix .wynn-nom b {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acentoa), var(--acentob));
+  font-weight: 800;
+  color:#eee;
+}
+
+.wynn-intro {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+}
+
+.wynn-izq {
+  background: var(--background-2);
+  border: var(--border);
+  border-radius: 3px;
+  width: 195px;
+  height: auto;
+  padding: 10px;
+}
+
+.wynn-av {
+  background: var(--background-2);
+  border: var(--border);
+  border-radius: 3px;
+  width: 195px;
+  height: -webkit-fill-available;
+}
+
+.wynn-der {
+  gap: 10px;
+  width: 386px;
+}
+
+.wynn-der span,
+.wynn-align span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-2);
+  padding: 0 10px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  flex: auto;
+  position: relative;
+  border: var(--border);
+}
+
+.wynn-der span strong,
+.wynn-sts span {
+  background: var(--negro);
+}
+
+.wynn-der span:last-of-type {
+  margin-bottom: 0px;
+}
+
+.content.clearfix .wynn-der span strong,
+.wynn-sts span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -15px;
+  padding: 12.5px 10px 12.5px 15px;
+  border-right: var(--border);
+  letter-spacing: .5px;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  color: var(--blanco);
+}
+
+.wynn-der span strong:before,
+.wynn-sts span:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: screen;
+  background: linear-gradient(90deg, var(--acentoa), var(--acentob));
+}
+
+.wynn-der span strong i {
+  transform: scale(1.3);
+  font-weight: 500;
+}
+
+.wynn-der span w {
+  letter-spacing: .5px;
+}
+
+.wynn-frase {
+  text-align: center;
+  justify-content: center;
+  text-transform: initial;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 14px;
+  border-top: var(--border);
+}
+
+.wynn-frase:before,
+.wynn-frase:after {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0.5;
+  font-family: "Font Awesome 5 Pro";
+}
+
+.wynn-frase:before {
+  content: "\f100";
+  left: 25px;
+  color: var(--acentoa);
+}
+
+.wynn-frase:after {
+  content: "\f101";
+  right: 25px;
+  color: var(--acentob);
+}
+
+.wynn-align {
+  padding: 15px;
+  gap: 15px;
+}
+
+.wynn-align h3 {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  background: var(--background-1);
+  border: var(--border);
+  letter-spacing: 2px;
+  width: -webkit-fill-available;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.wynn-align span {
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  width: 120px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.wynn-align span.este {
+  background: linear-gradient(90deg, var(--acentoa), var(--acentob));
+  font-weight: 700;
+  color: var(--blanco);
+  letter-spacing: 2px;
+}
+
+.wynn-gust {
+  display: flex;
+  gap: 15px;
+  padding: 0px 15px 15px;
+}
+
+.wynn-sts {
+  text-transform: uppercase;
+  background: var(--background-1);
+  border: var(--border);
+  letter-spacing: 2px;
+  width: 299px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.wynn-sts span {
+  width: inherit;
+  border-right: none;
+  border-bottom: var(--border);
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.wynn-txt {
+  border: 10px solid transparent;
+  padding-right: 5px;
+  text-transform: capitalize;
+  text-align: justify;
+  line-height: 16.5px;
+  height: 205px;
+  overflow: auto;
+  letter-spacing: 1.25px;
+}
+
+.content.clearfix .wynn-txt b {
+  color: var(--acentoa);
+}
+
+.content.clearfix .wynn-txt u {
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2px 3px;
+  display: inline-flex;
+  border-bottom:none;
+}
+
+.wynn-txt u:before {
+  content: "";
+  inset: 3px;
+  top: auto;
+  background: linear-gradient(90deg, var(--acentoa), var(--acentob));
+  height: 2px;
+  position: absolute;
+}
+
+.content.clearfix .wynn-txt strike {
+  color: var(--acentob);
+}
+
+.wynn-txt br {
+  display: none;
+}
+
+.wynn-txt.ds {
+  word-spacing: -2px;
+}
+
+.wynn-links {
+  gap: 15px;
+  padding: 0px 15px 15px;
+}
+
+.wynn-links>a {
+  background: linear-gradient(45deg, var(--acentoa), var(--acentob));
+  font-weight: 700;
+  color: var(--blanco);
+  letter-spacing: 2px;
+  padding: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: none;
+  border: var(--border);
+  border-radius: 3px;
+  flex: auto;
+}
+
+.wynn-links>a>i,
+.wynn-der span strong {
+  color: var(--blanco) !important;
+}
+
+/*Crono*/
+.wynn-time {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  counter-reset: section;
+}
+
+.wynn-tt {
+  color: var(--blanco);
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100px;
+  background: linear-gradient(0deg, var(--acentoa), var(--acentob));
+  padding: 25px 0px 40px;
+  border-right: var(--border);
+}
+
+.wynn-tt i {
+  display: block;
+  font-size: 34px;
+  margin-right: 5px;
+}
+
+.content.clearfix .wynn-tt b {
+  display: table;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  letter-spacing: 1px;
+  text-align: right;
+  margin-left: -5px;
+  margin-top: 50px;
+  color:#eee;
+}
+
+.wynn-temas,
+.wynn-rela {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  padding: 15px;
+  gap: 10px;
+}
+
+.wynn-temas {
+  max-height: 585px;
+  overflow: auto;
+}
+
+.wynn-temas>span,
+.wynn-rela>span {
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  flex: auto;
+  position: relative;
+  border: var(--border);
+  background: var(--background-2);
+  width: -webkit-fill-available;
+  flex-wrap: wrap;
+}
+
+.wynn-temas span.titulo {
+  background: linear-gradient(90deg, var(--acentoa), var(--acentob));
+  font-weight: 500;
+  color: var(--blanco);
+  letter-spacing: 2px;
+  font-size: 23px;
+}
+
+.content.clearfix .wynn-temas span.titulo b{
+  color: var(--blanco);
+}
+
+.wynn-temas span>a {
+  color: var(--acentoa);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.content.clearfix .wynn-temas span>strong {
+  width: -webkit-fill-available;
+  font-weight: 400;
+  text-align: right;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-top: 2.5px;
+  color: var(--color) !important;
+}
+
+.wynn-temas span>strong>i {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.wynn-temas span>strong>b:before {
+  content: "con";
+  margin-right: 5px;
+  color: var(--acentoa);
+}
+
+.wynn-temas span>strong>strong:before {
+  content: "es";
+  margin-right: 5px;
+  color: var(--acentoa);
+}
+
+.wynn-temas span>strong>i.far {
+  font-size: 12px;
+  color: var(--acentoa);
+}
+
+/*Relaciones*/
+.wynn-rela>span {
+  color: var(--blanco);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding: 15px;
+  background: var(--background-1);
+  background: linear-gradient(0deg, var(--acentoa), var(--acentob));
+}
+
+.wynn-rela>span>i {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.wynn-ch {
+  position: relative;
+  flex-grow: 1;
+  flex: 1 0 calc(100% / 5 - 20px);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: var(--border);
+  background: var(--background-2);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: var(--bs2);
+  transition: .5s;
+}
+
+.wynn-ch:hover {
+  -webkit-transform: scale(1.05);
+  transition: .5s;
+  z-index: 2;
+}
+
+.wynn-ico {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.wynn-ico>i {
+  font-size: 25px;
+  font-weight: 900;
+  word-spacing: 3px;
+  width: 50px;
+  text-align: right;
+  margin-top: 10px;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acentoa), var(--acentob));
+}
+
+.wynn-ch .wynn-ico>div {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  outline: var(--border);
+  outline-offset: 4px;
+}
+
+.wynn-ch>b {
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: var(--acentoa);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acentoa), var(--acentob));
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.wynn-ch>i {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  margin: 5px;
+  letter-spacing: 1px;
+  line-height: 10px;
+}
+
+/*Filmografia*/
+.wynn-fil {
+  position: relative;
+  display: block;
+}
+
+.wynn-series {
+  gap: 20px;
+  padding: 20px;
+}
+
+.wynn-tv {
+  position: relative;
+  align-items: center;
+  width: 187px;
+  height: 100%;
+  background: var(--background-2);
+  outline: var(--border);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.wynn-tv bg {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: .5s ease-in-out;
+}
+
+.wynn-tv bg:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  transition: .5s ease-in-out;
+  background: #000;
+  mix-blend-mode: color;
+  scale: 0;
+  opacity: 0;
+}
+
+.wynn-tv bg:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: linear-gradient(0deg, var(--acentoa), var(--acentob));
+  transition: .5s ease-in-out;
+  scale: 0;
+  opacity: 0;
+}
+
+.wynn-tv>p {
+  font-size: 13px;
+  font-family: arial, sans-serif;
+  line-height: 18px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--blanco);
+  top: 10px;
+  width: 146px;
+  border-radius: 10px;
+  margin: 0;
+  border: 10px solid transparent;
+  padding-right: 5px;
+  text-align: justify;
+  height: 200px;
+  overflow: auto;
+  scale: 0;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+.wynn-tv>span {
+  padding: 15px;
+  border-radius: 15px;
+  background: var(--background-2);
+  margin-top: -10px;
+  position: relative;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 40px;
+  text-align: center;
+  flex: auto;
+}
+
+.wynn-tv:hover bg {
+  scale: 1.1;
+  transition: .5s ease-in-out;
+}
+
+.wynn-tv:hover bg:before,
+.wynn-tv:hover bg:after {
+  opacity: .8;
+  scale: 1;
+  transition: .5s ease-in-out;
+}
+
+.wynn-tv:hover>p {
+  scale: 1;
+  opacity: 1;
+  transition: .5s ease-in-out;
+  transition-delay: .1s;
+}
+
+/*To Do*/
+.wynn-todo {
+  padding: 15px;
+  gap: 15px;
+}
+
+.wynn-todo>p {
+  padding: 15px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: var(--background-1);
+  border: var(--border);
+  letter-spacing: 1px;
+  width: -webkit-fill-available;
+  text-align: start;
+  justify-content: start;
+  border-radius: 3px;
+  margin: 0;
+  position: relative;
+  gap: 15px;
+}
+
+.wynn-todo>p>b {
+  width: 13px;
+  height: 13px;
+  border: var(--border);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 5px;
+  flex: none;
+}
+
+.wynn-todo>p strike {
+  text-decoration: line-through;
+  color: var(--acentob);
+}
+
+.wynn-todo>p>b>.fa-check {
+  color: var(--acentoa);
+}
+
+.wynn-todo>p>b>.fa-times {
+  color: var(--acentob);
+}
+
+/*Datos extras*/
+.contendordedatos {
+  margin-left: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datowynn,
+.doble {
+  display: flex;
+  width: 675px;
+  margin: auto;
+}
+
+.datowynn .wynn {
+  width: auto;
+}
+
+.wynn.ims {
+  rotate: -15deg;
+  margin-right: -23px;
+}
+
+.wynn-int.ims {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.wynn-int>p {
+  margin: 0;
+  border: 10px solid transparent;
+  height: 70px;
+  overflow: auto;
+  padding: 5px;
+  text-align: justify;
+  font-size: 0.8rem;
+  padding-left: 20px;
+  line-height: 17px;
+}
+
+.datowynn:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.datowynn:nth-child(2n) .wynn.ims {
+  rotate: 15deg;
+  margin-left: -23px;
+}
+
+.datowynn:nth-child(2n) .wynn-int>p {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.doble {
+  gap: 10px;
+}
+
+.doble .wynn-int.ims {
+  width: 75px;
+  height: 75px;
+}
+
+.doble .wynn-int>p {
+  height: 45px;
+}
+
+.doble .wynn.ims {
+  rotate: -18deg;
+}
+
+.doble .datowynn:nth-child(2n) .wynn.ims {
+  rotate: 18deg;
+}
+
+.wynn-int.ims:before,
+.wynn-int.ims:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.wynn-int.ims:before {
+  background: #000;
+  mix-blend-mode: color;
+}
+
+.wynn-int.ims:after {
+  background: linear-gradient(90deg, var(--acentoa), var(--acentob));
+  mix-blend-mode: multiply;
+}
+
+.wynn-int>p>b {
+  border-radius: 15px;
+  background: var(--fondo-foro);
+  padding: 1px 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: var(--acentoa);
+}
+
+.civil,
+.ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: var(--criminales);
+}
+
+.cele,
+.celebridad {
+    --acento: var(--g3);
+    --acentob: var(--criminales);
+}
+
+.sanidad {
+    --acento: var(--sanidad);
+    --acentob: var(--refineria);
+}
+
+.polis,
+.poli,
+.seguridad {
+    --acento: var(--seguridad);
+    --acentob: var(--empresarios);
+}
+
+.empre,
+.empresario {
+    --acento: var(--empresarios);
+    --acentob: var(--sami);
+}
+
+.crimi,
+.criminal {
+    --acento: var(--criminales);
+    --acentob: var(--ciudadanos);
+}
+
+.pesca,
+.pescador {
+    --acento: var(--pesca);
+    --acentob: var(--criminales);
+}
+
+.petro,
+.refineria {
+    --acento: var(--refineria);
+    --acentob: var(--sanidad);
+}
+
+.sami {
+    --acento: var(--sami);
+    --acentob: var(--empresarios);
+}
+
+.pnj,
+.npc {
+    --acento: var(--pnj);
+    --acentob: var(--ciudadanos);
+}
+
+.comercio {
+    --acento: var(--comercio-industria);
+    --acentob: var(--seguridad);
+}
+
+.wynn br{
+  display: none;
+}
+
+.wynn-tv>p::-webkit-scrollbar,
+.wynn-txt::-webkit-scrollbar{
+  background-color: transparent;
+  border: none;
+  height: 3px;
+  width: 3px;
+}
+
+.wynn-temas::-webkit-scrollbar,
+.wynn-tv>p::-webkit-scrollbar,
+.wynn-txt::-webkit-scrollbar {
+  height: 5px !important;
+  width: 3px !important;
+}
+
+.wynn-tv>p::-webkit-scrollbar-thumb{
+  background-color: var(--acentoa);
+}
