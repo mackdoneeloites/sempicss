@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+  --g1: var(--staff);
+  --g2: var(--ciudadanos);
+  --g3: var(--celebridades);
+  --g4: var(--sanidad);
+  --g5: var(--seguridad);
+  --g6: var(--empresarios);
+  --g7: var(--criminales);
+  --g8: var(--pesca);
+  --g9: var(--refineria);
+  --g10: var(--sami);
+  --g11: var(--pnj);
+  --g12: var(--inactivos);
+  word-break: auto-phrase;
+}
+
+
+/*Kieran uno*/
+body.day .kieran {
+  --bckg-1: #e8e8e8;
+}
+
+.kieran {
+  background: var(--bckg-2);
+  width: 580px;
+  margin: 10px auto;
+  font-family: "Helvetica", sans-serif;
+  font-size: 12px;
+  --font: "Oswald", sans-serif;
+  --acentoa: var(--accent);
+  --acentob: hsl(from var(--accent) calc(h + 25) s l);
+  border: 14px solid var(--brd-c);
+  position: relative;
+}
+
+.kier-nombre,
+.kier-links {
+  border-bottom: 1px solid var(--brd-c);
+  height: 60px;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+}
+
+.kier-nombre h3 {
+  font-family: var(--font);
+  letter-spacing: 1px;
+  font-size: 23px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+  color: var(--acentoa);
+  text-shadow: 1px 1px var(--bckg-3);
+  position: relative;
+  width: -webkit-fill-available;
+}
+
+.kier-nombre>span {
+  margin: 0px 15px;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  opacity: 0.8;
+}
+
+.kier-nombre>span:before {
+  content: "//";
+  margin: 5px;
+}
+
+.kier-nombre:before,
+.kier-links:before {
+  content: "";
+  background: var(--bckg-1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 505px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.kier-nombre>i {
+  font-weight: 900;
+  position: absolute;
+  color: transparent;
+  font-size: 50px;
+  -webkit-text-stroke: 2px var(--acentoa);
+  top: 0;
+  bottom: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  width: 80px;
+}
+
+.kier-cab {
+  height: 250px;
+  width: -webkit-fill-available;
+  position: relative;
+  border-bottom: 1px solid var(--brd-c);
+}
+
+.kier-cab:before,
+.kier-cab:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.kier-cab:before {
+  background: #000;
+  mix-blend-mode: saturation;
+}
+
+.kier-cab:after {
+  background: #000;
+  opacity: 0.85;
+}
+
+body.day .kier-cab:after {
+  background: #fff;
+  opacity: 0.65;
+}
+
+.kier-cab quote {
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+  display: block;
+  width: 200px;
+  line-height: 20px;
+  font-size: 11px;
+  text-align: justify;
+}
+
+.kier-cab quote i {
+  color: var(--acentoa);
+}
+
+.tomarcolor .content.clearfix .kier-cab quote b {
+  background: linear-gradient(45deg, var(--acentob), var(--acentoa));
+  border-radius: 10px;
+  padding: 2px 4px 1px;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+.kier-dats {
+  padding: 15px;
+  border-bottom: 1px solid var(--brd-c);
+}
+
+.kier-dats>span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--brd-c);
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.kier-dats>span:last-of-type {
+  margin-bottom: 0;
+}
+
+.content.clearfix .kier-dats>span>b, 
+.kier-dats>span>b {
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 0 5px;
+  color: var(--acentoa);
+  font-size: 11px;
+  text-shadow: 1px 1px var(--bckg-3);
+}
+
+.content.clearfix .kier-dats>span>i, 
+.kier-dats>span>i {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--ctext);
+}
+
+.kier-links {
+  height: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.kier-links:before {
+  left: auto;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+
+}
+
+.content.clearfix .kier-links>a, .kier-links>a {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acentob), var(--acentoa));
+  font-weight: 700;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  flex: auto;
+  z-index: 1;
+  padding: 10px;
+  transition: all ease-in-out 0.7s;
+}
+
+.kier-links>a:hover {
+  scale: 1.2;
+  transition: all ease-in-out 0.7s;
+}
+
+.kier-extra {
+  display: flex;
+  align-items: normal;
+}
+
+.kier-align {
+  padding: 10px;
+  border-right: 1px solid var(--brd-c);
+  width: 129px;
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.kier-align .ims {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid var(--brd-c);
+  outline-offset: 5px;
+  margin: 10px 0;
+}
+
+.content.clearfix .kier-align>b, .kier-align>b {
+  margin: 5px 10px;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: -webkit-linear-gradient(0deg, var(--acentob), var(--acentoa));
+  display: block;
+  width: -webkit-fill-available;
+  text-align: center;
+  padding: 2px;
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.kier-quech {
+  padding: 15px;
+  column-count: 2;
+  width: 400px;
+}
+
+.kier-quech>span {
+  display: flex;
+  justify-content: space-between;
+  line-height: 15.5px;
+  margin: 2.5px 0;
+  gap: 8px;
+  align-items: center;
+}
+
+.content.clearfix .kier-quech>span>b, .kier-quech>span>b {
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  position: relative;
+  color: var(--ctext);
+}
+
+.content.clearfix .kier-quech>span>i, .kier-quech>span>i {
+  color: var(--acentoa);
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13.5px;
+  text-align: right;
+}
+
+.kier-quech>span>b:after,
+.kier-tema>span>i:before,
+.pj-name>b:before {
+  content: "//";
+  margin: 5px;
+}
+
+.kir-tit {
+  padding: 15px 15px 0px;
+  text-align: right;
+  position: relative;
+  margin: 0 10px -10px;
+}
+
+.kir-tit>span {
+  font-family: var(--font);
+  letter-spacing: 1px;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  color: var(--ctext);
+  opacity: 0.75;
+  text-shadow: 1px 1px var(--bckg-3);
+  position: relative;
+  text-transform: uppercase;
+  display: block;
+  line-height: 20px;
+}
+
+.kir-tit:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: var(--ctext);
+  right: 5px;
+  top: 8px;
+  bottom: -8px;
+  opacity: 0.7;
+}
+
+.content.clearfix .kir-tit>b, .kir-tit>b {
+  background: linear-gradient(45deg, var(--acentob), var(--acentoa));
+  border-radius: 10px;
+  padding: 2px 6px 2px 10px;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #ddd;
+}
+
+.kier-tema {
+  margin: 10px;
+  border-bottom: 1px solid var(--brd-c);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kier-tema:last-of-type {
+  margin-bottom: 25px;
+}
+
+.content.clearfix .kier-tema>i, .kier-tema>i {
+  color: var(--brd-c);
+  font-size: 30px;
+  padding: 5px;
+}
+
+.content.clearfix .kier-tema>span>a, .kier-tema>span>a {
+  font-family: var(--font);
+  color: var(--acentoa) !important;
+  font-size: 15px;
+  text-shadow: 1px 1px var(--bckg-3);
+  display: block;
+  text-decoration: none;
+}
+
+.kier-tema>span>i {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 10px;
+  position: relative;
+  font-style: normal;
+}
+
+.content.clearfix .kier-tema>span>i>b, .kier-tema>span>i>b {
+  background: var(--acento);
+  padding: 1px 5px 2px;
+  border-radius: 10px;
+  font-weight: 800;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  color: #ddd;
+}
+
+.content.clearfix .kier-tema>i.fas, .kier-tema>i.fas {
+  color: var(--acentoa);
+}
+
+.kier-pjs {
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.kier-pj {
+  width: 228px;
+  outline: 1px solid var(--brd-c);
+  outline-offset: 5px;
+  background: var(--bckg-1);
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 10px;
+  padding: 15px;
+  --acento: var(--ctext);
+  transition: all ease-in-out 0.7s;
+}
+
+.kierimg-pj {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid var(--acento);
+  outline-offset: 5px;
+  margin: 10px;
+  transition: all ease-in-out 0.7s;
+}
+
+.pj-name {
+  width: -webkit-fill-available;
+}
+
+.pj-name>span {
+  font-family: var(--font);
+  letter-spacing: 1px;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  color: var(--acento) !important;
+  text-shadow: 1px 1px var(--bckg-3);
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.content.clearfix .pj-name>b, .pj-name>b {
+  opacity: 0.8;
+  margin: 10px 45px 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 12px;
+  color: var(--ctext);
+}
+
+.pj-txt {
+  border: 5px solid transparent;
+  padding-right: 5px;
+  height: 70px;
+  overflow: auto;
+  text-align: justify;
+}
+
+.pj-txt::-webkit-scrollbar {
+  background-color: transparent;
+  border: none;
+  height: 3px !important;
+  width: 3px !important;
+}
+
+.pj-txt::-webkit-scrollbar-thumb {
+  background-color: var(--brd-c);
+}
+
+.kier-pj:hover {
+  outline-offset: 0px;
+  transition: all ease-in-out 0.7s;
+}
+
+.kier-pj:hover .kierimg-pj {
+  outline-offset: 0px;
+  transition: all ease-in-out 0.7s;
+}
+
+.kieran br{
+  display: none;
+}
+
+.civil,
+.ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: var(--criminales);
+}
+
+.cele,
+.celebridad {
+    --acento: var(--g3);
+    --acentob: var(--criminales);
+}
+
+.sanidad {
+    --acento: var(--sanidad);
+    --acentob: var(--refineria);
+}
+
+.polis,
+.seguridad {
+    --acento: var(--seguridad);
+    --acentob: var(--empresarios);
+}
+
+.empre,
+.empresario {
+    --acento: var(--empresarios);
+    --acentob: var(--sami);
+}
+
+.crimi,
+.criminal {
+    --acento: var(--criminales);
+    --acentob: var(--ciudadanos);
+}
+
+.pesca,
+.pescador {
+    --acento: var(--pesca);
+    --acentob: var(--criminales);
+}
+
+.petro,
+.refineria {
+    --acento: var(--refineria);
+    --acentob: var(--sanidad);
+}
+
+.sami {
+    --acento: var(--sami);
+    --acentob: var(--empresarios);
+}
+
+.pnj, .npc {
+    --acento: var(--pnj);
+    --acentob: var(--ciudadanos);
+}
+
+.comercio {
+    --acento: var(--comercio-industria);
+    --acentob: var(--seguridad);
+}
