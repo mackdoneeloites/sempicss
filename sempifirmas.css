@@ -589,6 +589,7 @@ body.day .signa {
     text-decoration: none;
     margin: 0 0 2px;
     color: #ccc;
+    display: inline-flex;
 }
 
 .content.clearfix .singe>div u:before, 
