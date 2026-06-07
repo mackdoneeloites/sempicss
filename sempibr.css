@@ -78,7 +78,9 @@ body.day .bspd {
 }
 
 .content.clearfix .bspd-tit>span b,
-.content.clearfix .bspd-tit>span strong {
+.bspd-tit>span b,
+.content.clearfix .bspd-tit>span strong, 
+.bspd-tit>span strong  {
     font-weight: 900;
     -webkit-text-stroke: 1px #eee;
     color: transparent;
