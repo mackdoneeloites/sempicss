@@ -571,6 +571,21 @@ p.bspd-i-extpb>i {
     transition: all .7s ease-in-out;
 }
 
+.bspd br{
+  display: none;
+}
+
+.bspd-cd-des br{
+  display: inline;
+}
+
+.bspd-cd-des::-webkit-scrollbar {
+    background-color: transparent;
+    border: none;
+    height: 3px;
+    width: 3px !important;
+}
+
 
 @-webkit-keyframes bounce-in-top {
     0% {
