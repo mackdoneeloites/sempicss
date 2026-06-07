@@ -130,6 +130,7 @@ body {
 }
 
 .content.clearfix .wynn-der span strong,
+.wynn-der span strong,
 .wynn-sts span {
   display: flex;
   align-items: center;
