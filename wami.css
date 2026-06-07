@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+    --bckg-2: var(--bckg-2);
+    --bckg-1: var(--bckg-1);
+    --bckg-3: var(--bckg-3);
+    --accent: var(--acc-1);
+    --brd-c: var(--brd-c);
+    --ctext-icon: var(--cicon);
+    --g1: var(--staff);
+    --g2: var(--ciudadanos);
+    --g3: var(--celebridades);
+    --g4: var(--sanidad);
+    --g5: var(--seguridad);
+    --g6: var(--empresarios);
+    --g7: var(--criminales);
+    --g8: var(--pesca);
+    --g9: var(--refineria);
+    --g10: var(--sami);
+    --g11: var(--pnj);
+    --g12: var(--inactivos);
+    --ctext: var(--ctext);
+    word-break: auto-phrase;
+}
+
+dl.codebox {
+    font-size: 14px;
+}
+
+.content.clearfix {
+    max-width: 1045px;
+}
+
+/*Edgar*/
+.edgar,
+.edgar-dos {
+    width: 782px;
+    border: var(--border);
+    margin: 10px auto;
+    color: var(--color);
+    font-family: "montserrat";
+    background: var(--background-3);
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.edgar-dos {
+    width: 580px;
+    padding: 0;
+    overflow: hidden;
+    gap: 0;
+    margin: 10px auto 0;
+}
+
+.edgar-izq {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    width: 280px;
+}
+
+.edgar-img {
+    width: 280px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    outline: var(--border);
+    border: 5px solid var(--background-1);
+    border-radius: 5px;
+}
+
+.edgar-img.dos {
+    width: -webkit-fill-available;
+    height: 250px;
+    border: none;
+    outline: none;
+    border-bottom: var(--border);
+    border-radius: 0;
+}
+
+.edgar-image {
+    position: relative;
+    border: var(--border);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: 5px;
+}
+
+.edgar-image.dos {
+    border-radius: 0;
+    border: none;
+}
+
+.edgar-img:before,
+.edgar-img:after,
+.edgar-ims.colors:before,
+.edgar-ims.colors:after,
+.edgar-ims:before,
+.edgar-ims:after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 5px;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-img:before,
+.edgar-ims.colors:before,
+.edgar-pj:hover .edgar-ims:before {
+    background: #000;
+    mix-blend-mode: color;
+    z-index: 1;
+    opacity: 1;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-img:after,
+.edgar-ims.colors:after {
+    background: linear-gradient(45deg, var(--accentoa), var(--accentob));
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+
+.edgar-img.dos:before,
+.edgar-img.dos:after,
+.edgar-rela.dos .edgar-ims:before,
+.edgar-rela.dos .edgar-ims:after {
+    inset: 0px;
+    border-radius: 0px;
+}
+
+.edgar-img.dos span {
+    position: absolute;
+    inset: 0;
+    padding: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    z-index: 9;
+    flex-flow: wrap;
+}
+
+.content.clearfix .edgar-img.dos span>b,
+.edgar-img.dos span>b {
+    -webkit-text-stroke: 2px #aaa;
+    color: transparent;
+    font-size: 85px;
+    width: -webkit-fill-available;
+    font-family: Lato;
+    line-height: 80px;
+}
+
+.content.clearfix .edgar-img.dos span>i,
+.edgar-img.dos span>i {
+    color: #aaa;
+    width: -webkit-fill-available;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.edgar-link {
+    background: var(--cborder);
+    display: flex;
+    gap: 1px;
+    width: -webkit-fill-available;
+}
+
+.content.clearfix .edgar-link a,
+.edgar-link a {
+    padding: 10px;
+    background: var(--background-1);
+    color: var(--color);
+    font-weight: 800;
+    text-decoration: none;
+    flex: auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-link a:hover,
+.edgar-tema>span a:hover {
+    color: var(--accentoa) !important;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-quote {
+    background: var(--background-1);
+    padding: 15px;
+    position: relative;
+    text-align: justify;
+    line-height: 18px;
+    border: var(--border);
+}
+
+.edgar-quote.dos {
+    background: var(--background-3);
+    border: 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.edgar-quote>p {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px var(--background-1), -1px -1px var(--background-1), 1px -1px var(--background-1), 1px -1px var(--background-1);
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.edgar-quote.dos>p {
+    text-align-last: center;
+}
+
+.edgar-quote:before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    position: absolute;
+    color: var(--accentoa);
+    font-size: 40px;
+    left: 7px;
+    opacity: 0.2;
+    -webkit-text-stroke: 2px var(--background-1);
+}
+
+.edgar-quote>p u {
+    position: relative;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--accentob), var(--accentoa)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.content.clearfix .edgar-quote>p i,
+.edgar-quote>p i {
+    color: var(--accentoa);
+}
+
+.content.clearfix .edgar-quote>p b,
+.edgar-quote>p b,
+.content.clearfix .edgar-quote>p strong,
+.edgar-quote>p strong {
+    color: var(--accentob);
+}
+
+.edgar-icons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+a.edgar-icon {
+    background: var(--background-1);
+    padding: 15px;
+    position: relative;
+    border: var(--border);
+    flex: auto;
+    font-size: 35px;
+    text-align: center;
+}
+
+.content.clearfix .edgar-icon>i,
+.edgar-icon>i {
+    text-decoration: none;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--accentob), var(--accentoa));
+    background-size: 100%;
+    font-weight: 800;
+    scale: 1;
+    transition: all .7s ease-in-out;
+}
+
+a.edgar-icon:hover i {
+    scale: 1.1;
+    background-size: 500%;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-der,
+.edgar-crono {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    width: 460px;
+    align-content: baseline;
+    height: 532px;
+    overflow: auto;
+}
+
+.edgar-crono {
+    padding-right: 10px;
+}
+
+.edgar-crono.dos {
+    gap: 0;
+    padding: 0;
+    max-height: none;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+.edgar-mes {
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.content.clearfix .edgar-mes b,
+.edgar-mes b {
+    color: #eee;
+}
+
+.edgar-tema {
+    background: var(--background-1);
+    padding: 13px;
+    position: relative;
+    border: var(--border);
+    flex: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.edgar-crono.dos .edgar-tema {
+    border: none;
+    border-bottom: var(--border);
+}
+
+.edgar-crono.dos .edgar-tema:nth-child(2n) {
+    flex-direction: row-reverse;
+    background: var(--background-2);
+}
+
+.edgar-crono.dos .edgar-tema:last-of-type {
+    border-bottom: none;
+}
+
+.content.clearfix .edgar-tema>i,
+.edgar-tema>i,
+.edgar-titulo>span {
+    font-size: 28px;
+    color: var(--accent2);
+    position: relative;
+    transition: ease .5s;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--accentob), var(--accentoa));
+}
+
+.edgar-tema>span {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.edgar-crono.dos .edgar-tema:nth-child(2n) span {
+    align-items: end;
+}
+
+.content.clearfix .edgar-tema>span a,
+.edgar-tema>span a {
+    color: var(--color);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.content.clearfix .edgar-tema>span i, .edgar-tema>span i {
+    font-size: 9px;
+}
+
+.content.clearfix .edgar-tema>span i a, .edgar-tema>span i a {
+    color: var(--acento) !important;
+}
+
+.content.clearfix .edgar-tema>span i>b, .edgar-tema>span i>b {
+    color: var(--accentoa);
+}
+
+.edgar-tema>span i>b:after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    padding: 0 5px;
+    color: var(--color);
+}
+
+.edgar-crono.dos .edgar-mes {
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 18px;
+    background: linear-gradient(40deg, var(--accentob), var(--accentoa));
+    padding: 10px;
+    border-bottom: var(--border);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2), -1px -1px rgba(0, 0, 0, 0.2);
+    color: var(--background-1);
+}
+
+.edgar-rela {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.edgar-rela.dos {
+    border-top: var(--border);
+    background: var(--cborder);
+    gap: 1px;
+}
+
+.edgar-pj {
+    height: 130px;
+    min-width: 230px;
+    flex: auto;
+    background: var(--background-1);
+    position: relative;
+    border: 5px solid var(--background-1);
+    transition: all .7s ease-in-out;
+    border-radius: 5px;
+    outline: var(--border);
+    overflow: hidden;
+}
+
+.edgar-rela.dos .edgar-pj {
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.edgar-ims {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: 5px;
+    border: var(--border);
+}
+
+.edgar-rela.dos .edgar-ims {
+    border-radius: 0;
+    border: none;
+}
+
+.edgar-info {
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    overflow: hidden;
+}
+
+.content.clearfix .edgar-info>i, .edgar-info>i {
+    position: absolute;
+    font-size: 70px;
+    padding: 10px;
+    opacity: 0.3;
+    -webkit-text-stroke: 2px var(--background-1);
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.edgar-info>span.nom {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 20px;
+    color: #c9c9c9;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.3), 1px -1px rgba(0, 0, 0, 0.5), 1px -1px rgba(0, 0, 0, 0.3);
+    transform: translateY(100px);
+    transition: all .7s ease-in-out;
+}
+
+.edgar-info>span.dts {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    text-transform: uppercase;
+    color: var(--accentoa);
+    font-weight: 700;
+    text-shadow: 1px 1px var(--background-1), -1px -1px var(--background-1), 1px -1px var(--background-1), 1px -1px var(--background-1);
+    transform: translateY(120px);
+    transition: all .7s ease-in-out;
+}
+
+.edgar-pj:hover .edgar-info>span.dts,
+.edgar-pj:hover .edgar-info>span.nom {
+    transform: translateY(0px);
+    transition: all .7s ease-in-out;
+}
+
+.edgar-pj:hover .edgar-info>i {
+    transform: scale(1);
+    transition: all .7s ease-in-out;
+}
+
+.edgar-ims:before {
+    background: #000;
+    opacity: 0;
+    mix-blend-mode: color;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-ims:after {
+    background: linear-gradient(180deg, transparent, #000);
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-pj:hover .edgar-ims:after {
+    opacity: 1;
+    transition: all .7s ease-in-out;
+}
+
+.edgar-titulo {
+    background: var(--background-3);
+    padding: 10px;
+    width: -webkit-fill-available;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 2px;
+    border-bottom: var(--border);
+    line-height: 35px;
+}
+
+.edgar-titulo>span {
+    font-size: 21px;
+}
+
+.civil,
+.ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: var(--criminales);
+}
+
+.cele,
+.celebridad {
+    --acento: var(--g3);
+    --acentob: var(--criminales);
+}
+
+.sanidad {
+    --acento: var(--sanidad);
+    --acentob: var(--refineria);
+}
+
+.polis,
+.seguridad {
+    --acento: var(--seguridad);
+    --acentob: var(--empresarios);
+}
+
+.empre,
+.empresario {
+    --acento: var(--empresarios);
+    --acentob: var(--sami);
+}
+
+.crimi,
+.criminal {
+    --acento: var(--criminales);
+    --acentob: var(--ciudadanos);
+}
+
+.pesca,
+.pescador {
+    --acento: var(--pesca);
+    --acentob: var(--criminales);
+}
+
+.petro,
+.refineria {
+    --acento: var(--refineria);
+    --acentob: var(--sanidad);
+}
+
+.sami {
+    --acento: var(--sami);
+    --acentob: var(--empresarios);
+}
+
+.pnj, .npc {
+    --acento: var(--pnj);
+    --acentob: var(--ciudadanos);
+}
+
+.comercio {
+    --acento: var(--comercio-industria);
+    --acentob: var(--seguridad);
+}
+
+.edgar br,
+.edgar-dos br {
+    display: none;
+}
+
+.tl-cuerpo>p br {
+    display: inline;
+}
+
+.edgar-crono::-webkit-scrollbar {
+    height: 3px !important;
+    width: 3px !important;
+}
