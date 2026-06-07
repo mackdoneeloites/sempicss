@@ -194,9 +194,10 @@ body.day .yt-logo:after {
     gap: 4px;
 }
 
-.content.clearfix buton.rojo b {
+.content.clearfix buton.rojo>b, buton.rojo>b {
     color: #eee;
 }
+
 
 .yt-video {
     margin: 25px 10px 0;
