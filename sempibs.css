@@ -16,6 +16,10 @@ body {
     word-break: auto-phrase;
 }
 
+.content.clearfix {
+    max-width: 1045px;
+}
+
 /*Baul Random dos*/
 .bst {
     display: flex;
