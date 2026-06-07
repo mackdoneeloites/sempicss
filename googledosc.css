@@ -241,7 +241,7 @@ body.day .googledocs {
     justify-content: center;
     padding: 40px;
     min-height: 1000px;
-    background: var(--bckg-3);
+    background: var(--bckg-2);
     color: var(--ctext);
     width: -webkit-fill-available;
     border-radius: 0 0 8px 8px;
