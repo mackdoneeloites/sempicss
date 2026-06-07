@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+    --g1: var(--staff);
+    --g2: var(--ciudadanos);
+    --g3: var(--celebridades);
+    --g4: var(--sanidad);
+    --g5: var(--seguridad);
+    --g6: var(--empresarios);
+    --g7: var(--criminales);
+    --g8: var(--pesca);
+    --g9: var(--refineria);
+    --g10: var(--sami);
+    --g11: var(--pnj);
+    --g12: var(--inactivos);
+    word-break: auto-phrase;
+}
+
+
+
+/**INSTAGRAM**/
+.sphone {
+    width: 425px;
+    background: linear-gradient(0deg, var(--bckg-2), var(--bckg-3), var(--bckg-2));
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    height: 815px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    --acentoa: var(--accent);
+    --acentob: hsl(from var(--accent) calc(h + 25) s l);
+}
+
+.sbar {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    background: var(--bckg-2);
+}
+
+.sicon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sp-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 0;
+    font-size: 23px;
+    background: var(--bckg-2);
+}
+
+.sp-head>i {
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-head>i:hover,
+.sstory-reply>span>i:hover {
+    opacity: 0.5;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-info {
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    background: var(--bckg-2);
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1)
+}
+
+.sp-info-pic,
+.spost-ava {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -35px;
+    background: linear-gradient(0deg, var(--acento), var(--acentob));
+}
+
+.sp-info-pint {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+
+.sp-info-name {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 900;
+    margin: 5px 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.sp-info-bio {
+    font-size: 12px;
+    width: 320px;
+    border: 10px solid transparent;
+    padding-right: 5px;
+    text-align: justify;
+    line-height: 16px;
+    opacity: 0.8;
+    text-align-last: left;
+    height: 70px;
+    overflow: auto;
+}
+
+.sp-info-bio b,
+.sp-info-bio strong,
+.sp-info-bio i,
+.sp-info-bio>span,
+.post-caption>span {
+    background: linear-gradient(90deg, var(--acento), var(--acentob));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sp-info-bio strike,
+.sp-info-bio u,
+.sp-info-bio a {
+    color: var(--acento);
+}
+
+.sp-info-bio>span,
+.post-caption>span {
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-info-bio>span:hover,
+.post-caption>span:hover {
+    opacity: 0.8;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-info-stat {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 15px 15px
+}
+
+.sp-info-stat .stat {
+    flex: auto;
+}
+
+.sp-info-stat .stat>span.number {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    color: var(--acento);
+}
+
+.sp-info-stat .stat>span.label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sp-info-follow {
+    background: linear-gradient(90deg, var(--acento), var(--acentob));
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 13px;
+    cursor: pointer;
+    color: #ddd;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-info-follow:hover,
+.sp-bnav>i:hover {
+    opacity: 0.5;
+    transition: 0.7s ease-in-out;
+}
+
+.profile-tabs {
+    display: flex;
+    border-top: 1px solid var(--brd-c);
+    margin-top: 20px;
+}
+
+.tab-input {
+    display: none;
+}
+
+.tab {
+    flex: 1;
+    padding: 15px 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-top: 3px solid transparent;
+    margin-top: -2px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.7s ease-in-out;
+}
+
+#tab-posts:checked~.profile-tabs label[for="tab-posts"],
+#tab-reels:checked~.profile-tabs label[for="tab-reels"],
+#tab-tagged:checked~.profile-tabs label[for="tab-tagged"] {
+    border-top-color: var(--acento);
+    color: var(--acento);
+}
+
+.tab-content {
+    display: none;
+    scale: 0;
+    transition: 0.7s ease-in-out;
+}
+
+#tab-posts:checked~.tab-content.posts,
+#tab-reels:checked~.tab-content.reels,
+#tab-tagged:checked~.tab-content.tagged {
+    display: flex;
+    align-content: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 250px;
+    overflow: auto;
+    border: 10px solid transparent;
+    padding-right: 5px;
+    gap: 5px;
+    margin-bottom: 8px;
+    scale: 1;
+    transition: 0.7s ease-in-out;
+}
+
+.tab-content .ims {
+    width: 125px;
+    height: 125px;
+    transition: 0.7s ease-in-out;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tab-content .ims:hover,
+.sp-bnav>i.zmdi:hover,
+.sp-info-follow:hover {
+    scale: 1.05;
+    transition: 0.7s ease-in-out;
+}
+
+.tab-content .ims>i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 15px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.2);
+    color: #eee;
+}
+
+.tab-content .ims>video {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sp-bnav,
+.sstory-reply {
+    background: var(--bckg-2);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-bnav .zmdi {
+    font-size: 23px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: linear-gradient(0deg, var(--acentob), var(--acento));
+    padding: 10px;
+    margin-top: -25px;
+    color: #ddd;
+}
+
+.sp-bnav>i,
+.sstory-reply>span>i,
+.snots-info span.name {
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.sp-bnav>i.zmdi:hover {
+    opacity: 0.9;
+}
+
+.tab-content.tagged .sp-info-pic {
+    position: relative;
+    top: auto;
+    width: 80px;
+    height: 80px;
+}
+
+.tab-content.tagged .sp-info-pic .sp-info-pint {
+    width: 68px;
+    height: 68px;
+}
+
+.tab-content.tagged>a>span {
+    color: var(--ctext) !important;
+    margin-top: 8px;
+    display: block;
+    width: 80px;
+    text-align: center;
+    word-break: break-all;
+}
+
+#tab-tagged:checked~.tab-content.tagged {
+    gap: 20px !important;
+}
+
+.tab-content.tagged>a:hover {
+    opacity: .7;
+    transition: all 0.7s ease-in-out;
+}
+
+.tab-content.tagged>a {
+    transition: all 0.7s ease-in-out;
+}
+
+/*post*/
+.spost-head {
+    display: flex;
+    gap: 15px;
+    padding: 15px 20px 20px;
+    background: var(--bckg-2);
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.spost-ava {
+    position: relative;
+    top: auto;
+    width: 70px;
+    height: 70px;
+}
+
+.spost-avap {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.spost-name {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--acento);
+}
+
+.spost-time {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 15px;
+}
+
+.spost-ims {
+    width: 410px;
+    height: 460px;
+    position: relative;
+    margin: -30px auto 0;
+    border-radius: 15px;
+}
+
+.pspost-actions {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pspost-actions>i {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background: var(--acento);
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    color: #eee;
+}
+
+.pspost-actions>span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px 8px;
+    border-radius: 15px;
+    color: #eee;
+}
+
+body.day .pspost-actions>span,
+body.day .sstory-reply>input {
+    background: rgba(250, 250, 250, 0.3);
+}
+
+.post-caption {
+    border: solid 20px transparent;
+    padding-right: 5px;
+    max-height: 100px;
+    overflow: auto;
+    text-align: justify;
+    text-align-last: left;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.post-caption>img {
+    width: 15px;
+    height: auto;
+}
+
+.post-caption span.username {
+    float: left;
+    font-size: 12px;
+    color: var(--acento);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 10px 0 5px;
+    font-style: normal;
+}
+
+.post-time {
+    opacity: 0.5;
+    margin: -10px 25px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.post-time:hover,
+.snots-info span.name:hover {
+    opacity: 0.8;
+    transition: 0.7s ease-in-out;
+}
+
+/*story*/
+.sphone.spost, .sphone.sstory {
+    max-height: 815px;
+    height: auto;
+}
+
+.sphone.spost .sp-bnav {
+    position: relative;
+    margin-top: 18px;
+}
+
+.sphone.sstory .sbar {
+    background: transparent;
+}
+
+.sstory-head {
+    position: absolute;
+    top: 40px;
+    background: linear-gradient(180deg, var(--bckg-2), transparent);
+    border-radius: 30px 30px 0 0;
+    margin: 10px;
+    padding: 20px 20px 50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.2);
+    color: #eee;
+}
+
+.sstory-head .spost-ava {
+    width: 60px;
+    height: 60px;
+}
+
+.sstory-head .spost-avap {
+    width: 50px;
+    height: 50px;
+}
+
+.sstory-cont {
+    height: 525px;
+    width: 405px;
+    margin: 10px auto 0;
+    border-radius: 30px;
+}
+
+.sstory-cont>video {
+    width: 405px;
+    height: 525px;
+    object-fit: cover;
+    border-radius: 30px;
+    outline: var(--brd);
+    outline-offset: -1px;
+}
+
+.sphone.sstory.sincomentario .sstory-cont,
+.sphone.sstory.sincomentario .sstory-cont>video {
+    height: 675px;
+}
+
+.sstory-reply {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 15px;
+}
+
+.sstory-reply>input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    width: 270px;
+    color: var(--ctext);
+}
+
+.sstory-reply>span {
+    display: flex;
+    gap: 15px;
+}
+
+.sstory-reply>span>i.fa-solid.fa-heart {
+    color: var(--acento);
+}
+
+/**comentario**/
+.sphone.notis {
+    background: linear-gradient(90deg, var(--bckg-2), var(--bckg-3));
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.snots-ava {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    flex: none;
+}
+
+.snots-info {
+    padding: 5px;
+    max-width: 100%;
+}
+
+.snots-info span.name {
+    color: var(--acento);
+    font-weight: 800;
+}
+
+.snots-preview {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    flex: none;
+}
+
+
+.sphone br{
+  display: none;
+}
+
+.sp-info-bio br,
+.post-caption br,
+.snots-info br{
+  display: inline;
+}
