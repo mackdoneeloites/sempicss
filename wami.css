@@ -104,7 +104,7 @@ dl.codebox {
 .edgar-ims:after {
     content: "";
     position: absolute;
-    inset: 1px;
+    inset: 0;
     border-radius: 5px;
     transition: all .7s ease-in-out;
 }
