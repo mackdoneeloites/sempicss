@@ -509,6 +509,11 @@ body {
 .controladores .udps audio.audio-player {
   width: 100px;
   margin: -1.5px;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.day .controladores .udps audio.audio-player {
+  filter: invert(0) hue-rotate(0);
 }
 
 .day .sp-noti,
