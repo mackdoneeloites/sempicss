@@ -1,0 +1,1156 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+    --g1: var(--staff);
+    --g2: var(--ciudadanos);
+    --g3: var(--celebridades);
+    --g4: var(--sanidad);
+    --g5: var(--seguridad);
+    --g6: var(--empresarios);
+    --g7: var(--criminales);
+    --g8: var(--pesca);
+    --g9: var(--refineria);
+    --g10: var(--sami);
+    --g11: var(--pnj);
+    --g12: var(--inactivos);
+    word-break: auto-phrase;
+}
+
+/**MOODBOARDS**/
+/**Moodboard 001**/
+.spm-1 {
+    width: 500px;
+    background: var(--bckg-2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    --acentoa: var(--accent);
+    --acentob: hsl(from var(--accent) calc(h + 25) s l);
+}
+
+.spm-1-img {
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    height: 130px;
+    position: relative;
+}
+
+.spm-1-img:before,
+.spm-1-img:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.spm-1-img:before {
+    background: #000;
+    mix-blend-mode: color;
+}
+
+.spm-1-img:after {
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    mix-blend-mode: multiply;
+}
+
+.spm-1-img>span {
+    position: relative;
+    z-index: 1;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-align: center;
+    color: #eee;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), 1px -1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.25), -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.spm-1-q>b,
+.spm-1-q>strong,
+.spm-1-img>span>b,
+.spm-1-img>span>strong {
+    color: var(--acento);
+    font-weight: 700;
+}
+
+.spm-1-img>span>i,
+.spm-1-q>i,
+.spm-1-q>u {
+    color: var(--acento);
+    font-weight: 500;
+}
+
+span.bpjs-t {
+    font-family: "Poppins";
+    color: var(--bckg-1);
+    -webkit-text-stroke: 2px var(--brd-c);
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 55px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 45px 0;
+    letter-spacing: 2px;
+}
+
+.spm-1-q {
+    text-align: center;
+    padding: 25px;
+    width: -webkit-fill-available;
+    position: relative;
+}
+
+.spm-1-q:before {
+    content: "❝";
+    position: absolute;
+    top: 0;
+    font-size: 35px;
+    line-height: 35px;
+    left: 20px;
+    color: var(--acento);
+}
+
+.spm-1-q:after {
+    content: "❞";
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--acento);
+    opacity: 0.8;
+}
+
+.spm-1-a {
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    padding: 2px 10px;
+    width: -webkit-fill-available;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--bckg-1);
+    font-weight: 600;
+}
+
+/**Moodboard 002**/
+.spm-2 {
+    width: 700px;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 7px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 1.25fr 1fr;
+    grid-template-rows: 130px 145px 100px 110px;
+    gap: 7px;
+}
+
+.spm-2 .cell {
+    overflow: hidden;
+    border-radius: 1px;
+    border-radius: 3px;
+    position: relative;
+    transition: transform 0.5s ease;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.spm-2 .cell:hover {
+    transform: scale(1.020);
+    z-index: 2;
+}
+
+.d-u {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.d-d {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.d-t {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.d-f {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.d-ff {
+    grid-column: 2;
+    grid-row: 2/4;
+}
+
+.d-s {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.d-ss {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.d-e {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.d-n {
+    grid-column: 3;
+    grid-row: 3/5;
+}
+
+.cell.d-f {
+    margin-top: 15px;
+}
+
+.cell.d-s {
+    margin-bottom: 15px;
+}
+
+/**Moodboard 003**/
+.spm-3 {
+    width: 650px;
+    background: var(--bckg-2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 15px auto;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 5px;
+    gap: 7px;
+}
+
+.spm-3 .cell {
+    border-radius: 6px;
+    position: relative;
+    transition: all ease-in-out 0.7s;
+    border: 1px solid var(--bckg-1);
+    overflow: hidden;
+}
+
+.spm-3 .cell:hover {
+    scale: 1.005;
+    transition: all ease-in-out 0.7s;
+}
+
+.spm-3 .cell:after,
+.spm-3 .cell:before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    opacity: 0;
+    transition: all ease-in-out 0.7s;
+}
+
+.spm-3 .cell:before {
+    background: #000;
+    mix-blend-mode: color;
+}
+
+.spm-3 .cell:after {
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    mix-blend-mode: multiply;
+}
+
+
+.spm-3 .cell:hover:before {
+    content: "";
+    opacity: 1;
+    transition: all ease-in-out 0.7s;
+}
+
+.spm-3 .cell:hover:after {
+    content: "";
+    opacity: 1;
+    transition: all ease-in-out 0.7s;
+}
+
+.f-a {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.f-b {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.f-c {
+    grid-column: 3/5;
+    grid-row: 1;
+}
+
+.f-d {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+.f-e {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.f-f {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.f-g {
+    grid-column: 4;
+    grid-row: 2/4;
+}
+
+.f-h {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.f-i {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.f-j {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+.f-k {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.f-l {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.spm-3:before {
+    content: "";
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    display: block;
+    width: -webkit-fill-available;
+    grid-column: 1 / 5;
+    grid-row: 5;
+    border-radius: 10px;
+}
+
+/**Moodboard 004**/
+.spm-4 {
+    width: 550px;
+    background: var(--bckg-2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 15px auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.spm-4-p {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2px;
+}
+
+.spm-4 .dot {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.spm-4 .cell {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.spm-4-top {
+    display: grid;
+    grid-template-columns: 1fr 1.12fr;
+    grid-template-rows: 150px 80px;
+    gap: 7px;
+}
+
+.cell.aa {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.cell.ba {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.cell.ca {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.spm-4-bot {
+    margin-top: -5px;
+    display: grid;
+    grid-template-columns: 1fr 1.12fr;
+    grid-template-rows: auto auto auto;
+    gap: 7px;
+}
+
+.cell.da {
+    grid-column: 1;
+    grid-row: 1/4;
+    min-height: 280px;
+}
+
+.cell.qu {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.cell.thumbs-top {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.cell.thumbs-bottom {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.cell.qu .q-t {
+    font-family: 'Google Sans', 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+
+.cell.qu {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spm-4-tt,
+.spm-4-tb {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.tub {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+/**Moodboard 005**/
+.spm-5 {
+    width: 600px;
+    background: var(--bckg-2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.spm-5-g {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    padding: 10px;
+    position: relative;
+}
+
+.spm-5-g .cl {
+    position: relative;
+    padding: 6px;
+    width: 180px;
+    height: 180px;
+}
+
+.spm-5-i {
+    width: 180px;
+    height: 180px;
+    background: #1a1a1a;
+    position: relative;
+    overflow: hidden;
+}
+
+.spm-5-g .cl::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--acento);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.c1::after {
+    top: -3px;
+    left: -2px;
+    right: 14px;
+    bottom: 14px;
+}
+
+.c2::after {
+    top: -2.5px;
+    left: 8px;
+    right: 8px;
+    bottom: 14px;
+}
+
+.c3::after {
+    top: -3px;
+    left: 14px;
+    right: -2.5px;
+    bottom: 14px;
+}
+
+.c4:after {
+    top: 8px;
+    left: -2.5px;
+    right: 14px;
+    bottom: 10px;
+}
+
+.c5:after {
+    top: 9px;
+    left: 10px;
+    right: 5px;
+    bottom: 9px;
+}
+
+.c6:after {
+    top: 10px;
+    left: 14px;
+    right: -2px;
+    bottom: 8.5px;
+}
+
+.c7::after {
+    top: 14px;
+    left: 2px;
+    right: 14px;
+    bottom: -3px;
+}
+
+.c8:after {
+    top: 14px;
+    left: 8px;
+    right: 8px;
+    bottom: -3px;
+}
+
+.c9:after {
+    top: 14px;
+    left: 14px;
+    right: 2px;
+    bottom: -3px;
+}
+
+.c1 {
+    rotate: -1.2deg;
+}
+
+.c2 {
+    rotate: 0.6deg;
+}
+
+.c3 {
+    rotate: -1.1deg;
+}
+
+.c4 {
+    rotate: 0.9deg;
+}
+
+.c5 {
+    rotate: -0.4deg;
+}
+
+.c6 {
+    rotate: 1.1deg;
+}
+
+.c7 {
+    rotate: -0.9deg;
+}
+
+.c8 {
+    rotate: 0.5deg;
+}
+
+.c9 {
+    rotate: -1.4deg;
+}
+
+/**Moodboard 006**/
+
+/**Moodboard 007**/
+.spm-7 {
+    width: 600px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.spm-7-lc {
+    width: 138px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    gap: 8px;
+    font-family: 'Google Sans', sans-serif;
+    justify-content: center;
+}
+
+.spm-7-i {
+    position: relative;
+    width: 100px;
+    height: 125px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-i:before,
+.spm-7-mp:before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.25);
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-i>span {
+    font-weight: 800;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eee;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+    position: relative;
+    opacity: 0.7;
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-i:hover,
+.spm-7-mp:hover {
+    filter: grayscale(1);
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-i:hover:before,
+.spm-7-mp:hover:before {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-i:hover>span {
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-lt {
+    flex: 1;
+    padding: 10px 10px 12px;
+    overflow: hidden;
+    font-size: 7px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    line-height: 13px;
+    width: 115px;
+}
+
+.spm-7-rc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.spm-7-tb,
+.spm-7-ib {
+    height: 42px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 155px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.spm-7-tb>i,
+.spm-7-ii {
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    color: #eee;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spm-7-sb {
+    flex: 1;
+    height: 22px;
+    background: rgba(220, 220, 228, 0.8);
+    border: 1px solid rgba(180, 180, 190, 0.5);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px 0 10px;
+    justify-content: flex-end;
+    color: #222;
+    gap: 10px;
+    opacity: 0.8;
+}
+
+.spm-7-mp {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-7-ib {
+    bottom: 0;
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+
+.spm-7-icr {
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    font-family: 'Google Sans', sans-serif;
+    color: #eee;
+    letter-spacing: 0.3px;
+    opacity: 0.7;
+
+}
+
+/**Moodboard 008**/
+.spm-8 {
+    width: 550px;
+    height: 490px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.crcle {
+    position: absolute;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.crcle.tl {
+    width: 38px;
+    height: 38px;
+    top: 40px;
+    left: -8px;
+    opacity: 0.95;
+}
+
+.crcle.br {
+    width: 30px;
+    height: 30px;
+    bottom: 25px;
+    right: 12px;
+    opacity: 0.85;
+}
+
+.crcle.tr {
+    width: 22px;
+    height: 22px;
+    top: 290px;
+    left: 155px;
+    opacity: 0.95;
+}
+
+.spm-8-g {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 148px 158px 190px;
+    grid-template-rows: 188px 140px 140px;
+    gap: 6px;
+    padding: 4px 8px 4px 14px;
+    z-index: 1;
+}
+
+.spm-8-g .cl {
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-8-g .cl:hover {
+    scale: 0.97;
+    transition: all 0.7s ease-in-out;
+}
+
+.spm-8-g .cl.a1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.spm-8-g .cl.a2 {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    border-radius: 20px;
+}
+
+.spm-8-g .cl.a3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.spm-8-g .cl.a4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.spm-8-g .cl.a5 {
+    grid-column: 3;
+    grid-row: 2 / 4;
+    border-radius: 20px;
+}
+
+.spm-8-g .cl.a6 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+/**Moodboard 009**/
+.spps {
+    width: 750px;
+    height: 865px;
+    background: var(--ps-bg);
+    border: 1px solid var(--ps-border);
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    --ps-bg: #535353;
+    --ps-toolbar: #3c3c3c;
+    --ps-menubar: #2d2d2d;
+    --ps-win: #404040;
+    --ps-titlebar: #4a4a4a;
+    --ps-titlebg: #595959;
+    --ps-border: #2a2a2a;
+    --ps-text: #d4d4d4;
+    --ps-icon: #1473e6;
+    --ps-chrome: #3d3d3d;
+    --ps-statusbar: #3a3a3a;
+    --ps-canvas: #2e2e2e;
+}
+
+.spps-tb {
+    height: 28px;
+    background: var(--ps-menubar);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 8px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--ps-border);
+}
+
+.spps-tbi {
+    width: 16px;
+    height: 16px;
+    background: var(--ps-icon);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.spps-tb>span {
+    font-size: 11px;
+    color: var(--ps-text);
+}
+
+.spps-tbw {
+    margin-left: auto;
+    display: flex;
+    gap: 2px;
+}
+
+.spps-tbw>span {
+    width: 46px;
+    height: 20px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: var(--ps-text);
+    cursor: pointer;
+}
+
+.spps-tbw>span:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.spps-tbw>span.close:hover {
+    background: #c42b1c;
+    color: #fff;
+}
+
+.spps-mb {
+    height: 24px;
+    background: var(--ps-toolbar);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 2px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--ps-border);
+}
+
+.spps-mb>span {
+    font-size: 11px;
+    color: var(--ps-text);
+    padding: 2px 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.spps-mb>span:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.spps-o {
+    height: 20px;
+    background: var(--ps-toolbar);
+    border-bottom: 1px solid var(--ps-border);
+}
+
+.spps-ws {
+    flex: 1;
+    background: var(--ps-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.spps-wsw {
+    position: absolute;
+    background: var(--ps-win);
+    border: 1px solid var(--ps-border);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.7s ease-in-out;
+}
+
+.spps-wsw:hover {
+    opacity: 0.9;
+    transition: all 0.7s ease-in-out;
+}
+
+.spps-wswt {
+    height: 26px;
+    background: var(--ps-titlebg);
+    border-bottom: 1px solid var(--ps-border);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    flex-shrink: 0;
+    gap: 6px;
+}
+
+.spps-wswt .doci {
+    width: 12px;
+    height: 12px;
+    background: var(--ps-icon);
+    border-radius: 1px;
+    font-size: 7px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.spps-wswt .docn {
+    font-size: 11px;
+    color: var(--ps-text);
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spps-wswt .btw {
+    display: flex;
+    gap: 1px;
+    margin-left: auto;
+}
+
+.spps-wswt .btw>span {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--ps-text);
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.spps-wswt .btw>span:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.spps-wsc {
+    flex: 1;
+    background: var(--ps-canvas);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.spps-wss {
+    height: 20px;
+    background: var(--ps-statusbar);
+    border-top: 1px solid var(--ps-border);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.spps-wss>span {
+    font-size: 10px;
+    color: var(--ps-text);
+    opacity: 0.5;
+}
+
+.wtl,
+.wtr,
+.wbl,
+.wbr {
+    width: 320px;
+    height: 360px;
+    z-index: 1;
+}
+
+.wtl {
+    left: 30px;
+    top: 10px;
+}
+
+.wtr {
+    right: 20px;
+    top: 25px;
+    width: 360px;
+}
+
+.wcen {
+    left: 25%;
+    top: 205px;
+    width: 370px;
+    height: 400px;
+    z-index: 5;
+}
+
+.wbl {
+    left: 20px;
+    bottom: 40px;
+    width: 355px;
+}
+
+.wbr {
+    right: 35px;
+    bottom: 25px;
+    height: 380px;
+}
+
+/**Moodboard 002**/
+
+/**Moodboard 002**/
+/**Moodboard 002**/
+/**Moodboard 002**/
+/**Moodboard 002**/
+
+
+.spm-1 br,
+.spm-2 br,
+.spm-3 br,
+.spm-4 br,
+.spm-8 br,
+.spm-7 br,
+.spm-6 br,
+.spm-5 br,
+.spps br {
+    display: none;
+}
