@@ -14,6 +14,9 @@
       word-break: auto-phrase;
   }
 
+.content.clearfix {
+    max-width: 1045px;
+}
 
   body.night .bsf-body {
       --fondo: 5, 5, 5;
