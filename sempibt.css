@@ -16,6 +16,10 @@ body {
     word-break: auto-phrase;
 }
 
+.content.clearfix {
+    max-width: 1045px;
+}
+
 /*Thiago*/
 .thiago {
     margin: 25px auto;
