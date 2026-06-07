@@ -491,6 +491,11 @@ body.day .kier-cab:after {
   display: none;
 }
 
+.pj-txt br{
+  display: inline;
+}
+
+
 .civil,
 .ciudadano {
     --acento: var(--ciudadanos);
