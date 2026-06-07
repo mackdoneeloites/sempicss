@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+    --g1: var(--staff);
+    --g2: var(--ciudadanos);
+    --g3: var(--celebridades);
+    --g4: var(--sanidad);
+    --g5: var(--seguridad);
+    --g6: var(--empresarios);
+    --g7: var(--criminales);
+    --g8: var(--pesca);
+    --g9: var(--refineria);
+    --g10: var(--sami);
+    --g11: var(--pnj);
+    --g12: var(--inactivos);
+    word-break: auto-phrase;
+}
+
+/**Youtube**/
+body.day .yotuve, body.day .codys {
+    --bckg-3: #eee;
+}
+
+.yotuve {
+    width: 700px;
+    box-sizing: content-box;
+    margin: 15px auto;
+    background: var(--grd);
+    border: 5px solid var(--bckg-2);
+    border-radius: var(--brd-r-2);
+    padding: 10px;
+    position: relative;
+}
+
+.yotuve:before {
+    content: "";
+    inset: 8px;
+    position: absolute;
+    border: 1px solid var(--brd-c);
+    border-radius: calc(20px - 10px);
+    background: var(--bckg-2);
+}
+
+.yotuve a {
+    color: var(--acento);
+}
+
+.yt-cabecera {
+    padding: 15px 15px 13px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+}
+
+.yt-cabecera>i {
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.yt-cabecera>.yt-logo {
+    display: block;
+    height: 23px;
+    width: 105px;
+    position: relative;
+}
+
+.yt-logo:after {
+    content: "";
+    height: 23px;
+    width: 105px;
+    background-image: url(https://i.postimg.cc/x8D9M4h3/You-Tube-Logo-2017-1.png);
+    display: block;
+    background-size: 95.5%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.day .yt-logo:after {
+    background-image: url(https://i.postimg.cc/JzcFJm6z/You-Tube-Logo-2017.png);
+}
+
+.yt-cabecera>h9 {
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background: var(--bckg-3);
+    width: 250px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 11px;
+}
+
+.yt-cabecera>h9:after {
+    position: absolute;
+    right: 5px;
+    content: "\f002";
+    font-family: "Font Awesome 5 Pro";
+    padding: 5px;
+    margin: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all .7s ease-in-out;
+    opacity: 0.9;
+}
+
+.yt-cabecera>m {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 100px;
+    background: var(--bckg-3);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    position: relative;
+    justify-content: center;
+    font-size: 15px;
+    margin-right: 85px;
+}
+
+.yt-cabecera ava,
+.yt-cabecera ava>img,
+.yt-user ava,
+.yt-user ava>img,
+.yt-parrafo>user>ava,
+.yt-parrafo>user>ava>img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.yt-cabecera ava,
+.yt-user ava,
+.yt-parrafo>user>ava,
+.yt-users>ava {
+    overflow: hidden;
+    border-radius: 100%;
+    border: 2.5px solid var(--brd-c);
+    background: var(--brd-c);
+}
+
+.yt-usuario {
+    position: relative;
+    padding: 10px;
+}
+
+.yt-users, .video-principal, .videosmas>a, .yt-parrafo {
+    border: 1px solid var(--brd-c);
+    border-radius: var(--brd-r-2);
+    padding: 15px;
+    margin: 0;
+    background: var(--bckg-3);
+}
+
+.yt-users>ava,
+.yt-users>ava>img {
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.yt-users>ava {
+    width: 125px;
+    height: 125px;
+    background: var(--grd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid var(--brd-c);
+}
+
+.yt-users>ava>img {
+    width: 115px;
+    height: 115px;
+
+}
+
+.yt-users .datos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.content.clearfix buton.rojo b {
+    color: #eee;
+}
+
+.yt-video {
+    margin: 25px 10px 0;
+    border-radius: 10px;
+    border: 1px solid var(--brd-c);
+    overflow: hidden;
+    position: relative;
+}
+
+.yt-video>iframe {
+    width: 680px;
+    height: 365px;
+    margin: 0 0 -5px;
+    padding: 0;
+}
+
+.yt-titulo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.yt-titulo>h,
+.datos>h,
+.vp-info>h,
+.videosmas>h {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    width: 100%;
+    line-height: 23px;
+}
+
+.yt-titulo>h {
+    color: var(--accent);
+    margin: 0 10px;
+}
+
+.yt-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+}
+
+.yt-user span,
+.yt-parrafo>user>span {
+    display: block;
+    width: 130px;
+    font-family: 'Lato', sans-serif;
+}
+
+.yt-user span>a,
+.yt-parrafo>user>span>a {
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.content.clearfix .yt-user span>b,
+.content.clearfix .yt-parrafo>user>span>b {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    opacity: 0.8;
+    color: var(--ctext);
+}
+
+.yt-user buton.rojo,
+.content.clearfix .yt-user boton>b,
+.datos buton.rojo {
+    border-radius: 25px;
+    background: #e02a2a;
+    padding: 5px 8px;
+    color: #ccc;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex: 1;
+}
+
+.content.clearfix .yt-user boton>b {
+    background: var(--bckg-3);
+    color: #ccc;
+}
+
+body.day .yt-user buton.rojo,
+body.day .datos buton.rojo,
+body.day .yt-parrafo>user>p {
+    color: #eee;
+}
+
+body.day .yt-user boton>b {
+    color: var(--ctext);
+}
+
+.yt-user buton.rojo {
+    width: 100px;
+    flex: none;
+}
+
+.yt-user boton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    position: absolute;
+    right: 0;
+}
+
+.yt-user boton>b {
+    background: var(--bckg-3);
+    color: var(--ctext);
+    padding: 5px 10px;
+}
+
+.yt-parrafo {
+    position: relative;
+    margin: 0 10px 10px;
+}
+
+.yt-parrafo>span {
+    margin: 10px 10px 0;
+    display: block;
+}
+
+.yt-parrafo>p {
+    margin: 10px;
+    text-align: justify;
+    line-height: 18px;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.yt-parrafo>span>a {
+    color: var(--acento);
+}
+
+.yt-titulo>h,
+.yt-parrafo>span>a,
+.yt-user buton.rojo,
+.yt-user boton>b,
+.yt-user span>a,
+.yt-cabecera>m,
+.yt-cabecera>h9:after,
+.yt-cabecera>i,
+.yt-parrafo>user>span>a,
+.yt-tito,
+.yt-parrafo>user>p,
+.datos>h,
+.datos buton.rojo,
+.datos>span>b,
+.vp-info>h,
+.vp-info>a,
+.yt-menu>b,
+.yt-menu>u,
+.videosmas>a {
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+
+.yt-titulo>h:hover,
+.yt-parrafo>span>a:hover,
+.yt-user buton.rojo:hover,
+.yt-user boton>b:hover,
+.yt-user span>a:hover,
+.yt-cabecera>m:hover,
+.yt-cabecera>h9:hover:after,
+.yt-cabecera>i:hover,
+.yt-parrafo>user>span>a:hover,
+.yt-tito>a:hover,
+.yt-parrafo>user>p:hover,
+.datos>h:hover,
+.datos buton.rojo:hover,
+.datos>span>b:hover,
+.vp-info>h:hover,
+.vp-info>a:hover,
+.yt-menu>b:hover,
+.videosmas>a:hover {
+    opacity: 0.5;
+    transition: all .7s ease-in-out;
+}
+
+.yt-menu>u:hover {
+    opacity: 1;
+    transition: all .7s ease-in-out;
+}
+
+.yotuve.post {
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.yt-parrafo>user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.yt-tito {
+    margin: 15px 30px 10px;
+    opacity: 0.8;
+    font-style: italic;
+    width: 100%;
+}
+
+.yt-tito>a {
+    color: var(--acento);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.yt-parrafo.seg {
+    margin: 10px;
+}
+
+.yt-parrafo>user>p {
+    font-family: lato, sans-serif;
+    font-size: 15px;
+    text-align: end;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 25px;
+    background: var(--acento);
+    padding: 5px 10px;
+    color: #ccc;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0 0 0 25px;
+}
+
+.yt-users {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.datos>span {
+    margin: 5px 0;
+    display: block;
+}
+
+.datos>p,
+.vp-info>p {
+    margin: 5px 0;
+    width: 470px;
+    padding-right: 5px;
+    max-height: 45px;
+    overflow: auto;
+    line-height: 15px;
+    font-family: arial, sans-serif;
+    text-align: justify;
+    font-size: 12.5px;
+}
+
+.vp-info>p {
+    width: auto;
+    max-height: 90px;
+}
+
+.datos buton.rojo {
+    width: max-content;
+    padding: 5px 10px;
+}
+
+.yt-menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: lato, sans-serif;
+    font-size: 15px;
+    border-bottom: 1px solid var(--brd-c);
+    text-align: left;
+    justify-content: flex-start;
+    margin: 20px 10px;
+    gap: 15px;
+}
+
+.yt-menu>b {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-bottom: 3px solid;
+    padding: 0 5px 5px;
+    margin-bottom: -2px;
+}
+
+.content.clearfix .yt-menu>u {
+    border: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0 5px 5px;
+    opacity: 0.7;
+}
+
+.video-principal {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.video-principal>iframe {
+    width: 325px;
+    height: 182px;
+    border-radius: 15px;
+    border: 1px solid var(--brd-c);
+    overflow: hidden;
+}
+
+.vp-info {
+    width: 300px;
+}
+
+.vp-info>h {
+    display: block;
+}
+
+.vp-info>a {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 -10px;
+    width: 100%;
+    display: block;
+    text-align: end;
+}
+
+.videosmas {
+    display: flex;
+    margin: 20px 0px 0px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.videosmas>h {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.videosmas>a {
+    width: 185px;
+    flex: auto;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.portadavideo {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+    position: relative;
+    height: 100px;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid var(--brd-c);
+}
+
+.portadavideo>span {
+    color: #eee;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.videosmas>a>h {
+    display: block;
+    font-family: lato, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 3px 6px;
+    color: var(--accent);
+}
+
+.videosmas>a>span {
+    display: block;
+    font-family: lato, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 3px 6px;
+    color: var(--ctext);
+}
+
+
+
+.yotuve br {
+    display: none;
+}
+
+.yt-parrafo>p br,
+.datos>p br,
+.vp-info>p br {
+    display: inline;
+}
