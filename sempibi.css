@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Cambo&family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+
+body {
+    --g1: var(--staff);
+    --g2: var(--ciudadanos);
+    --g3: var(--celebridades);
+    --g4: var(--sanidad);
+    --g5: var(--seguridad);
+    --g6: var(--empresarios);
+    --g7: var(--criminales);
+    --g8: var(--pesca);
+    --g9: var(--refineria);
+    --g10: var(--sami);
+    --g11: var(--pnj);
+    --g12: var(--inactivos);
+    word-break: auto-phrase;
+}
+
+
+/*Ingrid*/
+body.day .ingrid {
+    --bckg-3: #e5e5e5;
+}
+
+.ingrid {
+    width: 570px;
+    box-sizing: content-box;
+    border-radius: 25px;
+    background: linear-gradient(45deg, var(--acentoa), var(--acentob));
+    padding: 25px;
+    margin: 15px auto;
+    font-family: roboto, sans-serif;
+    --acentoa: var(--accent);
+    --acentob: hsl(from var(--accent) calc(h + 25) s l);
+    transition: all .7s ease-in-out;
+}
+
+.ingrid.dos {
+    width: 500px;
+}
+
+.ingrid-int {
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    flex-wrap: wrap;
+    position: relative;
+    width: -webkit-fill-available;
+    background: var(--bckg-3);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.ingrid-img,
+.ingrid-img>div {
+    width: 250px;
+    height: 380px;
+    position: relative;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-img {
+    margin: 10px 0 0 -10px;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px -1px rgba(0, 0, 0, 0.5);
+}
+
+.ingrid:hover .ingrid-img>div:before,
+.ingrid:hover .ingrid-img>div:after,
+.ingrid:hover .ingrid-img:before,
+.ingrid:hover .ingrid-img>span {
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-img>div:before,
+.ingrid-img>div:after,
+.ingrid-img:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-img>div:before {
+    background: #000;
+    mix-blend-mode: color;
+}
+
+.ingrid-img>div:after {
+    background: linear-gradient(40deg, var(--acentob), var(--acentoa));
+    mix-blend-mode: multiply;
+}
+
+.ingrid-img:before {
+    background: var(--bckg-1);
+    z-index: 1;
+    mix-blend-mode: lighten;
+}
+
+body.day .ingrid-img:before {
+    mix-blend-mode: overlay;
+}
+
+.ingrid-img>span {
+    position: absolute;
+    padding: 25px;
+    text-align: center;
+    z-index: 2;
+    cursor: context-menu;
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 20px;
+    transition: all .7s ease-in-out;
+}
+
+body.day .ingrid-img>span {
+    color: #d0d0d0;
+}
+
+.content.clearfix .ingrid-img>span>i, .ingrid-img>span>i {
+    color: var(--acentoa);
+    font-weight: 800;
+}
+
+.content.clearfix .ingrid-img>span>b, .ingrid-img>span>b {
+    color: var(--acentoa);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.ingrid-datos {
+    background: var(--bckg-1);
+    padding: 15px;
+    width: 310px;
+    margin: 10px -10px 0 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.ingrid-datos h {
+    display: block;
+    text-align: end;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: roboto;
+    font-size: 10px;
+    padding: 3px;
+}
+
+.content.clearfix .ingrid-datos h>b, .ingrid-datos h>b,
+.content.clearfix .ingrid-datos>p>span>i, .ingrid-datos>p>span>i {
+    font-family: lato;
+    text-decoration: none;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acentoa));
+    font-weight: 800;
+    scale: 1;
+    font-size: 40px;
+    display: block;
+    margin: 0 -10px;
+}
+
+.ingrid-datos h>b {
+    line-height: 35px;
+}
+
+.ingrid-datos>p {
+    margin: 15px auto;
+    text-align: center;
+    max-height: 255px;
+    width: 255px;
+}
+
+.ingrid-datos>p>span {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.content.clearfix .ingrid-datos>p>span>i,
+.ingrid-datos>p>span>i {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.ingrid-link {
+    display: flex;
+    margin: 20px 10px;
+    gap: 15px;
+}
+
+.content.clearfix .ingrid-link>a,
+.ingrid-link>a,
+.content.clearfix .ingrid-titu>i,
+.ingrid-titu>i {
+    background: linear-gradient(40deg, var(--acentob), var(--acentoa));
+    padding: 10px;
+    font-size: 27px;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc !important;
+    text-decoration: none;
+}
+
+.content.clearfix .ingrid-link>a:hover,
+.ingrid-link>a:hover {
+    background: var(--bckg-1);
+    color: var(--acentoa) !important;
+}
+
+.ingrid-titu {
+    margin: 25px;
+    text-align: center;
+    width: -webkit-fill-available;
+}
+
+.ingrid-titu>i {
+    margin: 0 auto 15px;
+}
+
+.ingrid-titu>span {
+    display: block;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content.clearfix .ingrid-titu>span>i,
+.ingrid-titu>span>i {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acentoa));
+    font-weight: 800;
+}
+
+.content.clearfix .ingrid-titu>span>u,
+.ingrid-titu>span>u,
+.content.clearfix .ingrid-tema>span>a,
+.ingrid-tema>span>a,
+.content.clearfix .ingrid-img>span>u,
+.ingrid-img>span>u {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+.content.clearfix .ingrid-titu>span>u:before,
+.ingrid-titu>span>u:before,
+.content.clearfix .ingrid-tema>span>a:before,
+.ingrid-tema>span>a:before,
+.content.clearfix .ingrid-img>span>u:before,
+.ingrid-img>span>u:before {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    left: -2px;
+    height: 5px;
+    background: linear-gradient(40deg, var(--acentob), var(--acentoa));
+    content: "";
+    border-radius: 15px;
+    mix-blend-mode: lighten;
+}
+
+body.day .ingrid-titu>span>u:before,
+body.day .ingrid-tema>span>a:before {
+    mix-blend-mode: hard-light;
+}
+
+.content.clearfix .ingrid-titu>span>b,
+.ingrid-titu>span>b,
+.content.clearfix .ingrid-titu>span>strong,
+.ingrid-titu>span>strong {
+    background: linear-gradient(40deg, var(--acentob), var(--acentoa));
+    padding: 3px 7px 3px 9px;
+    border-radius: 10px;
+    color: #ccc;
+}
+
+.ingrid-crono {
+    width: -webkit-fill-available;
+    padding: 15px;
+    position: relative;
+}
+
+.ingrid-crono mes {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.ingrid-mes {
+    display: block;
+    width: -webkit-fill-available;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 15px;
+    font-family: lato;
+}
+
+.ingrid-crono mes:first-child .ingrid-mes {
+    margin-top: 0;
+}
+
+.ingrid-crono mes:nth-child(2n) .ingrid-mes {
+    direction: rtl;
+}
+
+.ingrid-mes:before {
+    content: "#";
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acentoa));
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 27px;
+}
+
+.ingrid-crono mes:nth-child(2n) .ingrid-mes:before {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.content.clearfix .ingrid-mes>b,
+.ingrid-mes>b {
+    color: var(--acentoa);
+}
+
+.ingrid-tema {
+    padding: 15px;
+    margin: 5px 0 5px -25px;
+    background: var(--bckg-1);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    width: -webkit-fill-available;
+}
+
+.ingrid-crono mes:nth-child(2n) .ingrid-tema {
+    margin: 5px -25px 10px 0px;
+    direction: rtl;
+}
+
+.content.clearfix .ingrid-tema>i,
+.ingrid-tema>i {
+    font-size: 27px;
+    color: var(--accent2);
+    position: relative;
+    transition: ease .5s;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acentoa));
+}
+
+.ingrid-tema>span {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.content.clearfix .ingrid-tema>span>a,
+.ingrid-tema>span>a {
+    text-decoration: none;
+    color: var(--ctext) !important;
+    font-size: 14px;
+    margin: 3px;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-tema>span>a:before {
+    bottom: 1px;
+    height: 6px;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-tema>span>a:hover:before {
+    bottom: 1px;
+    height: 15px;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-tema>span>span {
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.content.clearfix .ingrid-tema>span>span>i,
+.ingrid-tema>span>span>i {
+    color: var(--acento);
+}
+
+.content.clearfix .ingrid-tema>span>span>b,
+.ingrid-tema>span>span>b {
+    color: var(--acentoa);
+}
+
+.ingrid-tema>span>span>b:after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    padding: 0 5px;
+    color: var(--ctext);
+    font-size: 8px;
+}
+
+.ingrid-rela {
+    padding: 10px 10px 15px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ingrid-pj {
+    --acento: var(--acentoa);
+    width: 152px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    flex: auto;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-ims {
+    width: -webkit-fill-available;
+    height: 180px;
+    position: relative;
+}
+
+.ingrid-ims:before,
+.ingrid-ims:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-ims:before {
+    background: #000;
+    mix-blend-mode: color;
+    scale: 0;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-pj:hover .ingrid-ims:before {
+    scale: 1;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-ims:after {
+    opacity: 0;
+    background: linear-gradient(45deg, var(--acento), transparent);
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-pj:hover .ingrid-ims:after {
+    opacity: 0.4;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-info {
+    position: absolute;
+    top: 0;
+    left: -45px;
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-pj:hover .ingrid-info {
+    left: 0px;
+    transition: all .7s ease-in-out;
+}
+
+.content.clearfix .ingrid-info>i,
+.ingrid-info>i {
+    margin-top: 25px;
+    background: var(--acento);
+    padding: 8px 8px 8px 6px;
+    border-radius: 0 15px 15px 0;
+    font-size: 17px;
+}
+
+.ingrid-pj span.nom,
+.ingrid-double {
+    background: var(--acento);
+    padding: 4px 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #dbdbdb;
+    position: relative;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25), -1px -1px rgba(0, 0, 0, 0.25);
+}
+
+.ingrid-double {
+    overflow: hidden;
+    position: relative;
+}
+
+.ingrid-double::before,
+.ingrid-double::after {
+    content: '';
+    position: absolute;
+    width: -webkit-fill-available;
+    left: 0;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.ingrid-double::before {
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-double::after {
+    content: attr(data-replace);
+    transform-origin: 100% 50%;
+    transform: translate3d(450%, 0, 0);
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-pj:hover .ingrid-double:before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.ingrid-pj:hover .ingrid-double:after {
+    transform: translate3d(0, 0, 0);
+}
+
+.ingrid-double span {
+    transition: all .7s ease-in-out;
+}
+
+.ingrid-pj:hover .ingrid-double span {
+    transform: translate3d(-450%, 0, 0);
+}
+
+.ingrid br {
+    display: none;
+}
+
+.ingrid-int>span br,
+.pj-txt br {
+    display: inline;
+}
+
+
+.civil,
+.ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: var(--criminales);
+}
+
+.cele,
+.celebridad {
+    --acento: var(--g3);
+    --acentob: var(--criminales);
+}
+
+.sanidad {
+    --acento: var(--sanidad);
+    --acentob: var(--refineria);
+}
+
+.polis,
+.seguridad {
+    --acento: var(--seguridad);
+    --acentob: var(--empresarios);
+}
+
+.empre,
+.empresario {
+    --acento: var(--empresarios);
+    --acentob: var(--sami);
+}
+
+.crimi,
+.criminal {
+    --acento: var(--criminales);
+    --acentob: var(--ciudadanos);
+}
+
+.pesca,
+.pescador {
+    --acento: var(--pesca);
+    --acentob: var(--criminales);
+}
+
+.petro,
+.refineria {
+    --acento: var(--refineria);
+    --acentob: var(--sanidad);
+}
+
+.sami {
+    --acento: var(--sami);
+    --acentob: var(--empresarios);
+}
+
+.pnj,
+.npc {
+    --acento: var(--pnj);
+    --acentob: var(--ciudadanos);
+}
+
+.comercio {
+    --acento: var(--comercio-industria);
+    --acentob: var(--seguridad);
+}
