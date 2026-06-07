@@ -1,0 +1,278 @@
+/**INDICE NICK**/
+.bsf.ind {
+    background-color: rgba(var(--fondo), 0.25);
+    border: 1px solid var(--border);
+    width: 750px;
+    border-radius: 28px;
+    padding: 40px 50px 10px;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    font-family: "Poppins";
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    --fondo: 5, 5, 5;
+    --dudoso: 255, 255, 255;
+}
+
+body.day .bsf.ind {
+    --fondo: 255, 255, 255;
+    --dudoso: 5, 5, 5;
+}
+
+.bsf.ind:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, var(--accent), transparent, var(--accent));
+    background-attachment: fixed;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.ind-h {
+    position: relative;
+    padding: 25px 35px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ind-hc {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 100%;
+    top: -175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.ind-hc:before,
+.ind-hc:after {
+    content: "";
+    border-radius: 100%;
+    position: absolute;
+}
+
+.ind-hc:before {
+    width: 180px;
+    height: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.ind-hc:after {
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ind-ha {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    background: linear-gradient(45deg, var(--accent), rgba(var(--fondo), 0.25));
+    margin: -52px auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ind-hf {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.ind-n {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.ind-n a {
+    padding: 7px 16px;
+    border-radius: 20px;
+    background: rgba(var(--fondo), 0.4);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    flex: auto;
+    text-align: center;
+    color: var(--ctext);
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-n a:hover {
+    background: rgba(var(--fondo), 0.7);
+    color: var(--accent);
+    transition: all 0.7s ease-in-out;
+}
+
+.bsf-tt {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 30px 0 20px;
+    opacity: 0.8;
+    font-weight: 800;
+    text-shadow: 1px 1px rgba(var(--fondo), 0.2);
+    margin-left: -20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bsf-tt span.dot-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    flex-shrink: 0;
+}
+
+.bsf-tt:after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.ind-p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px rgba(var(--fondo), 0.4), -1px -1px rgba(var(--fondo), 0.2);
+}
+
+.ind-pp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background: rgba(var(--fondo), 0.35);
+    text-decoration: none;
+    cursor: pointer;
+    width: 330px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pp:hover {
+    background: rgba(var(--fondo), 0.75);
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pf {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    outline: 1px solid rgba(var(--dudoso), 0.15);
+    outline-offset: 3px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pp:hover .ind-pf {
+    outline: 1px solid var(--accent);
+    outline-offset: 5px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pi {
+    flex: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pn {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ctext);
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pr {
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+    margin-top: 3px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pb {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pp:hover .ind-pb {
+    letter-spacing: 0.5px;
+    color: var(--ctext);
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pp.activo {
+    background: rgba(var(--fondo), 0.85);
+    box-shadow: 0 0 2px var(--accent);
+}
+
+.ind-pp.activo .ind-pb {
+    letter-spacing: 1.5px;
+    color: var(--ctext);
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pp.activo .ind-pf {
+    outline: 1px solid var(--accent);
+    outline-offset: 5px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ind-pie {
+    text-align: center;
+}
+
+.ind-pie svg {
+    opacity: 0.25;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.ind br{
+    display: none;
+}
