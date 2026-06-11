@@ -662,6 +662,7 @@ span.poste6-hh {
     text-align: justify;
     position: relative;
     --acentob: var(--acento);
+    letter-spacing: 0.5px;
 }
 
 .poste7-h {
@@ -743,6 +744,7 @@ span.poste6-hh {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
+    letter-spacing: 0.5px;
 }
 
 body.day .poste8,
@@ -844,6 +846,7 @@ body.day .poste2 {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     position: relative;
@@ -928,6 +931,7 @@ body.day .poste2 {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     position: relative;
@@ -1014,6 +1018,7 @@ body.day .poste2 {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     background: var(--bckg-2);
@@ -1186,6 +1191,7 @@ body.day .poste2 {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     background: var(--bckg-2);
@@ -1307,6 +1313,7 @@ body.day .poste2 {
 .e-sppp4-txt {
     margin: -25px auto;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     background: var(--bckg-1);
     border-radius: var(--radius);
@@ -1382,6 +1389,7 @@ body.day .poste2 {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     overflow: hidden;
@@ -1507,6 +1515,7 @@ body.day .e-sppp5-superior {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     --font: "Outfit";
     --letrab: "Hepta Slab";
@@ -1642,6 +1651,7 @@ body.day .e-sppp5-superior {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     background: var(--bckg-2);
@@ -1711,6 +1721,7 @@ body.day .e-sppp5-superior {
     line-height: 1.2rem;
     font-size: 0.85rem;
     font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
     text-align: justify;
     color: var(--ctext);
     border-radius: var(--radius);
@@ -1795,6 +1806,7 @@ body.day .e-sppp5-superior {
   line-height: 1.15rem;
   font-size: 0.8rem;
   font-family: arial, sans-serif;
+    letter-spacing: 0.5px;
   text-align: justify;
   position: relative;
   background: var(--bckg-2);
@@ -1964,7 +1976,8 @@ body.day .e-sppp5-superior {
   display: flex;
   flex-flow: wrap;
   position: relative;
-  font-family: arial;
+  font-family: arial, sans-serif;
+  letter-spacing: 0.5px;
   text-align: justify;
   background: var(--bckg-2);
   overflow: hidden;
