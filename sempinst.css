@@ -543,7 +543,9 @@ body.day .sstory-reply>input {
     margin: 10px auto 0;
     border-radius: 30px;
 }
-
+.sstory-cont img {
+    border-radius: 30px;
+}
 .sstory-cont>video {
     width: 405px;
     height: 525px;
