@@ -45,6 +45,10 @@ body {
   object-fit: cover;
 }
 
+.hissel-img img {
+    max-width: inherit !important;
+}
+
 .hissel-img {
   border: 1px solid var(--fondo-foro);
   outline: 1px solid var(--acento);
