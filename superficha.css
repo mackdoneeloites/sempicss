@@ -34,7 +34,7 @@
   .bsf-body {
       background-color: rgba(var(--fondo), 0.25);
       border: 1px solid var(--border);
-      width: 750px;
+      max-width: 750px;
       border-radius: 30px;
       padding: 40px 50px;
       margin-bottom: 20px;
