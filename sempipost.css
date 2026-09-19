@@ -2649,6 +2649,7 @@ font-family:Arial,sans-serif;
 color:var(--color-text);
 overflow:hidden;
 box-sizing:border-box;
+--font:Montserrat,sans-serif;
 }
 body.night .stop1{--bckg-3:#020202;}
 
