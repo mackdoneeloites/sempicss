@@ -2639,6 +2639,110 @@ body.day .post1:before {
   line-height: 18px;
 }
 
+/*Post nuevo 1*/
+.stop1{
+width:570px;
+margin:30px auto;
+background:var(--bckg-2);
+border:1px solid var(--bckg-3);
+font-family:Arial,sans-serif;
+color:var(--color-text);
+overflow:hidden;
+box-sizing:border-box;
+}
+body.night .stop1{--bckg-3:#020202;}
+
+.stop1 *{box-sizing:border-box;}
+
+.stop1 .stop1-head {
+min-height: 210px;
+position: relative;
+overflow: hidden;
+border-bottom: 1px solid var(--bckg-3);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 25px;
+font-family:Montserrat,sans-serif;
+font-weight: 600;
+}
+
+.stop1 .stop1-head>span{
+margin:0;
+width:430px;
+font-size:36px;
+line-height:34px;
+letter-spacing:-1px;
+text-transform:uppercase;
+}
+
+.stop1 .stop1-head>span u, .stop1 .stop1-head>span i, .stop1 .stop1-head>span b, .stop1 .stop1-head>span strong, .stop1
+.stop1-head>span strike{
+color:var(--acento);
+}
+
+.stop1 .stop1-head>smm{
+display:block;
+margin-top:10px;
+font-family:Lato,sans-serif;
+font-style:italic;
+font-size:11px;
+color:var(--acento);
+text-transform: lowercase;
+letter-spacing:1px;
+opacity:0.8;
+}
+
+.stop1 .stop1-body{
+padding:40px 45px;
+font-size:13.5px;
+font-family:arial, sans-serif;
+line-height:20px;
+text-align:justify;
+}
+
+.stop1 .stop1-mk{
+margin-bottom:25px;
+}
+.stop1 .stop1-mk, .stop1 .stop1-nd>span{
+display:flex;
+align-items:center;
+font-size:8px;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--acento);
+font-family:Lato,sans-serif;
+font-weight: 700;
+}
+
+.stop1 .stop1-mk:after{
+content:"";
+height:1px;
+flex:1;
+margin-left:15px;
+background:var(--bckg-3);
+}
+
+.stop1 .stop1-nd{
+display:grid;
+grid-template-columns:1fr auto;
+gap:13px;
+align-items:center;
+margin-top:35px;
+}
+
+.stop1 .stop1-nd:before{
+content:"";
+height:1px;
+background:var(--bckg-3);
+}
+
+.stop1 .stop1-nd>span{
+padding:7px 12px;
+}
+
 /**Extras**/
 .e-sppp8-txt u,
 .e-sppp7-txt u,
@@ -2654,7 +2758,7 @@ body.day .post1:before {
 .poste5-tx u,
 .poste2-tx u,
 .poste3-tx u,
-.poste4-tx u {
+.poste4-tx u, .stop1-body u {
     position: relative;
     background: var(--background-2);
     text-decoration: none;
@@ -2673,6 +2777,9 @@ body.day .post1:before {
     color: #777;
 }
 
+.stop1-body i,
+.stop1-body strike,
+.stop1-body a,
 .e-sppp8-txt i,
 .e-sppp8-txt strike,
 .e-sppp8-txt a,
@@ -2722,6 +2829,7 @@ body.day .post1:before {
     font-family: var(--font);
 }
 
+.stop1-body i,
 .e-sppp8-txt i,
 .e-sppp7-txt i,
 .e-sppp6-txt i,
@@ -2740,6 +2848,7 @@ body.day .post1:before {
     font-style: italic;
 }
 
+.stop1-body a,
 .e-sppp8-txt a,
 .e-sppp7-txt a,
 .e-sppp6-txt a,
@@ -2763,6 +2872,7 @@ body.day .post1:before {
     transition: all .7s ease-in-out;
 }
 
+.stop1-body a:hover, 
 .e-sppp8-txt a:hover,
 .e-sppp7-txt a:hover,
 .e-sppp6-txt a:hover,
@@ -2784,6 +2894,7 @@ body.day .post1:before {
 
 
 
+.stop1 br,
 .poste1 br,
 .post6 br,
 .post1 br,
@@ -2810,6 +2921,7 @@ body.day .post1:before {
     display: none;
 }
 
+.stop1-body br,
 .poste1-txt br,
 .post6-titulo br,
 .post6-txt br,
