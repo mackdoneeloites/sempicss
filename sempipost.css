@@ -2703,9 +2703,6 @@ line-height:20px;
 text-align:justify;
 }
 
-.stop1 .stop1-mk{
-margin-bottom:25px;
-}
 .stop1 .stop1-mk, .stop1 .stop1-nd>span{
 display:flex;
 align-items:center;
@@ -2730,7 +2727,6 @@ display:grid;
 grid-template-columns:1fr auto;
 gap:13px;
 align-items:center;
-margin-top:35px;
 }
 
 .stop1 .stop1-nd:before{
