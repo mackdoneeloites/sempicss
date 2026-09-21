@@ -258,11 +258,11 @@
     margin-top: 7px;
 }
 
-.sednit-facts>span {
+.sednit-facts>span,.sednit-sect>span {
     padding: 9px;
     background: var(--bckg-2);
     border-radius: 9px;
-    font-size: 10.5px;
+    font-size: 11.5px;
     letter-spacing: 1px;
 }
 
@@ -404,7 +404,7 @@
 }
 
 .sednit-text {
-    font-size: 11px;
+    font-size: 11.5px;
     line-height: 15px;
     margin: 0 5px;
 }
@@ -420,7 +420,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 8px;
+    font-size: 9px;
     opacity: .5;
 }
 
