@@ -26,7 +26,7 @@
     overflow: hidden;
     box-shadow: 4px 4px 0px var(--bckg-2), 0px 4px 0px var(--bckg-2);
     background: linear-gradient(160deg, var(--acento) 0%, var(--acentob) 50%, var(--acento) 100%);
-    --acentob: oklch(from var(--acento) calc(l + 0.1) c h);
+    --acentob: oklch(from var(--acento) calc(l + 0.1) c h)!important;
 }
 
 .kub:hover {
