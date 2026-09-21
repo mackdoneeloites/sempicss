@@ -16,6 +16,10 @@
     font-family: "Nunito", sans-serif;
 }
 
+.sednit.mins .sednit-card {
+    color: #eee;
+}
+
 .sednit-nav {
     height: 55px;
     padding: 0 18px;
