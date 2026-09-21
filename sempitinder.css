@@ -280,6 +280,11 @@ body.day .sednit-dis {
 .sednit-sect>span {
     background: transparent;
 }
+.sednit-facts>span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 .sednit-acts.full {
     padding: 0px 0 17px;
