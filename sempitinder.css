@@ -200,6 +200,10 @@ body.day .sednit-dis {
     transition: 0.7s ease-in-out;
 }
 
+.sednit-btn.null>i {
+    margin-top: 4px;
+}
+
 .sednit-btn.yes {
     color: #368722;
     transition: 0.7s ease-in-out;
