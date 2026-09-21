@@ -1,0 +1,468 @@
+.sednit {
+    width: 425px;
+    background: linear-gradient(0deg, var(--bckg-2), var(--bckg-3), var(--bckg-2));
+    border: 8px solid var(--bckg-3);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    max-height: 815px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+.sednit-nav {
+    height: 55px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bckg-3);
+}
+
+.sednit-logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--acento);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sednit-nav>span {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sednit-card {
+    margin: 15px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .12);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sednit-card.comple {
+    margin: 8px 8px 0;
+    height: 350px;
+}
+
+.sednit-card:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom,
+            transparent 45%,
+            rgba(0, 0, 0, .3) 55%,
+            rgba(0, 0, 0, .8) 100%);
+}
+
+.sednit-dis {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+    padding: 6px 10px;
+    background: var(--bckg-1);
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.sednit-info {
+    position: absolute;
+    z-index: 3;
+    left: 22px;
+    right: 22px;
+    bottom: 20px;
+}
+
+.sednit-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sednit-name hh {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.sednit-name span {
+    font-size: 20px;
+}
+
+.sednit-veri {
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--acento);
+    font-size: 8px !important;
+}
+
+.sednit-loca {
+    margin-top: 5px;
+    font-size: 10px;
+    opacity: .9;
+}
+
+.sednit-bio {
+    margin-top: 8px;
+    font-size: 11.5px;
+    line-height: 15px;
+    opacity: .92;
+}
+
+.sednit-bio>b,
+.sednit-sect>b {
+    display: block;
+    text-transform: uppercase;
+    color: var(--acento);
+    margin-top: 3px;
+}
+
+.sednit-bio>b,
+.sednit-sect.look>b {
+    margin-bottom: 5px;
+}
+
+.sednit-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.sednit-tags span {
+    padding: 5px 8px;
+    border: 1px solid;
+    border-radius: 12px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.sednit-acts {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: -15px 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+.sednit-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bckg-3);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .12);
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sednit-btn.no {
+    color: #db2b2b;
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-btn.null {
+    width: 41px;
+    height: 41px;
+    color: var(--acento);
+    font-size: 18px;
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-btn.yes {
+    color: #368722;
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-btn.yes:hover {
+    background: #368722;
+    color: var(--bckg-3);
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-btn.null:hover {
+    background: var(--acento);
+    color: var(--bckg-3);
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-btn.no:hover {
+    background: #db2b2b;
+    color: var(--bckg-3);
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-nav.buts {
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.sednit-nav>i {
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-nav>i:hover {
+    opacity: 0.5;
+    transition: 0.7s ease-in-out;
+}
+
+.sednit-main {
+    margin-top: -15px;
+    position: relative;
+    z-index: 2;
+    padding: 22px 20px;
+    background: var(--bckg-1);
+    border-radius: 18px 18px 0 0;
+}
+
+.sednit-main .sednit-loca,
+.sednit-main .sednit-bio,
+.sednit-sect {
+    margin: 0 5px;
+    padding: 6px 2.5px 8px;
+    border-bottom: 1px solid var(--bckg-3);
+}
+
+.sednit-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 7px;
+}
+
+.sednit-facts>span {
+    padding: 9px;
+    background: var(--bckg-2);
+    border-radius: 9px;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+}
+
+.sednit-acts.full {
+    padding: 5px 0 10px;
+    margin: 0;
+    background: var(--bckg-1);
+}
+
+.sednit-sect .sednit-tags span:hover {
+    color: var(--acento);
+    transition: 0.7s ease-in-out;
+}
+
+.sednit.match {
+    width: 380px;
+    background: linear-gradient(160deg, var(--acento), var(--acentob), var(--acento));
+    border-radius: 30px;
+    padding: 10px;
+    color: #eee;
+}
+
+.sednit-heart {
+    position: absolute;
+    right: -20px;
+    top: -38px;
+    font-size: 120px;
+    opacity: .08;
+}
+
+.sednit-title {
+    text-align: center;
+}
+
+.sednit-title hh {
+    margin: 10px 0 0;
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: -1px;
+    display: block;
+    font-weight: 800;
+}
+
+.sednit-title>span {
+    margin: 5px 0 22px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+.sednit-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sednit-photo {
+    width: 92px;
+    height: 92px;
+    border: 4px solid #eee;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .18);
+}
+
+.sednit-photo.one {
+    margin-right: -13px;
+    z-index: 2;
+}
+
+.sednit-photo.two {
+    margin-left: -13px;
+}
+
+.sednit-minih {
+    z-index: 4;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    color: var(--acento);
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+.sednit-names {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.sednit-message {
+    margin: 10px auto 5px;
+    width: 210px;
+    padding: 9px;
+    text-align: center;
+    background: #eee;
+    border-radius: 18px;
+    color: var(--acento);
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.sednit.notis {
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.sednit-swit {
+    position: relative;
+    display: grid;
+    grid-template-columns: 65px 1fr 40px;
+    gap: 12px;
+    align-items: center;
+}
+
+.sednit-nava {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 100%;
+    border: 3px solid var(--acento);
+    background: var(--acento);
+}
+
+.sednit-type {
+    margin-bottom: 4px;
+    font-size: 7px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: var(--acento);
+}
+
+.sednit-text {
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0 5px;
+}
+
+.sednit-text b {
+    font-weight: 800;
+    color: var(--acento);
+}
+
+.sednit-preview {
+    margin-top: 4px;
+    max-width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 8px;
+    opacity: .5;
+}
+
+.sednit-action {
+    text-align: center;
+}
+
+.sednit-icon {
+    width: 37px;
+    height: 37px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: var(--bckg-1);
+    color: var(--acento);
+    font-size: 15px;
+}
+
+.sednit-time {
+    margin-top: 5px;
+    font-size: 6px;
+}
+
+.sednit-menss {
+    margin: 5px 10px;
+    display: block;
+    position: relative;
+    text-align: justify;
+    padding: 5px 9px;
+    background: var(--bckg-2);
+    border-radius: 9px;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+}
+
+.sednit br {
+    display: none;
+}
+
+.sednit-menss br,
+.sednit-bio>span br {
+    display: inline;
+}
