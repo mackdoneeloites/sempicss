@@ -391,6 +391,10 @@ body.day .sednit-dis {
     justify-content: flex-start;
 }
 
+body.day .sednit.notis {
+    background: linear-gradient(314deg, var(--bckg-2), var(--bckg-1), var(--bckg-2));
+}
+
 .sednit-swit {
     position: relative;
     display: grid;
