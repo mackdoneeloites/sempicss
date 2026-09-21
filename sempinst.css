@@ -233,6 +233,7 @@ body {
 #tab-tagged:checked~.profile-tabs label[for="tab-tagged"] {
     border-top-color: var(--acento);
     color: var(--acento);
+    padding-right:0;
 }
 
 .tab-content {
@@ -1029,6 +1030,7 @@ body.day .dfchat-m-area>input {
     pointer-events: auto;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .18);
     padding-bottom: 2px;
+    padding-right:0;
 }
 
 .spost-arrows span{
@@ -1058,12 +1060,14 @@ body.day .dfchat-m-area>input {
     background:rgba(255,255,255,.65);
     cursor:pointer;
     box-shadow:0 1px 3px rgba(0,0,0,.25);
+    padding-right:0;
 }
 
 #post1-img1:checked ~ .spost-dots label:nth-child(1),
 #post1-img2:checked ~ .spost-dots label:nth-child(2),
 #post1-img3:checked ~ .spost-dots label:nth-child(3){
     background:var(--acento);
+    padding-right:0;
 }
 .spost-carousel .pspost-actions{
     position:absolute;
