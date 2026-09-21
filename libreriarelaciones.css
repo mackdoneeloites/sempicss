@@ -123,6 +123,7 @@
     position: relative;
     color: var(--gold);
     mix-blend-mode: screen;
+    text-shadow:none;
 }
 
 .kub-ornament:before {
