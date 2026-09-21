@@ -97,7 +97,7 @@
     text-align: center;
     line-height: 1.3;
     letter-spacing: 0.05em;
-    margin-top:;5px
+    margin-top:5px;
 }
 
 .kub-des {
@@ -152,16 +152,16 @@
 /**Clases**/
 .civil,
 .ciudadano {
-    --acento: #597593;
+    --acento: #597593!important;
 }
 
 .cele,
 .celebridad {
-    --acento: #5c5173;
+    --acento: #5c5173!important;
 }
 
 .sanidad {
-    --acento: #518772;
+    --acento: #518772!important;
 }
 
 .polis,
@@ -181,7 +181,7 @@
 
 .pesca,
 .pescador {
-    --acento: #4d848d;
+    --acento: #4d848d!important;
 }
 
 .petro,
@@ -190,14 +190,14 @@
 }
 
 .sami {
-    --acento: #754b59;
+    --acento: #754b59!important;
 }
 
 .pnj,
 .npc {
-    --acento: #647277;
+    --acento: #647277!important;
 }
 
 .comercio {
-    --acento: #877449;
+    --acento: #877449!important;
 }
