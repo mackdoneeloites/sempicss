@@ -82,6 +82,7 @@
 }
 body.day .sednit-dis {
     color:#333;
+    text-shadow:none;
 }
 .sednit-info {
     position: absolute;
