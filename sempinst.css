@@ -936,3 +936,136 @@ body.day .dfchat-m-area>input {
 .snots-info br{
   display: inline;
 }
+
+/*CARRUSEL POST INSTAGRAM*/
+
+.spost-carousel{
+    position:relative;
+    overflow:hidden;
+}
+
+.spost-carousel > input{
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
+}
+
+.spost-slides{
+    width:300%;
+    height:100%;
+    display:flex;
+    transition:transform .45s ease;
+}
+
+.spost-slide{
+    width:33.333%;
+    height:100%;
+    flex-shrink:0;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+#post1-img1:checked ~ .spost-slides{
+    transform:translateX(0);
+}
+
+#post1-img2:checked ~ .spost-slides{
+    transform:translateX(-33.333%);
+}
+
+#post1-img3:checked ~ .spost-slides{
+    transform:translateX(-66.666%);
+}
+
+.spost-counter {
+    position: absolute;
+    right: 12px;
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, .45);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 10px;
+    z-index: 10;
+    bottom: 34px;
+}
+
+.spost-counter span{
+    display:none;
+}
+
+#post1-img1:checked ~ .spost-counter .count1,
+#post1-img2:checked ~ .spost-counter .count2,
+#post1-img3:checked ~ .spost-counter .count3{
+    display:block;
+}
+
+.spost-arrows{
+    position:absolute;
+    z-index:10;
+    left:0;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    display:none;
+    justify-content:space-between;
+    padding:0 10px;
+    pointer-events:none;
+}
+
+.spost-arrows label {
+    width: 28px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, .82);
+    color: #333;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .18);
+    padding-bottom: 2px;
+}
+
+.spost-arrows span{
+    width:28px;
+}
+
+#post1-img1:checked ~ .arrows1,
+#post1-img2:checked ~ .arrows2,
+#post1-img3:checked ~ .arrows3{
+    display:flex;
+}
+
+.spost-dots{
+    position:absolute;
+    z-index:10;
+    left:50%;
+    bottom:11px;
+    transform:translateX(-50%);
+    display:flex;
+    gap:5px;
+}
+
+.spost-dots label{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:rgba(255,255,255,.65);
+    cursor:pointer;
+    box-shadow:0 1px 3px rgba(0,0,0,.25);
+}
+
+#post1-img1:checked ~ .spost-dots label:nth-child(1),
+#post1-img2:checked ~ .spost-dots label:nth-child(2),
+#post1-img3:checked ~ .spost-dots label:nth-child(3){
+    background:var(--acento);
+}
+.spost-carousel .pspost-actions{
+    position:absolute;
+    z-index:12;
+}
