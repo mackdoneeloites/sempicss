@@ -1614,3 +1614,748 @@ p.spbp3-hq {
 .spbp3-ct br {
     display: inline;
 }
+
+/**/
+.tseuq {
+    width: 580px;
+    margin: 30px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: var(--bckg-2);
+    font-family: 'Manrope', sans-serif;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.tseuq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--bckg-3);
+    position: relative;
+    flex-direction: column;
+}
+
+.tseuq-title span {
+    display: block;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tseuq-title b {
+    display: block;
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--acento);
+    text-align: right;
+    width: stretch;
+}
+
+.tseuq-main {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+.tseuq-photo {
+    width: 180px;
+    height: 240px;
+    flex-shrink: 0;
+    position: relative;
+    border: 2px solid var(--bckg-3);
+}
+
+.tseuq-photo:after {
+    content: "OPEN";
+    position: absolute;
+    right: -18px;
+    bottom: 18px;
+    padding: 5px 10px;
+    border: 2px solid var(--acento);
+    color: var(--acento);
+    background: var(--bckg-2);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transform: rotate(-8deg);
+}
+
+.tseuq-data {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tseuq-field {
+    flex: auto;
+    min-width: 35px;
+}
+
+.tseuq-field smm {
+    display: block;
+    color: var(--acento);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.tseuq-field span {
+    display: block;
+    margin-top: 1px;
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.tseuq-field.tseuq-name {
+    width: stretch;
+}
+
+.tseuq-field.tseuq-name span {
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.tseuq-about {
+    height: 100px;
+    overflow: auto;
+    margin-top: 4px;
+    padding: 9px 8px 0 0;
+    border-top: 1px solid var(--bckg-3);
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    font-family: arial, sans-serif;
+}
+
+.tseuq-about::-webkit-scrollbar {
+    width: 2px;
+}
+
+.tseuq-about::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+
+.tseuq1 {
+    width: 580px;
+    height: 400px;
+    margin: 15px auto;
+    padding: 24px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: var(--bckg-2);
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.tseuq1-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    border-bottom: 4px solid var(--acento);
+    font-family: 'DM Mono', monospace;
+    font-size: 6px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tseuq1-title {
+    margin: 13px 0 8px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 43px;
+    line-height: 39px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.tseuq1-title>span,
+.tseuq1-title>b,
+.tseuq1-title>em,
+.tseuq1-title>i,
+.tseuq1-title>strong,
+.tseuq1-title>strike {
+    color: var(--acento);
+}
+
+.tseuq1-photo {
+    width: 205px;
+    height: 230px;
+    position: absolute;
+    right: 25px;
+    bottom: 24px;
+    padding: 7px 7px 27px;
+    background: #f6f3ed;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, .15);
+    transform: rotate(3deg);
+}
+
+.tseuq1-photo>div {
+    width: 100%;
+    height: 100%;
+    background: center/cover;
+}
+
+.tseuq1-photo>span {
+    display: block;
+    padding-top: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--acento);
+}
+
+.tseuq1-info {
+    width: 285px;
+    margin-top: 15px;
+}
+
+.tseuq1-label {
+    display: inline-block;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    background: var(--acento);
+    color: #eee;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.tseuq1-info>span {
+    margin: 0 0 10px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 24px;
+    line-height: 23px;
+    font-weight: 400;
+    display: block;
+}
+
+.tseuq1-text {
+    height: 135px;
+    overflow: auto;
+    padding-right: 8px;
+    font-family: arial, monospace;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.tseuq1-text::-webkit-scrollbar {
+    width: 2px;
+}
+
+.tseuq1-text::-webkit-scrollbar-thumb {
+    background: var(--acento);
+}
+
+.tseuq1-code {
+    position: absolute;
+    left: 24px;
+    bottom: 25px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tseuq1-code:before {
+    content: "●";
+    margin-right: 6px;
+    color: var(--accent);
+}
+
+.tseuq1:nth-child(2n) .tseuq1-photo {
+    width: 205px;
+    height: 230px;
+    position: absolute;
+    left: 25px;
+    bottom: 24px;
+    padding: 7px 7px 27px;
+    background: #f6f3ed;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, .15);
+    transform: rotate(-3deg);
+}
+
+.tseuq1:nth-child(2n) .tseuq1-info {
+    position: absolute;
+    right: 15px;
+    text-align: right;
+}
+
+.tseuq1:nth-child(2n) .tseuq1-title {
+    text-align: right;
+}
+
+.tseuq1:nth-child(2n) .tseuq1-code {
+    left: auto;
+    right: 15px;
+}
+
+.tseuq2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tseuq2-body {
+    width: 570px;
+    height: 390px;
+    margin: 5px auto;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: var(--bckg-2);
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    font-family: 'Courier Prime', sans-serif;
+}
+
+.tseuq2-body:nth-child(2n) {
+    flex-direction: ;
+}
+
+.tseuq2-num {
+    position: absolute;
+    right: -12px;
+    top: -50px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 190px;
+    line-height: 1;
+    color: var(--acento);
+    opacity: 0.2;
+}
+
+.tseuq2-body:nth-child(2n) .tseuq2-num {
+    left: -12px;
+}
+
+.tseuq2-top {
+    height: 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid var(--brd-c);
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tseuq2-body:nth-child(2n) .tseuq2-top {
+    flex-direction: row-reverse;
+}
+
+.tseuq2-top span:last-child {
+    color: var(--acento);
+}
+
+.tseuq2-center {
+    height: 310px;
+    display: flex;
+    gap: 22px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.tseuq2-body:nth-child(2n) .tseuq2-center {
+    flex-direction: row-reverse;
+}
+
+.tseuq2-photo {
+    width: 205px;
+    height: 290px;
+    flex-shrink: 0;
+    position: relative;
+    border: 1px solid var(--brd-c);
+}
+
+.tseuq2-photo:before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 8px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--acento);
+    z-index: -1;
+}
+
+.tseuq2-body:nth-child(2n) .tseuq2-photo:before {
+    right: -8px;
+    left: auto;
+}
+
+.tseuq2-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tseuq2-kicker {
+    margin-bottom: 4px;
+    color: var(--acento);
+    font-size: 6px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tseuq2-info>span {
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-size: 35px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.tseuq2-role {
+    margin-top: 5px;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tseuq2-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 13px 0;
+}
+
+.tseuq2-tags span {
+    padding: 4px 7px;
+    background: var(--brd-c);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.tseuq2-text {
+    overflow: auto;
+    padding-right: 8px;
+    height: 180px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: justify;
+    font-family: arial, sans-serif;
+    display: block;
+    width: stretch;
+}
+
+.tseuq2-text::-webkit-scrollbar {
+    width: 3px;
+}
+
+.tseuq2-text::-webkit-scrollbar-thumb {
+    background: var(--acento);
+}
+
+
+.tseuq3 {
+    width: 615px;
+    height: 450px;
+    margin: 30px auto;
+    padding: 23px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    font-family: 'Courier Prime', sans-serif;
+    background: var(--bckg-2);
+}
+
+body.day .tseuq3 {
+    --bck: #dddcd4;
+}
+
+body.night .tseuq3 {
+    --bck: #252423;
+}
+
+.tseuq3-title {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    z-index: 5;
+    padding: 5px 12px;
+    background: var(--bck);
+    transform: rotate(-2deg);
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tseuq3-photo {
+    width: 205px;
+    height: 250px;
+    position: absolute;
+    left: 47px;
+    top: 60px;
+    z-index: 3;
+    padding: 9px 9px 32px;
+    background: #e9e5dc;
+    transform: rotate(-3deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .15);
+}
+
+.tseuq3-photo div {
+    width: 100%;
+    height: 100%;
+}
+
+.tseuq3-photo span {
+    display: block;
+    padding-top: 10px;
+    color: var(--acento);
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.tseuq3-pin,
+.tseuq3-pin2,
+.tseuq3-pin3 {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    z-index: 8;
+    border-radius: 50%;
+    background: var(--acentob);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+}
+
+.tseuq3-pin {
+    left: 142px;
+    top: 55px;
+}
+
+.tseuq3-pin2 {
+    left: 343px;
+    top: 113px;
+}
+
+.tseuq3-pin3 {
+    left: 305px;
+    top: 345px;
+}
+
+.tseuq3-line {
+    height: 2px;
+    position: absolute;
+    z-index: 2;
+    background: var(--acento);
+    transform-origin: left center;
+    opacity: .85;
+}
+
+.tseuq3-line.l1 {
+    width: 205px;
+    left: 155px;
+    top: 64px;
+    transform: rotate(15deg);
+}
+
+.tseuq3-line.l2 {
+    width: 243px;
+    left: 350px;
+    top: 110px;
+    transform: rotate(100deg);
+}
+
+.tseuq3-line.l3 {
+    width: 195px;
+    left: 225px;
+    top: 265px;
+    transform: rotate(45deg);
+}
+
+.tseuq3-note {
+    position: absolute;
+    z-index: 4;
+    background: var(--bck);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .15);
+}
+
+.tseuq3-name {
+    width: 210px;
+    right: 25px;
+    top: 76px;
+    padding: 16px;
+    transform: rotate(1deg);
+}
+
+.tseuq3-name smm {
+    color: var(--acento);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.tseuq3-name hh {
+    margin: 4px 0 8px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.tseuq3-name span {
+    font-size: 11px;
+    line-height: 15px;
+    display: block;
+}
+
+.tseuq3-desc {
+    width: 245px;
+    height: 135px;
+    right: 30px;
+    bottom: 28px;
+    padding: 15px;
+    transform: rotate(-1deg);
+}
+
+.tseuq3-desc b {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tseuq3-scroll {
+    height: 115px;
+    overflow: auto;
+    padding-right: 6px;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: justify;
+    font-family: arial, sans-serif;
+}
+
+.tseuq3-scroll::-webkit-scrollbar {
+    width: 2px;
+}
+
+.tseuq3-scroll::-webkit-scrollbar-thumb {
+    background: var(--acento);
+}
+
+.tseuq3-label {
+    position: absolute;
+    left: 35px;
+    bottom: 29px;
+    z-index: 5;
+    padding: 5px 8px;
+    background: var(--acento);
+    color: #eee;
+    transform: rotate(2deg);
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.tseuq br,
+.tseuq1 br,
+.tseuq2 br,
+.tseuq3 br {
+    display: none;
+}
+
+.tseuq3-scroll br,
+.tseuq2-text br,
+.tseuq1-text br,
+.tseuq-about br {
+    display: inline;
+}
+
+.tseuq3-scroll>span,
+.tseuq2-text>span,
+.tseuq1-text>span,
+.tseuq-about>span {
+    background: var(--acento);
+    color: #eee;
+    padding: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.tseuq-about>strike,
+.tseuq-about>i,
+.tseuq-about>b,
+.tseuq1-text>strike,
+.tseuq1-text>i,
+.tseuq1-text>b,
+.tseuq2-text>strike,
+.tseuq2-text>i,
+.tseuq2-text>b,
+.tseuq3-scroll>strike,
+.tseuq3-scroll>i,
+.tseuq3-scroll>b {
+    color: var(--acento);
+}
+
+.tseuq-about>a,
+.tseuq1-text>a,
+.tseuq2-text>a,
+.tseuq3-scroll>a {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
+    background-size: 100%;
+    font-weight: 800;
+    transition: .7s ease-in-out;
+}
+
+.tseuq-about>a:hover,
+.tseuq1-text>a:hover,
+.tseuq2-text>a:hover,
+.tseuq3-scroll>a:hover {
+    background-size: 500%;
+    transition: .7s ease-in-out;
+}
+
+.tseuq-about>u,
+.tseuq1-text>u,
+.tseuq2-text>u,
+.tseuq3-scroll>u {
+    position: relative;
+    background: var(--bckg-3);
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--acento), var(--acentob)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
