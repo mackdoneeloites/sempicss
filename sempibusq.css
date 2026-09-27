@@ -2279,24 +2279,175 @@ body.night .tseuq3 {
     text-transform: uppercase;
 }
 
+.tseuq4 {
+    width: 600px;
+    margin: 10px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    background: var(--bckg-2);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.tseuq4-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.tseuq4-head hh {
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.tseuq4-head span {
+    color: var(--acento);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tseuq4-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+.tseuq4-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px;
+    width: 100%;
+}
+
+.tseuq4-meta {
+    flex: 1;
+}
+
+.tseuq4-meta b {
+    display: block;
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tseuq4-player {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tseuq4-play {
+    width: 23px;
+    height: 25px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    padding-left: 2px;
+    transition: all .7s ease-in-out;
+    cursor: pointer;
+}
+
+.tseuq4-play:hover {
+    opacity: 0.5;
+    transition: all .7s ease-in-out;
+}
+
+.tseuq4-track {
+    height: 2px;
+    flex: 1;
+    position: relative;
+    background: #444;
+}
+
+.tseuq4-track:before {
+    content: "";
+    width: 38%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, var(--acento), var(--acentob));
+}
+
+.tseuq4-track:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 38%;
+    top: -1.5px;
+    border-radius: 50%;
+    background: var(--color-text);
+}
+
+.tseuq4-time {
+    font-size: 7px;
+}
+
+.tseuq4-info {
+    margin: 0 15px;
+    padding: 15px 0 15px;
+    border-top: 1px solid var(--brd-c);
+}
+
+.tseuq4-text {
+    font-size: 13px;
+    line-height: 17px;
+    font-family: arial, sans-serif;
+    text-align: justify;
+}
+
+.tseuq4-tags {
+    display: flex;
+    gap: 5px;
+    margin-top: 9px;
+}
+
+.tseuq4-tags span {
+    padding: 2px 6px;
+    border: 1px solid var(--acentob);
+    color: var(--acento);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
 .tseuq br,
 .tseuq1 br,
 .tseuq2 br,
-.tseuq3 br {
+.tseuq3 br,
+.tseuq4 br {
     display: none;
 }
 
 .tseuq3-scroll br,
 .tseuq2-text br,
 .tseuq1-text br,
-.tseuq-about br {
+.tseuq-about br,
+.tseuq4-text br {
     display: inline;
 }
 
 .tseuq3-scroll>span,
 .tseuq2-text>span,
 .tseuq1-text>span,
-.tseuq-about>span {
+.tseuq-about>span,
+.tseuq4-text>span {
     background: var(--acento);
     color: #eee;
     padding: 0 5px;
@@ -2316,14 +2467,17 @@ body.night .tseuq3 {
 .tseuq2-text>b,
 .tseuq3-scroll>strike,
 .tseuq3-scroll>i,
-.tseuq3-scroll>b {
+.tseuq3-scroll>b,
+.tseuq4-text>strike,
+.tseuq4-text>i.tseuq4-text>b {
     color: var(--acento);
 }
 
 .tseuq-about>a,
 .tseuq1-text>a,
 .tseuq2-text>a,
-.tseuq3-scroll>a {
+.tseuq3-scroll>a,
+.tseuq4-text>a {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
@@ -2335,7 +2489,8 @@ body.night .tseuq3 {
 .tseuq-about>a:hover,
 .tseuq1-text>a:hover,
 .tseuq2-text>a:hover,
-.tseuq3-scroll>a:hover {
+.tseuq3-scroll>a:hover,
+.tseuq4-text>a:hover {
     background-size: 500%;
     transition: .7s ease-in-out;
 }
@@ -2343,7 +2498,8 @@ body.night .tseuq3 {
 .tseuq-about>u,
 .tseuq1-text>u,
 .tseuq2-text>u,
-.tseuq3-scroll>u {
+.tseuq3-scroll>u,
+.tseuq4-text>u {
     position: relative;
     background: var(--bckg-3);
     text-decoration: none;
