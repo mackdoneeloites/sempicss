@@ -1618,7 +1618,7 @@ p.spbp3-hq {
 /**/
 .tseuq {
     width: 580px;
-    margin: 30px auto;
+    margin: 10px auto;
     padding: 25px;
     box-sizing: border-box;
     position: relative;
@@ -1974,7 +1974,7 @@ p.spbp3-hq {
     height: 310px;
     display: flex;
     gap: 22px;
-    padding-top: 20px;
+    padding-top: 10px;
     position: relative;
     z-index: 2;
 }
@@ -2079,7 +2079,7 @@ p.spbp3-hq {
 .tseuq3 {
     width: 615px;
     height: 450px;
-    margin: 30px auto;
+    margin: 10px auto;
     padding: 23px;
     position: relative;
     overflow: hidden;
