@@ -1741,7 +1741,8 @@ p.spbp3-hq {
 }
 
 .tseuq-about::-webkit-scrollbar {
-    width: 2px;
+    width: 3px!important;
+    height: 3px!important;
 }
 
 .tseuq-about::-webkit-scrollbar-thumb {
@@ -1811,7 +1812,7 @@ p.spbp3-hq {
 
 .tseuq1-photo>span {
     display: block;
-    padding-top: 8px;
+    padding-top: 5px;
     font-family: 'DM Mono', monospace;
     font-size: 8px;
     font-weight: 600;
@@ -1858,7 +1859,8 @@ p.spbp3-hq {
 }
 
 .tseuq1-text::-webkit-scrollbar {
-    width: 2px;
+    width: 3px!important;
+    height: 3px!important;
 }
 
 .tseuq1-text::-webkit-scrollbar-thumb {
@@ -2065,7 +2067,8 @@ p.spbp3-hq {
 }
 
 .tseuq2-text::-webkit-scrollbar {
-    width: 3px;
+    width: 3px!important;
+    height: 3px!important;
 }
 
 .tseuq2-text::-webkit-scrollbar-thumb {
@@ -2258,7 +2261,8 @@ body.night .tseuq3 {
 }
 
 .tseuq3-scroll::-webkit-scrollbar {
-    width: 2px;
+    width: 3px!important;
+    height: 3px!important;
 }
 
 .tseuq3-scroll::-webkit-scrollbar-thumb {
