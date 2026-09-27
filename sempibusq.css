@@ -2505,7 +2505,7 @@ body.night .tseuq3 {
 .tseuq3-scroll>u,
 .tseuq4-text>u {
     position: relative;
-    background: var(--bckg-3);
+    background: var(--bckg-1);
     text-decoration: none;
     border-width: 2px;
     border-style: solid;
