@@ -3976,7 +3976,7 @@ body.day .firma32 {
 /**FIRMA 043**/
 .amrif1{
   width:350px;
-  height:180px;
+  height:200px;
   margin:10px auto;
   position:relative;
   background:var(--bckg-3);
@@ -4007,7 +4007,7 @@ body.day .firma32 {
 .amrif1-word{
   position:absolute;
   z-index:3;
-  left:-10px;
+  left:10px;
   top:40%;
   padding:5px 8px;
   background:var(--bckg-3);
@@ -4015,6 +4015,7 @@ body.day .firma32 {
   font-size:17px;
   letter-spacing:4px;
   text-transform:uppercase;
+    color:var(--acento);
 }
 
 .amrif1-text {
@@ -4083,10 +4084,11 @@ body.day .firma32 {
   font-size:8px;
   letter-spacing:1.5px;
   text-transform:uppercase;
+  line-height: 10px;
 }
 
 .amrif2-top{top:-1px;}
-.amrif2-bottom{bottom:-5px;}
+.amrif2-bottom{bottom:-2px;}
 
 .amrif2-word{
   position:absolute;
@@ -4100,8 +4102,9 @@ body.day .firma32 {
   line-height:1;
   font-style:italic;
   transform:rotate(90deg);
-  text-shadow: 1px 1px var(--bckg-1),-1px -1px var(--bckg-1);
 }
+
+
 /*Kieran firma*/
 .kier {
   margin: 10px auto;
