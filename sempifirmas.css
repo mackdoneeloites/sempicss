@@ -3974,9 +3974,134 @@ body.day .firma32 {
 }
 
 /**FIRMA 043**/
+.amrif1{
+  width:350px;
+  height:180px;
+  margin:10px auto;
+  position:relative;
+  background:var(--bckg-3);
+  --acento: var(--accent);
+  --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.amrif1-img{
+  position:absolute;
+  inset:12px;
+  overflow:hidden;
+}
+
+.amrif1-img>div{
+  width:100%;
+  height:100%;
+  background:center 35%/cover;
+  filter:grayscale(.85) brightness(.45);
+  transition:all .6s ease;
+}
+
+.amrif1:hover .amrif1-img>div{
+  transform:scale(1.08);
+  filter:grayscale(0) brightness(.8);
+  transition:all .6s ease;
+}
+
+.amrif1-word{
+  position:absolute;
+  z-index:3;
+  left:-10px;
+  top:40%;
+  padding:5px 8px;
+  background:var(--bckg-3);
+  font-family:'Oswald',sans-serif;
+  font-size:17px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.amrif1-text {
+    position: absolute;
+    z-index: 3;
+    right: 24px;
+    bottom: 23px;
+    width: 170px;
+    color: #eee;
+    font-family: 'Poppins', monospace;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.0);
+    padding: 5px;
+  transition:all .6s ease;
+}
+.amrif1:hover .amrif1-text {
+    background: rgba(0, 0, 0, 0.7);
+  transition:all .6s ease;
+}
+
+.amrif1-text b{
+  color:var(--acento);
+}
+ 
 /**FIRMA 043**/
+.amrif2{
+  width:380px;
+  height:190px;
+  margin:35px auto;
+  position:relative;
+  --acento: var(--accent);
+  --acentob: hsl(from var(--acento) calc(h + 25) s l);
+  box-sizing:border-box;
+}
 
+.amrif2:before{
+  content:"";
+  width:315px;
+  height:175px;
+  position:absolute;
+  left:0;
+  top:7px;
+  border:1px solid var(--acento);
+}
 
+.amrif2-img{
+  width:310px;
+  height:160px;
+  position:absolute;
+  left:12px;
+  top:18px;
+}
+
+.amrif2-top,
+.amrif2-bottom{
+  position:absolute;
+  z-index:3;
+  left:18px;
+  padding:2px 7px;
+  background:var(--bckg-1);
+  font-family:'Poppins', sans-serif;
+  font-size:8px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.amrif2-top{top:-1px;}
+.amrif2-bottom{bottom:-5px;}
+
+.amrif2-word{
+  position:absolute;
+  z-index:4;
+  right:-25px;
+  top:80px;
+  width:165px;
+  color:var(--acento);
+  font-family:'Instrument Serif',serif;
+  font-size:47px;
+  line-height:1;
+  font-style:italic;
+  transform:rotate(90deg);
+  text-shadow: 1px 1px var(--bckg-1),-1px -1px var(--bckg-1);
+}
 /*Kieran firma*/
 .kier {
   margin: 10px auto;
