@@ -3986,7 +3986,7 @@ body.day .firma32 {
 
 .amrif1-img{
   position:absolute;
-  inset:12px;
+  inset:10px;
   overflow:hidden;
 }
 
@@ -4007,15 +4007,16 @@ body.day .firma32 {
 .amrif1-word{
   position:absolute;
   z-index:3;
-  left:10px;
+  left:9px;
   top:40%;
   padding:5px 8px;
   background:var(--bckg-3);
   font-family:'Oswald',sans-serif;
   font-size:17px;
-  letter-spacing:4px;
+  letter-spacing:3px;
   text-transform:uppercase;
-    color:var(--acento);
+  color:var(--acento);
+  font-weight: 700;
 }
 
 .amrif1-text {
