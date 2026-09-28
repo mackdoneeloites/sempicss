@@ -952,7 +952,7 @@ body.day .dfchat-m-area>input {
 }
 
 .spost-slides{
-    width:300%;
+    width:calc(410px * 3);
     height:100%;
     display:flex;
     transition:transform .45s ease;
