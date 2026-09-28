@@ -959,7 +959,7 @@ body.day .dfchat-m-area>input {
 }
 
 .spost-slide{
-    width:33.333%;
+    width:410px;
     height:100%;
     flex-shrink:0;
     background-size:cover;
