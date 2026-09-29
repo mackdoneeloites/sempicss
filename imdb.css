@@ -195,10 +195,11 @@
 }
 
 .mdb-person hh {
-    margin: 9px 0;
+    margin: 5px 0 6px;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: -1.2px;
+    display: block;
 }
 
 .mdb-known {
@@ -220,7 +221,7 @@
     background: #555;
 }
 
-.mdb-bio {
+p.mdb-bio {
     max-width: 455px;
     margin: 15px 0;
     font-size: 13px;
