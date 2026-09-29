@@ -8,7 +8,7 @@
     background: var(--bckg-2);
     color: var(--color-text);
     font-family: 'Inter', sans-serif;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, .15);
     --acento: var(--accent);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
@@ -464,7 +464,7 @@
 
 .ouy-card>b {
     display: block;
-    margin: 8px 3px 2px;
+    margin: 8px 3px 0;
     overflow: hidden;
     font-size: 11px;
     white-space: nowrap;
@@ -557,20 +557,19 @@
 
 .nyv-author bb {
     display: block;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .nyv-author b i {
     margin-left: 2px;
     color: var(--acento);
-    font-size: 8px;
+    font-size: 9px;
 }
 
 .nyv-author span {
     display: block;
-    margin-top: 2px;
-    font-size: 8px;
+    font-size: 9px;
     opacity: 0.7;
 }
 
@@ -696,7 +695,7 @@
 .ouy-text {
     max-width: 300px;
     font-size: 12px;
-    line-height: 10px;
+    line-height: 13px;
 }
 
 .ouy-text b {
@@ -718,7 +717,7 @@
 
 .ouy-time {
     display: block;
-    margin-top: 4px;
+    margin:0 4px;
     font-size: 9px;
     opacity: 0.7;
 }
