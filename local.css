@@ -333,14 +333,13 @@ body.day .biz {
 .biz-person-info>b {
     display: block;
     color: var(--acento);
-    margin-top: 4px;
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
 }
 
 .biz-person-info p {
-    margin: 8px 0 0;
+    margin: 4px 0 0;
     font-size: 12px;
     line-height: 15px;
     height: 55px;
