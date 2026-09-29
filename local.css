@@ -605,3 +605,7 @@ body.day .biz {
 .biz-rules>div br {
     display: inline;
 }
+
+.biz-about>p::-webkit-scrollbar, .biz-person-info p::-webkit-scrollbar{width:3px!important;}
+.biz-about>p::-webkit-scrollbar-thumb, .biz-person-info p::-webkit-scrollbar-thumb{background:var(--acento);}
+
