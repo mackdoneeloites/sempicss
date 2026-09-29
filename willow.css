@@ -326,3 +326,56 @@
 .willow-person-info>p br{
     display: inline;
 }
+
+.civil,
+.ciudadano {
+    --acento: var(--ciudadanos);
+}
+
+.cele,
+.celebridad {
+    --acento: var(--g3);
+}
+
+.sanidad {
+    --acento: var(--sanidad);
+    --acentob: var(--refineria);
+}
+
+.polis,
+.seguridad {
+    --acento: var(--seguridad);
+}
+
+.empre,
+.empresario {
+    --acento: var(--empresarios);
+}
+
+.crimi,
+.criminal {
+    --acento: var(--criminales);
+}
+
+.pesca,
+.pescador {
+    --acento: var(--pesca);
+}
+
+.petro,
+.refineria {
+    --acento: var(--refineria);
+}
+
+.sami {
+    --acento: var(--sami);
+}
+
+.pnj,
+.npc {
+    --acento: var(--pnj);
+}
+
+.comercio {
+    --acento: var(--comercio-industria);
+}
