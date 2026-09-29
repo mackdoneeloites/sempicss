@@ -626,7 +626,7 @@ p.sp-user-bio {
 
 .sp-user-follow {
   padding: 7px 13px;
-  border: 1px solid var(----cicon);
+  border: 1px solid var(--cicon);
   border-radius: 5px;
   font-size: 9px;
   font-weight: 700;
@@ -762,7 +762,7 @@ p.sp-user-bio {
   transition: all .5s ease;
 }
 
-.sp-user-list > b {
+.sp-user-list > span {
   display: block;
   overflow: hidden;
   color: inherit;
@@ -824,7 +824,7 @@ p.sp-user-bio {
   box-shadow: 0 4px 5px rgba(0,0,0,.2);
 }
 
-.sp-user-artist b {
+.sp-user-artist bb {
   display: block;
   overflow: hidden;
   font-size: 10px;
