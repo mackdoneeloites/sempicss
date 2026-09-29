@@ -1406,10 +1406,6 @@ body.day .singy .ntm:before {
     transition: all ease-in-out 0.7s;
 }
 
-.firma8:hover {
-    filter: hue-rotate(360deg);
-    transition: all ease-in-out 0.7s;
-}
 
 .firma8:before,
 .firma8:after {
