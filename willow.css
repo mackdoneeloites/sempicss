@@ -332,65 +332,65 @@
     display: inline;
 }
 
-.civil,
-.ciudadano {
+.willow .civil,
+.willow .ciudadano {
     --acento: var(--ciudadanos);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.cele,
-.celebridad {
+.willow .cele,
+.willow .celebridad {
     --acento: var(--celebridades);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.sanidad {
+.willow .sanidad {
     --acento: var(--sanidad);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.polis,
-.seguridad {
+.willow .polis,
+.willow .seguridad {
     --acento: var(--seguridad);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.empre,
-.empresario {
+.willow .empre,
+.willow .empresario {
     --acento: var(--empresarios);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.crimi,
-.criminal {
+.willow .crimi,
+.willow .criminal {
     --acento: var(--criminales);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.pesca,
-.pescador {
+.willow .pesca,
+.willow .pescador {
     --acento: var(--pesca);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.petro,
-.refineria {
+.willow .petro,
+.willow .refineria {
     --acento: var(--refineria);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.sami {
+.willow .sami {
     --acento: var(--sami);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.pnj,
-.npc {
+.willow .pnj,
+.willow .npc {
     --acento: var(--pnj);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
-.comercio {
+.willow .comercio {
     --acento: var(--comercio-industria);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
