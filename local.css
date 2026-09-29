@@ -591,7 +591,8 @@ body.day .biz {
 .biz-person-info>span,
 .biz-gallery-caption span,
 .biz-detail-title,
-.biz-hours p b {
+.biz-hours p b, 
+.biz-contact p span {
     text-transform: uppercase;
 }
 
