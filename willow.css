@@ -150,6 +150,11 @@
     opacity: 0.8;
 }
 
+.willow-tema>span>span {
+    color:var(--acento);
+    font-weight:800;
+}
+
 .willow-tema:hover {
     border-color:color-mix(in srgb, var(--acento) 50%, var(--brd-c-h));
     transform: translateX(3px);
@@ -330,52 +335,62 @@
 .civil,
 .ciudadano {
     --acento: var(--ciudadanos);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .cele,
 .celebridad {
-    --acento: var(--g3);
+    --acento: var(--celebridades);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .sanidad {
     --acento: var(--sanidad);
-    --acentob: var(--refineria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .polis,
 .seguridad {
     --acento: var(--seguridad);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .empre,
 .empresario {
     --acento: var(--empresarios);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .crimi,
 .criminal {
     --acento: var(--criminales);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .pesca,
 .pescador {
     --acento: var(--pesca);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .petro,
 .refineria {
     --acento: var(--refineria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .sami {
     --acento: var(--sami);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .pnj,
 .npc {
     --acento: var(--pnj);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
 
 .comercio {
     --acento: var(--comercio-industria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
