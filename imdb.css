@@ -170,7 +170,7 @@
     height: 39px;
     position: absolute;
     left: 8px;
-    top: 0;
+    top: -1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,6 +433,7 @@ p.mdb-bio {
     padding-right: 5px;
     text-align: justify;
     overflow: auto;
+    color:#eee;
 }
 
 .mdb-cover-info p::-webkit-scrollbar,
