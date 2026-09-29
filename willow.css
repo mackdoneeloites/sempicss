@@ -48,8 +48,8 @@
     height: 100px;
     border-radius: 100%;
     background: var(--bckg-1);
-    border: 10px solid var(--acento);
-    outline: 18px solid var(--bckg-1);
+    border: 8px solid var(--acento);
+    outline: 15px solid var(--bckg-1);
     box-shadow: 0 7px 20px rgba(0, 0, 0, .15);
 }
 
@@ -98,7 +98,6 @@
     position: relative;
     margin: 10px auto;
 }
-
 
 .willow-tema {
     width: 100%;
@@ -152,11 +151,9 @@
 }
 
 .willow-tema:hover {
-    border-color:
-        color-mix(in srgb, var(--acento) 50%, var(--brd-c-h));
+    border-color:color-mix(in srgb, var(--acento) 50%, var(--brd-c-h));
     transform: translateX(3px);
     transition: all 0.7s ease-in-out;
-
 }
 
 .willow.willow-rel .willow-int {
@@ -195,9 +192,6 @@
     width: 100%;
 }
 
-
-/* PERSONA */
-
 .willow-person {
     width: 223px;
     position: relative;
@@ -217,14 +211,10 @@
 }
 
 .willow-person:hover {
-    border-color:
-        color-mix(in srgb, var(--acento) 60%, var(--brd-c-h));
+    border-color:color-mix(in srgb, var(--acento) 60%, var(--brd-c-h));
     transform: translateY(-3px);
     transition: all 0.7s ease-in-out;
 }
-
-
-/* AVATAR */
 
 .willow-person-img {
     width: 78px;
@@ -232,7 +222,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 100%;
     box-shadow:
         0 0 0 4px var(--bckg-1),
         0 0 0 6px var(--acento);
@@ -247,12 +237,8 @@
         linear-gradient(135deg,
             transparent 40%,
             color-mix(in srgb, var(--acentob) 45%, transparent));
-
     opacity: .7;
 }
-
-
-/* INFORMACIÓN */
 
 .willow-person-info {
     min-width: 0;
@@ -287,8 +273,8 @@
     transition: all 0.7s ease-in-out;
 }
 
-.willow-person-info>a:hover {
-    opacity: 0.8;
+.willow-person-info>a:hover,.willow-tema>a:hover {
+    opacity: 0.7;
     transition: all 0.7s ease-in-out;
 }
 
@@ -313,11 +299,8 @@
     background: var(--acento);
 }
 
-/* ICONO */
-
 .willow-person-icon {
     color: transparent;
-
     background:
         linear-gradient(40deg,
             var(--acento),
@@ -326,9 +309,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
     font-size: 20px;
-
     opacity: .65;
 }
 
