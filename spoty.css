@@ -524,3 +524,489 @@ body {
 .sp-noti br{
   display: none;
 }
+
+
+/*SPOTIFY — PERFIL DE USUARIO*/
+
+.sp-user {
+  width: 650px;
+  margin: 15px auto;
+  background: var(--background-1);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins";
+  box-shadow: 0 4px 15px rgba(0,0,0,.4);
+}
+
+/* CABECERA */
+
+.sp-user-head {
+  min-height: 210px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--acento) 85%, transparent),
+      color-mix(in srgb, var(--acento) 25%, var(--background-1))
+    );
+}
+
+.sp-user-avatar {
+  width: 145px;
+  height: 145px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.sp-user-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.sp-user-info > span {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sp-user-info hh {
+  margin: 0;
+  color: inherit;
+  font: 800 34px/1.1 "Poppins";
+  letter-spacing: -1px;
+}
+
+.sp-user-bio {
+  margin: 7px 0 8px;
+  max-width: 380px;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: 55px;
+  overflow:hidden;
+}
+
+.sp-user-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 10px;
+}
+
+.sp-user-stats b {
+  font-weight: 700;
+}
+
+.sp-user-stats i {
+  width: 3px;
+  height: 3px;
+  margin: 0 2px;
+  display: inline-block;
+  border-radius: 100%;
+  background: currentColor;
+  opacity: .6;
+}
+
+.sp-user-actions {
+  padding: 20px 25px 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.sp-user-follow {
+  padding: 7px 13px;
+  border: 1px solid var(--cborder);
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition:all .7s ease-in-out;
+}
+
+.sp-user-follow:hover {
+  background:var(--acento);
+  color:#eee;
+  transition:all .7s ease-in-out;
+}
+
+.sp-user-actions > i {
+  margin-left: 2px;
+  font-size: 18px;
+  opacity: .6;
+}
+
+
+/* SECCIONES */
+
+.sp-user-section {
+  padding: 0 25px 25px;
+}
+
+.sp-user-title {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sp-user-title > span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sp-user-title>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  opacity: .55;
+}
+.sp-user-title>div>span:first-child {
+    width: 118px;
+}
+
+/* PLAYLISTS */
+
+.sp-user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.sp-user-list {
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  background: rgba(255,255,255,.05);
+  cursor: pointer;
+  transition: all .5s ease;
+      text-align: center;
+}
+
+.day .sp-user-list {
+  background: rgba(50,50,50,.06);
+  transition: all .5s ease;
+
+}
+
+.sp-user-list:hover {
+  background: rgba(255,255,255,.1);
+  transition: all .5s ease;
+
+}
+
+.day .sp-user-list:hover {
+  background: rgba(50,50,50,.1);
+  transition: all .5s ease;
+}
+
+.sp-user-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.sp-user-cover img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 7px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+}
+
+.sp-user-coverplay {
+  width: 35px;
+  height: 35px;
+  right: 8px;
+  bottom: 8px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: var(--acento);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: .35s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,.35);
+}
+
+.sp-user-coverplay i {
+  margin-left: 2px;
+  font-size: 11px;
+  transition: all .5s ease;
+}
+
+.sp-user-list:hover .sp-user-coverplay {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .5s ease;
+}
+
+.sp-user-list > b {
+  display: block;
+  overflow: hidden;
+  color: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sp-user-list > p {
+  margin: 2px 0 0;
+  overflow: hidden;
+  font-size: 9px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  opacity: .65;
+}
+
+
+/* ARTISTAS */
+
+.sp-user-artists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.sp-user-artist {
+  min-width: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 9px;
+  background: rgba(255,255,255,.04);
+  transition:all .5s ease;
+}
+
+.day .sp-user-artist {
+  background: rgba(50,50,50,.05);
+  transition:all .5s ease;
+}
+
+.sp-user-artist:hover {
+  background: rgba(255,255,255,.08);
+  transition:all .5s ease;
+}
+
+.day .sp-user-artist:hover {
+  background: rgba(50,50,50,.08);
+  transition:all .5s ease;
+}
+
+.sp-user-artist img {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 5px rgba(0,0,0,.2);
+}
+
+.sp-user-artist b {
+  display: block;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sp-user-artist span {
+  display: block;
+  margin-top: 1px;
+  font-size: 8px;
+  opacity: .55;
+}
+
+/* POPULARES */
+
+.sp-user-popular {
+  padding-bottom: 10px;
+}
+
+.sp-popular-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-popular-song {
+  min-height: 48px;
+  padding: 5px 8px;
+  display: grid;
+  grid-template-columns: 22px 42px minmax(0, 1fr) 100px 40px;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  transition: .3s ease;
+}
+
+.sp-popular-song:hover {
+  background: rgba(255,255,255,.07);
+}
+
+.day .sp-popular-song:hover {
+  background: rgba(50,50,50,.07);
+}
+
+.sp-popular-number {
+  font-size: 11px;
+  text-align: center;
+  opacity: .55;
+}
+
+.sp-popular-song > img {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.sp-popular-name {
+  min-width: 0;
+}
+
+.sp-popular-name b {
+  display: block;
+  overflow: hidden;
+  color: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sp-popular-name span {
+  display: block;
+  margin-top: 1px;
+  font-size: 9px;
+  opacity: .55;
+}
+
+.sp-popular-name span i {
+  margin-right: 3px;
+}
+
+.sp-popular-plays,
+.sp-popular-time {
+  font-size: 10px;
+  opacity: .6;
+}
+
+.sp-popular-time {
+  text-align: right;
+}
+
+.sp-popular-more {
+  display: inline-block;
+  margin: 10px 8px 0;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  opacity: .65;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.sp-popular-more:hover {
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+/* ACERCA DE */
+
+.sp-about-card {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.8) 0%,
+      rgba(0,0,0,.5) 50%,
+      rgba(0,0,0,.05) 100%
+    ),
+    var(--about) center/cover;
+    color: #eee;
+}
+
+.sp-about-rank {
+  width: 65px;
+  height: 65px;
+  top: 25px;
+  right: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: var(--acento);
+  color: #fff;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.sp-about-rank b {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.sp-about-rank span {
+  margin-top: 3px;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.sp-about-info {
+  right: 30px;
+  bottom: 25px;
+  left: 30px;
+  position: absolute;
+}
+
+.sp-about-info > b {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sp-about-info p {
+    width: 540px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    opacity: .9;
+    text-align: justify;
+}
+.sp-user br{
+  display:none;
+}
+.sp-about-info p br, .sp-user-bio br{
+  display:inline;
+}
+
+
