@@ -4278,6 +4278,172 @@ body.day .amrif4-sin:before {
     display: block;
 }
 
+.amrif5 {
+    width: 380px;
+    height: 195px;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: var(--bckg-3);
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    transition: all .7s ease;
+}
+
+.amrif5:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, .55), transparent 60%),
+        linear-gradient(0deg, rgba(0, 0, 0, .25), transparent 45%);
+}
+
+.amrif5-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(.15) brightness(.7);
+    transition: all .7s ease;
+}
+
+.amrif5:hover .amrif5-img {
+    transform: scale(1.05);
+    filter: grayscale(.65) brightness(.4);
+    transition: all .7s ease;
+}
+
+.amrif5-cont {
+    position: absolute;
+    z-index: 3;
+    left: 25px;
+    bottom: 22px;
+    width: 260px;
+    color: #ddd;
+    text-shadow: -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.amrif5-pre {
+    margin-bottom: 7px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--acento);
+    font-weight: 800;
+}
+
+.amrif5-tit {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 21px;
+    font-style: italic;
+}
+
+.amrif5-lin {
+    width: 0;
+    height: 1px;
+    margin-top: 10px;
+    background: var(--acentob);
+    transition: all .7s ease;
+}
+
+.amrif5:hover .amrif5-lin {
+    width: 110px;
+    transition: all .7s ease;
+}
+
+.amrif5-hov {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    opacity: 0;
+    font-size: 11px;
+    line-height: 12px;
+    transition: all .7s ease;
+}
+
+.amrif5:hover .amrif5-hov {
+    max-height: 40px;
+    margin-top: 8px;
+    opacity: .7;
+    transition: all .7s ease;
+}
+
+
+.amrif6 {
+    width: 370px;
+    height: 175px;
+    margin: 25px auto;
+    position: relative;
+    background: var(--bckg-3);
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.amrif6-fram {
+    position: absolute;
+    left: 13px;
+    right: -10px;
+    top: -10px;
+    bottom: 13px;
+    border: 1px solid var(--acento);
+    transition: all .45s ease;
+}
+
+.amrif6:hover .amrif6-fram {
+    left: 7px;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+    transition: all .45s ease;
+}
+
+.amrif6-blok {
+    position: absolute;
+    left: -12px;
+    bottom: 10%;
+    padding: 9px 14px 9px 17px;
+    background: var(--bckg-2);
+    transition: all .45s ease;
+}
+
+.amrif6:hover .amrif6-blok {
+    left: 8px;
+    transition: all .45s ease;
+}
+
+.amrif6-blok>pp {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.amrif6-blok span {
+    display: block;
+    margin-top: 3px;
+    color: var(--acento);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.amrif6-num {
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    color: #eee;
+    font-size: 6px;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+}
 
 /*Kieran firma*/
 .kier {
