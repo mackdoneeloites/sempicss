@@ -559,11 +559,12 @@
     display: block;
     font-size: 12px;
     font-weight: 700;
+    color:var(--acento);
 }
 
-.nyv-author b i {
+.nyv-author bb i {
     margin-left: 2px;
-    color: var(--acento);
+    color: var(--acentob);
     font-size: 9px;
 }
 
