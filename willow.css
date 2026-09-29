@@ -9,7 +9,7 @@
     border-radius: 10px;
     margin: 20px auto;
     border: 1px solid var(--brd-c-h);
-    background: var(--bckg-1);
+    background: var(--bckg-2);
     --acento: var(--accent);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
 }
