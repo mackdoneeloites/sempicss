@@ -585,7 +585,7 @@ body {
   letter-spacing: -1px;
 }
 
-.sp-user-bio {
+p.sp-user-bio {
   margin: 7px 0 8px;
   max-width: 380px;
   font-size: 12px;
@@ -1005,7 +1005,7 @@ body {
 .sp-user br{
   display:none;
 }
-.sp-about-info p br, .sp-user-bio br{
+.sp-about-info p br, p.sp-user-bio br{
   display:inline;
 }
 
