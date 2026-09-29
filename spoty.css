@@ -626,7 +626,7 @@ p.sp-user-bio {
 
 .sp-user-follow {
   padding: 7px 13px;
-  border: 1px solid var(--cborder);
+  border: 1px solid var(----cicon);
   border-radius: 5px;
   font-size: 9px;
   font-weight: 700;
