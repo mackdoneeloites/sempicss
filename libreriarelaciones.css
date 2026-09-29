@@ -150,54 +150,54 @@
 
 
 /**Clases**/
-.civil,
-.ciudadano {
+.oilbib .civil,
+.oilbib .ciudadano {
     --acento: #597593!important;
 }
 
-.cele,
-.celebridad {
+.oilbib .cele,
+.oilbib .celebridad {
     --acento: #5c5173!important;
 }
 
-.sanidad {
+.oilbib .sanidad {
     --acento: #518772!important;
 }
 
-.polis,
-.seguridad {
+.oilbib .polis,
+.oilbib .seguridad {
     --acento: var(--seguridad);
 }
 
-.empre,
-.empresario {
+.oilbib .empre,
+.oilbib .empresario {
     --acento: var(--empresarios);
 }
 
-.crimi,
-.criminal {
+.oilbib .crimi,
+.oilbib .criminal {
     --acento: var(--criminales);
 }
 
-.pesca,
-.pescador {
+.oilbib .pesca,
+.oilbib .pescador {
     --acento: #4d848d!important;
 }
 
-.petro,
-.refineria {
+.oilbib .petro,
+.oilbib .refineria {
     --acento: var(--refineria);
 }
 
-.sami {
+.oilbib .sami {
     --acento: #754b59!important;
 }
 
-.pnj,
-.npc {
+.oilbib .pnj,
+.oilbib .npc {
     --acento: #647277!important;
 }
 
-.comercio {
+.oilbib .comercio {
     --acento: #877449!important;
 }
