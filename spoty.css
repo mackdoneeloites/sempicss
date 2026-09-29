@@ -531,7 +531,7 @@ body {
 .sp-user {
   width: 650px;
   margin: 15px auto;
-  background: var(--background-1);
+  background: var(--bckg-1);
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -553,7 +553,7 @@ body {
     linear-gradient(
       180deg,
       color-mix(in srgb, var(--acento) 85%, transparent),
-      color-mix(in srgb, var(--acento) 25%, var(--background-1))
+      color-mix(in srgb, var(--acento) 25%, var(--bckg-1))
     );
 }
 
@@ -969,7 +969,7 @@ body {
   box-shadow: 0 5px 5px rgba(0,0,0,.2);
 }
 
-.sp-about-rank b {
+.sp-about-rank bb {
   font-size: 17px;
   line-height: 1;
 }
