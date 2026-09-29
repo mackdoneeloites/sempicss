@@ -1,0 +1,347 @@
+.willow,
+.willow * {
+    box-sizing: border-box;
+}
+
+.willow {
+    width: 550px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 1px solid var(--brd-c-h);
+    background: var(--bckg-1);
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.willow.pefi .willow-int {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.willow-int {
+    display: flex;
+    flex-flow: wrap;
+    border: 1px solid var(--brd-c-h);
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.willow-int:before {
+    content: "";
+    background: var(--imgs);
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+.willow-img {
+    position: relative;
+    z-index: 1;
+    margin: 25px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: var(--bckg-1);
+    border: 10px solid var(--acento);
+    outline: 18px solid var(--bckg-1);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .15);
+}
+
+
+.willow-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 1;
+    position: relative;
+    margin-top: 10px;
+}
+
+.willow-links>a {
+    padding: 20px;
+    background: var(--bckg-1);
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-links>a:hover {
+    color: var(--acento);
+    transform: translateY(-3px);
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-tiempo {
+    background: var(--bckg-2);
+    padding: 6px 13px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+    line-height: 25px;
+    position: relative;
+    margin: 10px auto;
+}
+
+
+.willow-tema {
+    width: 100%;
+    border: 1px solid var(--brd-c-h);
+    background: var(--bckg-1);
+    display: flex;
+    justify-content: center;
+    padding: 15px 55px 15px 15px;
+    gap: 10px;
+    position: relative;
+    border-radius: 10px;
+    margin: 5px 0;
+    flex-direction: column;
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-tema tato {
+    position: absolute;
+    right: 12px;
+    font-size: 25px;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+.willow-tema tato.fin {
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acento), var(--acentob));
+    opacity: 1;
+}
+
+.willow-tema>a {
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acento), var(--acentob));
+    font-weight: 800;
+    font-size: 15px;
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-tema>span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    margin: -3px 0 0 10px;
+    opacity: 0.8;
+}
+
+.willow-tema:hover {
+    border-color:
+        color-mix(in srgb, var(--acento) 50%, var(--brd-c-h));
+    transform: translateX(3px);
+    transition: all 0.7s ease-in-out;
+
+}
+
+.willow.willow-rel .willow-int {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.willow-title {
+    position: relative;
+    z-index: 2;
+    margin: 0 5px 15px;
+    padding: 5px 5px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+.willow-title span {
+    display: block;
+    margin-bottom: 2px;
+    color: rgba(255, 255, 255, .65);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.willow-title i {
+    color: #ddd;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.willow.willow-rel .willow-title {
+    width: 100%;
+}
+
+
+/* PERSONA */
+
+.willow-person {
+    width: 223px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 15px;
+    padding: 20px 15px 15px;
+    background: var(--bckg-1);
+    border: 1px solid var(--brd-c-h);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-person:hover {
+    border-color:
+        color-mix(in srgb, var(--acento) 60%, var(--brd-c-h));
+    transform: translateY(-3px);
+    transition: all 0.7s ease-in-out;
+}
+
+
+/* AVATAR */
+
+.willow-person-img {
+    width: 78px;
+    height: 78px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 4px var(--bckg-1),
+        0 0 0 6px var(--acento);
+}
+
+.willow-person-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        linear-gradient(135deg,
+            transparent 40%,
+            color-mix(in srgb, var(--acentob) 45%, transparent));
+
+    opacity: .7;
+}
+
+
+/* INFORMACIÓN */
+
+.willow-person-info {
+    min-width: 0;
+}
+
+.willow-vinculo {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--acento);
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.willow-person-info>a {
+    display: block;
+    margin-bottom: 5px;
+    overflow: hidden;
+    color: transparent;
+    background: linear-gradient(40deg, var(--acento), var(--acentob));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-person-info>a:hover {
+    opacity: 0.8;
+    transition: all 0.7s ease-in-out;
+}
+
+.willow-person-info>p {
+    margin: 0;
+    display: -webkit-box;
+    color: var(--color-text);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: justify;
+    max-height: 66px;
+    overflow: auto;
+    padding-right: 4px;
+}
+
+.willow-person-info>p::-webkit-scrollbar {
+    width: 3px !important;
+}
+
+.willow-person-info>p::-webkit-scrollbar-thumb {
+    background: var(--acento);
+}
+
+/* ICONO */
+
+.willow-person-icon {
+    color: transparent;
+
+    background:
+        linear-gradient(40deg,
+            var(--acento),
+            var(--acentob));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 20px;
+
+    opacity: .65;
+}
+
+.willow-person:nth-of-type(even) .willow-person-img {
+    box-shadow:
+        0 0 0 4px var(--bckg-1),
+        0 0 0 6px var(--acentob);
+}
+
+.willow br{
+    display:none;
+}
+
+.willow-person-info>p br{
+    display: inline;
+}
