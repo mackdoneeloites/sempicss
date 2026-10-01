@@ -2519,3 +2519,147 @@ body.night .tseuq3 {
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+.tseuq5 *{
+  box-sizing:border-box;
+}
+
+.tseuq5-intro{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:12px;
+  padding:17px;
+  border:1px solid var(--cicon);
+  border-radius:10px;
+  background:linear-gradient(45deg, var(--bckg-2), var(--bckg-3));
+}
+
+.tseuq5-intro span>i{
+  width:30px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:100%;
+  background:linear-gradient(45deg, var(--acento), var(--acentob));
+  color:var(--bckg-2);
+  font-size:12px;
+}
+
+.tseuq5-intro span {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 800;
+    justify-content: space-between;
+}
+
+.tseuq5-intro p{
+  margin:5px 10px 0;
+  font-size:14px;
+  line-height:17px;
+  text-align:justify;
+}
+
+.tseuq5-plot{
+  margin-bottom:10px;
+  padding:19px 21px;
+  border:1px solid var(--cicon);
+  border-radius:10px;
+  background:linear-gradient(45deg, var(--bckg-3), var(--bckg-2));
+}
+
+.tseuq5-head{
+  display:flex;
+  align-items:center;
+  border-bottom: 1px solid var(--cicon);
+  padding:0 5px 5px;
+  margin:0 -10px;
+}
+
+.tseuq5-head span{
+  flex:1;
+  font-family:'DM Mono',monospace;
+  font-size:13px;
+  font-weight:500;
+  letter-spacing:1px;
+}
+
+.tseuq5-head i{
+  color:var(--acento);
+  font-size:13px;
+}
+
+.tseuq5-plot hh{
+  display:block;
+  margin:14px 0 10px;
+  font-size:18px;
+  font-weight:800;
+  line-height:23px;
+}
+
+.tseuq5-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+
+.tseuq5-tags span{
+  padding:4px 7px;
+  border:1px solid var(--cicon);
+  border-radius:5px;
+  background:var(--bckg-1);
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.tseuq5-infs{
+  margin:12px 0 0;
+  font-size:14px;
+  line-height:18px;
+  text-align:justify;
+}
+
+.tseuq5 br{
+  display:none;
+}
+.tseuq5-intro p br, .tseuq5-infs br{
+  display:inline;
+}
+
+.tseuq5-intro>strike,.tseuq5-intro>i,.tseuq5-intro>b,.tseuq5-infs>strike,.tseuq5-infs>i,.tseuq5-infs>b{
+  color:var(--acento);
+}
+.tseuq5-intro>a,.tseuq5-infs>a{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
+    background-size: 100%;
+    font-weight: 800;
+    transition: .7s ease-in-out;
+}
+.tseuq5-intro>a:hover,.tseuq5-infs>a:hover {
+    background-size: 500%;
+    transition: .7s ease-in-out;
+}
+.tseuq5-intro>u,.tseuq5-infs>u{
+    position: relative;
+    background: var(--bckg-1);
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--acento), var(--acentob)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
