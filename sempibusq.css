@@ -2520,6 +2520,16 @@ body.night .tseuq3 {
     letter-spacing: 1px;
 }
 
+
+.tseuq5{
+  width:580px;
+  margin:25px auto;
+  box-sizing:border-box;
+  --acento: var(--accent);
+  --acentob: hsl(from var(--acento) calc(h + 25) s l);
+  font-family:'DM Sans',sans-serif;
+}
+
 .tseuq5 *{
   box-sizing:border-box;
 }
