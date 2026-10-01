@@ -2564,6 +2564,7 @@ body.night .tseuq3 {
     gap: 15px;
     font-weight: 800;
     justify-content: space-between;
+    flex: none;
 }
 
 .tseuq5-intro p{
