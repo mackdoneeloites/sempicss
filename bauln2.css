@@ -1,0 +1,578 @@
+.luab2 {
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid var(--cicon);
+    background: var(--bckg-2);
+    color: var(--color-text);
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid var(--cicon);
+    border-radius: 30px;
+}
+
+.luab2 * {
+    box-sizing: border-box;
+}
+
+.luab2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.luab2-ix {
+    height: 480px;
+    display: grid;
+    grid-template-columns: 1fr 275px;
+    overflow: hidden;
+}
+
+.luab2-lft {
+    position: relative;
+    overflow: hidden;
+}
+
+.luab2-lft:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .05) 55%, rgba(0, 0, 0, .7)), linear-gradient(0deg, rgba(0, 0, 0, .8), transparent 52%);
+}
+
+.luab2-nav {
+    position: absolute;
+    z-index: 4;
+    left: 25px;
+    top: 25px;
+    display: flex;
+    gap: 8px;
+}
+
+.luab2-nav a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cicon);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .8);
+    color: var(--acento);
+    font-size: 12px;
+    backdrop-filter: blur(5px);
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-nav a:hover {
+    border-color: var(--acentob);
+    background: var(--acento);
+    color: #eee !important;
+    transform: translateY(-2px);
+    transition: all 0.7s ease-in-out;
+}
+
+
+/* NAME */
+
+.luab2-name {
+    position: absolute;
+    z-index: 3;
+    left: 50px;
+    bottom: 40px;
+    width: 400px;
+    color: #eee;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.luab2-name hh {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: .79;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.luab2-name hh em {
+    display: block;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.luab2-name p {
+    max-width: 330px;
+    margin: 18px 0 0;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.luab2-rgt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.luab2-rgt:after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .7));
+}
+
+.luab2-rgt:before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: #000;
+    mix-blend-mode: color;
+}
+
+.luab2-dgt:before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: var(--accent);
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+
+.luab2-dgt:after {
+    content: "";
+    inset: 15px;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0 20px 20px 0;
+    z-index: 2;
+}
+
+.luab2-data {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.luab2-data>div {
+    display: grid;
+    grid-template-columns: 27px 1fr;
+    align-items: center;
+    gap: 8px;
+    color: #eee;
+    font-size: 13px;
+    line-height: 15px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5), -1px 1px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+}
+
+.luab2-data>div>i {
+    color: var(--acentob);
+    font-size: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.luab2-data small {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: uppercase;
+}
+
+.luab2-data o {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 500;
+    opacity: 0.8;
+    padding: 0 5px;
+}
+
+.luab2-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    border-bottom: 1px solid var(--cicon);
+}
+
+.luab2-title hh {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 35px;
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.luab2-list {
+    padding: 0 20px;
+}
+
+.luab2-thd {
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: 85px 1fr 105px;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--cicon);
+    transition: all 0.7s ease-in-out;
+    padding: 0 15px;
+}
+
+.luab2-thd:hover {
+    background: var(--bckg-1);
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.luab2-date>b {
+    color: var(--acento);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.luab2-date>span {
+    color: var(--acentob);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.luab2-date small {
+    display: block;
+    color: var(--color-text);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.luab2-date.nn>span {
+    font-size: 12.5px;
+    line-height: 15px;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+}
+
+.luab2-date.nn small {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.luab2-main>a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text) !important;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 17px;
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-main>a:hover {
+    color: var(--acento) !important;
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 2px;
+    font-size: 11px;
+}
+
+.luab2-meta i {
+    margin-right: 5px;
+    color: var(--acento);
+}
+
+.luab2-sts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.luab2-sts i {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: currentColor;
+    opacity: .75;
+}
+
+.luab2-sts.active {
+    color: #6ca17a;
+}
+
+.luab2-sts.closed {
+    color: #6f7f99;
+}
+
+.luab2-sts.abandoned {
+    color: #8a6666;
+}
+
+.luab2-futer {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 11px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+
+.luab2-futer i {
+    color: var(--acento);
+    font-weight: 900;
+}
+
+.luab2-futer>span {
+    opacity: .6;
+}
+
+.luab2-bods {
+    display: flex;
+    gap: 15px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.luab2-person {
+    overflow: hidden;
+    border: 1px solid var(--cicon);
+    border-radius: 12px;
+    background: var(--bckg-2);
+    transition: all 0.7s ease-in-out;
+    width: 235px;
+    height: 275px;
+}
+
+.luab2-person:hover {
+    transition: all 0.7s ease-in-out;
+    border-color: var(--acento);
+}
+
+.luab2-photo {
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-photo:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .65), transparent);
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-hover {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, .9) 60%, rgba(0, 0, 0, .3));
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-person:hover .luab2-hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-hover>span {
+    color: var(--acento);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: uppercase;
+}
+
+.luab2-hover p {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 18px;
+    max-height: 200px;
+    padding-right: 3px;
+    overflow: auto;
+    text-align: justify;
+    font-family: arial, sans-serif;
+}
+
+.luab2-info {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.luab2-person:hover .luab2-info {
+    opacity: 1;
+    transform: translateY(200px);
+    transition: all 0.7s ease-in-out;
+}
+
+.luab2-info>span {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 15px;
+    letter-spacing: .5px;
+}
+
+.luab2-info>b {
+    display: block;
+    margin-top: 3px;
+    overflow: hidden;
+    color: var(--acento);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.luab2-hover p::-webkit-scrollbar {
+    width: 3px !important;
+}
+
+.luab2-hover p::-webkit-scrollbar-thumb {
+    background: var(--acento);
+}
+
+.luab2 br {
+    display: none;
+}
+
+.luab2-hover p br,
+.luab2-name p br {
+    display: inline;
+}
+
+.luab2-hover p u,
+.luab2-name p u {
+    position: relative;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--acentob), var(--acento)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.luab2-hover p i,
+.luab2-name p i {
+    color: var(--acentob);
+}
+
+.luab2-hover p strong,
+.luab2-hover p b,
+.luab2-hover p strike,
+.luab2-name p strong,
+.luab2-name p b,
+.luab2-name p strike {
+    color: var(--acento) !important;
+}
+
+.luab2 .civil,
+.luab2 .ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .cele,
+.luab2 .celebridad {
+    --acento: var(--celebridades);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .sanidad {
+    --acento: var(--sanidad);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .polis,
+.luab2 .seguridad {
+    --acento: var(--seguridad);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .empre,
+.luab2 .empresario {
+    --acento: var(--empresarios);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .crimi,
+.luab2 .criminal {
+    --acento: var(--criminales);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .pesca,
+.luab2 .pescador {
+    --acento: var(--pesca);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .petro,
+.luab2 .refineria {
+    --acento: var(--refineria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .sami {
+    --acento: var(--sami);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .pnj,
+.luab2 .npc {
+    --acento: var(--pnj);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab2 .comercio {
+    --acento: var(--comercio-industria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
