@@ -66,14 +66,14 @@
 
 .luab2-nav a:hover {
     border-color: var(--acentob);
-    background: var(--acento);
+    background: var(--acento)!important;
     color: #eee !important;
     transform: translateY(-2px);
     transition: all 0.7s ease-in-out;
 }
 
 body.day .luab2-nav a,body.day .luab2-data>div>i {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .7);
 }
 
 .luab2-name {
@@ -157,7 +157,7 @@ body.day .luab2-nav a,body.day .luab2-data>div>i {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 .luab2-data>div {
