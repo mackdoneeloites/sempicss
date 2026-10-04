@@ -72,8 +72,9 @@
     transition: all 0.7s ease-in-out;
 }
 
-
-/* NAME */
+body.day .luab2-nav a,body.day .luab2-data>div>i {
+    background: rgba(255, 255, 255, .8);
+}
 
 .luab2-name {
     position: absolute;
@@ -121,7 +122,7 @@
     content: "";
     inset: 0;
     position: absolute;
-    background: linear-gradient(90deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .7));
+    background: linear-gradient(90deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .7));
 }
 
 .luab2-rgt:before {
@@ -172,10 +173,17 @@
 }
 
 .luab2-data>div>i {
-    color: var(--acentob);
-    font-size: 12px;
+    padding: 5px;
+    color: var(--acento);
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
 }
 
 .luab2-data small {
