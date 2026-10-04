@@ -276,6 +276,10 @@
     font-size: 11px;
 }
 
+.luab-info span>span, .luab-info span>span>a{
+    color:var(--acento)!important;
+}
+
 .luab-status {
     padding: 6px 9px;
     border: 1px solid var(--cicon);
@@ -344,7 +348,7 @@
 }
 
 .luab-basic b {
-    color: var(--acento);
+    color: var(--acento)!important;
     font-size: 13px;
     letter-spacing: 1px;
 }
