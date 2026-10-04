@@ -377,6 +377,7 @@ body.day .luab2-nav a,body.day .luab2-data>div>i {
     transition: all 0.7s ease-in-out;
     width: 235px;
     height: 275px;
+    color:#eee;
 }
 
 .luab2-person:hover {
