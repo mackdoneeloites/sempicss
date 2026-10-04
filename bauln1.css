@@ -443,6 +443,7 @@ body.day .luab-hover {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
+    font-size: 0.65rem;
 }
 
 .luab-hover>div i,
