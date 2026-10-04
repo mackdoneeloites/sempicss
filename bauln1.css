@@ -273,11 +273,13 @@
 }
 
 .luab-info span {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .luab-info span>span, .luab-info span>span>a{
-    color:var(--acento)!important;
+    color: var(--acento) !important;
+    display: inline;
+    font-size: 12px;
 }
 
 .luab-status {
