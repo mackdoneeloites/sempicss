@@ -465,7 +465,7 @@ body.day .luab2-nav a,body.day .luab2-data>div>i {
     display: block;
     margin-top: 3px;
     overflow: hidden;
-    color: var(--acento);
+    color: var(--acento)!important;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 20px;
     font-weight: 600;
