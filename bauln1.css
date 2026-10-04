@@ -340,6 +340,10 @@
     transition: all 0.7s ease-in-out;
 }
 
+body.day .luab-basic {
+    background: linear-gradient(transparent 50%, var(--bckg-2));
+}
+
 .luab-basic b,
 .luab-basic span {
     display: block;
