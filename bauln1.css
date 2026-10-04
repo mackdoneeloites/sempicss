@@ -452,3 +452,66 @@ body.day .luab-hover {
 .luab-quote>span strike {
     color: var(--acento) !important;
 }
+
+.luab .civil,
+.luab .ciudadano {
+    --acento: var(--ciudadanos);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .cele,
+.luab .celebridad {
+    --acento: var(--celebridades);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .sanidad {
+    --acento: var(--sanidad);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .polis,
+.luab .seguridad {
+    --acento: var(--seguridad);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .empre,
+.luab .empresario {
+    --acento: var(--empresarios);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .crimi,
+.luab .criminal {
+    --acento: var(--criminales);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .pesca,
+.luab .pescador {
+    --acento: var(--pesca);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .petro,
+.luab .refineria {
+    --acento: var(--refineria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .sami {
+    --acento: var(--sami);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .pnj,
+.luab .npc {
+    --acento: var(--pnj);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
+
+.luab .comercio {
+    --acento: var(--comercio-industria);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
+}
