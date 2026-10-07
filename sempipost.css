@@ -504,7 +504,8 @@ span.poste5-hh {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: right;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: var(--acento);
 }
 
 .poste5-sb:before {
@@ -544,7 +545,7 @@ span.poste5-hh {
     padding: 10px 30px;
     background: var(--background-1);
     font-family: 'Noto Sans', sans-serif;
-    font-size: 7.5px;
+    font-size: 9.5px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: left;
