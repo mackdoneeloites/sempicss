@@ -538,7 +538,8 @@ span.poste5-hh {
     z-index: 1;
     padding: 25px 55px 25px 25px;
     text-align: justify;
-    line-height: normal;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .poste5-f {
