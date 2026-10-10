@@ -2948,7 +2948,33 @@ padding:7px 12px;
     display: inline;
 }
 
-
+.stop1-body,
+.poste1-txt,
+.post6-titulo,
+.post6-txt,
+.post1-txt,
+.post2-txt,
+.post3-txt,
+.post4-txt,
+.post5-int txt,
+.poste7-tx,
+.poste8-tx,
+.poste6-tx,
+.poste5-tx,
+.poste4-r,
+.poste2-tx,
+.poste3-tx,
+.poste4-tx, 
+.e-sppp8-txt,
+.e-sppp7-txt,
+.e-sppp6-txt,
+.e-sppp5-txt,
+.e-sppp4-txt,
+.e-sppp3-txt,
+.e-sppp2-txt,
+.e-sppp-txt  {
+    letter-spacing:0.5px;
+}
 /**Clases**/
 .civil,
 .ciudadano {
