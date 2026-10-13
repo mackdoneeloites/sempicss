@@ -2960,7 +2960,7 @@ body.night .tseuq3 {
 .tseuq8-desc {
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     right: 0;
     height: 175px;
