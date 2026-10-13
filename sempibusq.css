@@ -2872,6 +2872,14 @@ body.night .tseuq3 {
 .tseuq7-stat>span{
   color:var(--acentob);
 }
+.tseuq7:nth-child(2n) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.tseuq7:nth-child(2n) .tseuq7-photo {
+    left: auto;
+    right: -45px;
+}
 
 
 .tseuq8{
