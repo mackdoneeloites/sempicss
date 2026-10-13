@@ -2606,7 +2606,7 @@ body.night .tseuq3 {
   padding:19px 21px;
   border:1px solid var(--cicon);
   border-radius:10px;
-  background:linear-gradient(45deg, var(--bckg-3), var(--bckg-2));
+  background:linear-gradient(45deg, var(--bckg-3), var(--bckg-1));
 }
 
 .tseuq5-head{
@@ -2925,13 +2925,15 @@ body.night .tseuq3 {
   font-size:24px;
   font-weight:700;
   text-shadow: 1px 1px rgba(0, 0, 0, .5);
+    display:block;
+    color:var(--acentob);
 }
 .tseuq8-head span{
   display:inline-block;
   margin-top:7px;
   padding:4px 7px;
   background:var(--acento);
-  color:#ccc;
+  color:#eee;
   font-family:"DM Mono",monospace;
   font-size:11px;
   font-weight:700;
