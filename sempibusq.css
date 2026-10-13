@@ -2566,7 +2566,7 @@ body.night .tseuq3 {
   padding:17px;
   border:1px solid var(--cicon);
   border-radius:10px;
-  background:linear-gradient(45deg, var(--bckg-2), var(--bckg-3));
+  background:linear-gradient(45deg, var(--bckg-2), var(--bckg-1));
 }
 
 .tseuq5-intro span>i{
@@ -2606,7 +2606,7 @@ body.night .tseuq3 {
   padding:19px 21px;
   border:1px solid var(--cicon);
   border-radius:10px;
-  background:linear-gradient(45deg, var(--bckg-3), var(--bckg-1));
+  background:linear-gradient(45deg, var(--bckg-1), var(--bckg-2));
 }
 
 .tseuq5-head{
