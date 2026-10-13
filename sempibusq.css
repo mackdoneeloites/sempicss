@@ -2875,11 +2875,11 @@ body.night .tseuq3 {
 .tseuq7-stat>span{
   color:var(--acentob);
 }
-.tseuq7:nth-child(2n) {
+.tseuq7:nth-child(2n of .tseuq7) {
     flex-direction: row-reverse;
     text-align: right;
 }
-.tseuq7:nth-child(2n) .tseuq7-photo {
+.tseuq7:nth-child(2n of .tseuq7) .tseuq7-photo {
     left: auto;
     right: -45px;
 }
