@@ -2737,6 +2737,9 @@ body.night .tseuq3 {
   padding-top:23px;
   border-top:1px solid var(--cicon);
 }
+.tseuq6-pj:nth-child(2n) {
+    direction: rtl;
+}
 .tseuq6-photo{
   min-height:300px;
   overflow:hidden;
