@@ -2936,8 +2936,8 @@ body.night .tseuq3 {
   font-size:24px;
   font-weight:700;
   text-shadow: 1px 1px rgba(0, 0, 0, .5);
-    display:block;
-    color:var(--acentob);
+  display:block;
+  color:#eee;
 }
 .tseuq8-head span{
   display:inline-block;
