@@ -2770,7 +2770,7 @@ body.night .tseuq3 {
     font-weight: 900;
     font-size: 12px;
     letter-spacing: 1.5px;
-    color: #ccc;
+    color: #ddd;
 }
 .tseuq6-des {
     max-height: 170px;
@@ -2948,7 +2948,7 @@ body.night .tseuq3 {
   margin-top:7px;
   padding:4px 7px;
   background:var(--acento);
-  color:#eee;
+  color:#ddd;
   font-family:"DM Mono",monospace;
   font-size:11px;
   font-weight:700;
