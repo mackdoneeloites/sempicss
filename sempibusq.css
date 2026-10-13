@@ -2736,9 +2736,13 @@ body.night .tseuq3 {
   gap:20px;
   padding-top:23px;
   border-top:1px solid var(--cicon);
+  margin-bottom: 25px;
 }
 .tseuq6-pj:nth-child(2n) {
     direction: rtl;
+}
+.tseuq6-pj:last-of-type {
+    margin-bottom:0;
 }
 .tseuq6-photo{
   min-height:300px;
