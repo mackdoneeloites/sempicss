@@ -1311,7 +1311,7 @@ p.spbp3-hq {
 .spbp8-tc {
     border-bottom: 1.5px solid var(--cborder);
     padding: 20px;
-    line-height: 17px;
+    line-height: 19px;
     text-align: justify;
     position: relative;
     column-count: 2;
@@ -2409,7 +2409,7 @@ body.night .tseuq3 {
 
 .tseuq4-text {
     font-size: 13px;
-    line-height: 17px;
+    line-height: 19px;
     font-family: arial, sans-serif;
     text-align: justify;
 }
@@ -2597,7 +2597,7 @@ body.night .tseuq3 {
 .tseuq5-intro p{
   margin:5px 10px 0;
   font-size:14px;
-  line-height:17px;
+  line-height:19px;
   text-align:justify;
 }
 
