@@ -2666,7 +2666,7 @@ body.night .tseuq3 {
 .tseuq5 br{
   display:none;
 }
-.tseuq5-intro p br, .tseuq5-infs br{
+.tseuq5-intro p br, .tseuq5-infs br, .tseuq6-intro br{
   display:inline;
 }
 
@@ -2740,6 +2740,9 @@ body.night .tseuq3 {
 }
 .tseuq6-pj:nth-child(2n) {
     direction: rtl;
+}
+.tseuq6-pj:nth-child(2n) .tseuq6-des{
+    direction: ltr;
 }
 .tseuq6-pj:last-of-type {
     margin-bottom:0;
