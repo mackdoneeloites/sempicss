@@ -116,11 +116,12 @@
     min-width: 0;
 }
 
-.ltt-info strong {
+.ltt-info b {
     display: block;
     font-size: 14px;
     font-weight: 600;
     overflow-wrap: anywhere;
+    color:#eee!important;
 }
 
 .ltt-info small {
