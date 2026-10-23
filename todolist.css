@@ -9,9 +9,9 @@
     border-radius: 30px;
     background: linear-gradient(160deg, var(--acento), rgba(var(--fondo), 0.25), var(--acento));
     background-attachment: fixed;
-    color: var(--ltt-text);
     font-size: 13px;
     font-family: "Poppins", sans-serif;
+    color: #ddd;
     overflow: hidden;
     --acento: var(--accent);
     --acentob: hsl(from var(--acento) calc(h + 25) s l);
@@ -68,6 +68,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 30px;
     display: block;
 }
 
@@ -91,7 +92,6 @@
     padding: 15px 17px;
     border-radius: 16px;
     background: rgba(var(--fondo), 0.35);
-    color: #eee;
 }
 
 .ltt-item:hover {
@@ -121,7 +121,7 @@
     font-size: 14px;
     font-weight: 600;
     overflow-wrap: anywhere;
-    color:#eee!important;
+    color:#ddd!important;
 }
 
 .ltt-info small {
@@ -185,4 +185,10 @@
 
 .ltt-list br{
     display:none;
+}
+body.day .ltt-item.td-done .ltt-info small {
+    color: #87bb92;
+}
+body.day .ltt-item.td-pending .ltt-info small {
+    color: #d194b5;
 }
