@@ -181,3 +181,7 @@
     display: block;
     margin: 0 auto;
 }
+
+.ltt-list br{
+    display:none;
+}
