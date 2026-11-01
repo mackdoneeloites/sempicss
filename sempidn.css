@@ -439,6 +439,21 @@ body.day .touchm {
     --c: #b69ce8
 }
 
+body.day .tm-pill {
+background: color-mix(in srgb, var(--c) 20%, transparent);
+}
+body.day .touchm .tm-maybe {
+    --c: #d1b758;
+}
+body.day .touchm .tm-eh {
+    --c: #d9934c;
+}
+body.day .touchm .tm-no {
+    --c: #df595e;
+}
+body.day .touchm .tm-please {
+    --c: #e98abb;
+}
 body.day .touchm .tm-okay {
     --c: #98bf4a;
 }
