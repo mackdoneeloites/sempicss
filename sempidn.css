@@ -439,6 +439,13 @@ body.day .touchm {
     --c: #b69ce8
 }
 
+body.day .touchm .tm-okay {
+    --c: #98bf4a;
+}
+body.day .touchm .tm-yes {
+    --c: #69afd3;
+}
+
 .touchm span.titi {
     height: 39px;
     color: color-mix(in srgb, var(--acento) 75%, #eee);
