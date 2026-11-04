@@ -137,11 +137,11 @@
 }
 
 .ltt-item.td-pending .ltt-icon {
-    background: #794963;
+    background: color-mix(in srgb, var(--accent) 70%, transparent);
 }
 
 .ltt-item.td-pending .ltt-info small {
-    color: #a16686;
+    color: color-mix(in srgb, var(--accent) 65%, transparent);
 }
 
 .ltt-item.td-done .ltt-icon {
