@@ -2774,7 +2774,6 @@ body.night .tseuq3 {
     font-size: 12px;
     letter-spacing: 1.5px;
     color: #ddd;
-    direction: ltr;
 }
 .tseuq6-des {
     max-height: 170px;
@@ -2806,12 +2805,14 @@ body.night .tseuq3 {
     font-size: 10px;
     letter-spacing: 1.5px;
     border:1px solid var(--cicon);
-    direction: ltr;
 }
 .tseuq6-pj + .tseuq6-pj{
   margin-top:25px;
 }
-
+.tseuq6-pj:nth-child(2n) .tseuq6-tags, .tseuq6-pj:nth-child(2n) .tseuq6-poss {
+    flex-direction: row-reverse;
+    direction: ltr;
+}
 
 .tseuq7{
   width:580px;
