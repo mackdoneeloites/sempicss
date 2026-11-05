@@ -2810,8 +2810,8 @@ body.night .tseuq3 {
   margin-top:25px;
 }
 .tseuq6-pj:nth-child(2n) .tseuq6-tags, .tseuq6-pj:nth-child(2n) .tseuq6-poss {
-    flex-direction: row-reverse;
-    direction: ltr;
+    direction: initial;
+    justify-content: end;
 }
 
 .tseuq7{
