@@ -3040,6 +3040,7 @@ body.night .tseuq3 {
 
 .tseuq9-head p {
     margin: 0 0 10px;
+    font-size:13px;
 }
 
 .tseuq9-head:before {
@@ -3126,7 +3127,7 @@ body.night .tseuq3 {
     margin: 0;
     font-size: 14px;
     text-align: justify;
-    line-height: 1.8;
+    line-height: 20px;
 }
 
 .tseuq9-desc:last-child {
