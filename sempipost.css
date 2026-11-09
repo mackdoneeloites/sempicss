@@ -3230,9 +3230,6 @@ body.day .stop6:after {
     background: linear-gradient(45deg, var(--acento), var(--acentob));
     padding: 10px;
     position: relative;
-}
-
-body.day .stop8-head {
     color: #eee;
 }
 
