@@ -1773,6 +1773,7 @@ body.day .e-sppp5-superior {
     border-radius: 100%;
     margin: 15px auto -65px;
     position: relative;
+    z-index:1;
 }
 
 .e-sppp8-img>div {
