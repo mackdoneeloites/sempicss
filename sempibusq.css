@@ -2984,3 +2984,197 @@ body.night .tseuq3 {
 .tseuq8-card:focus-within .tseuq8-desc{
   transform:translateY(0);
 }
+
+.ery *,
+.ery {
+    box-sizing: border-box;
+    transition: all 0.7s ease-in-out;
+    position: relative;
+}
+
+.tseuq9 {
+    width: 550px;
+    margin: 15px auto;
+    padding: 0 35px 10px;
+    font-size: 14px;
+    line-height: 1.75;
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 320) s l);
+    --color-icon: #444;
+}
+
+.tseuq9-head {
+    text-align: center;
+    padding: 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tseuq9-ico {
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--color-icon);
+    color: var(--color-icon);
+    font-size: 21px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 15px;
+    position: relative;
+    box-shadow: 0 0 0 5px var(--bckg-1), 0 0 0 6px var(--color-icon);
+}
+
+.tseuq9-head span {
+    display: block;
+    width: 100%;
+    font-family: Playfair Display, serif;
+    font-size: 15px;
+}
+
+.tseuq9-head p {
+    margin: 0 0 10px;
+}
+
+.tseuq9-head:before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 1px;
+    background: var(--color-icon);
+    bottom: 0;
+}
+
+.tseuq9-head:after,
+.tseuq9:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: var(--color-icon);
+    bottom: 0px;
+}
+
+.tseuq9-plot {
+    width: 90%;
+    margin: 25px auto;
+}
+
+.tseuq9-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: .3px;
+    margin: 0 0 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.tseuq9-title:before {
+    content: "";
+    height: 1px;
+    width: 45px;
+    background: var(--color-icon);
+    flex-shrink: 0;
+}
+
+.tseuq9-title>em {
+    color: var(--acento);
+    font-size: 21px;
+}
+
+.tseuq9-tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 0 15px 50px;
+}
+
+.tseuq9-tag span {
+    border: 1px solid var(--color-icon);
+    padding: 3px 8px;
+    background: var(--bckg-2);
+    border-radius: 2px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.tseuq9-tag span.libre {
+    background: var(--acento);
+    border-color: var(--acentob);
+    color: #eee;
+}
+
+.tseuq9-tag span.ocupada {
+    background: var(--color-icon);
+    color: #eee;
+    opacity: .5;
+}
+
+.tseuq9-desc {
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.tseuq9-desc:last-child {
+    margin-bottom: 0
+}
+
+.tseuq9 br {
+    display: none;
+}
+
+.tseuq9-desc br,
+.tseuq9-head p br {
+    display: inline;
+}
+
+.tseuq9 strike,
+.tseuq9 i,
+.tseuq9 b {
+    color: var(--acento);
+}
+
+.tseuq9 a {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
+    background-size: 100%;
+    font-weight: 800;
+    transition: .7s ease-in-out;
+}
+
+.tseuq9 a:hover {
+    background-size: 500%;
+    transition: .7s ease-in-out;
+}
+
+.tseuq9 u {
+    position: relative;
+    background: var(--bckg-1);
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--acento), var(--acentob)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
