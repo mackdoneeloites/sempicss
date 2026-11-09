@@ -2742,6 +2742,454 @@ background:var(--bckg-3);
 padding:7px 12px;
 }
 
+.ery *,
+.ery {
+    box-sizing: border-box;
+    transition: all 0.7s ease-in-out;
+    position: relative;
+}
+
+.stop6 {
+    width: 520px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    background: var(--bckg-2);
+    isolation: isolate;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 320) s l);
+}
+
+.stop6:before {
+    inset: 0 0 auto;
+    height: 225px;
+    background: linear-gradient(318deg, var(--bckg-2), color-mix(in srgb, var(--bckg-2) 70%, transparent) 65%, color-mix(in srgb, var(--bckg-2) 40%, transparent)), var(--stop6-photo);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.stop6:after {
+    inset: auto 0 0;
+    height: 225px;
+    background: linear-gradient(35deg, color-mix(in srgb, var(--bckg-2) 40%, transparent), color-mix(in srgb, var(--bckg-2) 70%, transparent) 95%), var(--stop6-photo);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.stop6:before,
+.stop6:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(0.5) grayscale(0.5);
+}
+
+body.day .stop6:before,
+body.day .stop6:after {
+    filter: brightness(1.1) grayscale(0.7);
+}
+
+.stop6-head {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative
+}
+
+.stop6-head>i {
+    border: 1px solid var(--color-text);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    margin: 10px auto;
+    font-size: 25px;
+}
+
+.stop6-head>span {
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.8;
+    text-shadow: 2px 2px 0px var(--bckg-3);
+}
+
+.stop6-middle {
+    padding: 0 50px 20px;
+    position: relative
+}
+
+.stop6-text {
+    border: 1px solid var(--cicon);
+    background: var(--bckg-1);
+    padding: 35px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.stop6-tag {
+    padding: 0 50px 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 0px var(--bckg-3);
+}
+
+.stop6 u {
+    position: relative;
+    background: var(--bckg-1);
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--acento), var(--acentob)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: color-mix(in srgb, var(--color-text) 80%, transparent);
+}
+
+.stop6-text i,
+.stop6 strike,
+.stop6 a,
+.stop6-head>span>i {
+    color: var(--acento);
+    font-family: Montserrat, sans-serif;
+}
+
+.stop6-text i,
+.stop6-head>span>i {
+    font-style: italic;
+}
+
+.stop6 a {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
+    background-size: 100%;
+    font-weight: 800;
+    transition: all .7s ease-in-out;
+}
+
+.stop6 a:hover {
+    background-size: 500%;
+    transition: all .7s ease-in-out;
+}
+
+.stop6 br {
+    display: none;
+}
+
+.stop6-text br {
+    display: inline;
+}
+
+.stop7 {
+    position: relative;
+    isolation: isolate;
+    width: 525px;
+    margin: 10px auto;
+    padding: 30px 30px 30px 70px;
+    background: var(--bckg-2);
+    overflow: hidden;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 320) s l);
+}
+
+.stop7:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: var(--stop7-photo);
+    filter: grayscale(1) contrast(.95) brightness(.48);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .15;
+}
+
+.stop7:after {
+    content: "";
+    position: absolute;
+    background: var(--bckg-2);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 39px;
+    border-right: 1px solid var(--accent);
+}
+
+.stop7-ft {
+    position: absolute;
+    left: 12px;
+    bottom: 25px;
+    writing-mode: vertical-rl;
+    letter-spacing: 4px;
+    text-transform: lowercase;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    scale: -1;
+    z-index: 1;
+}
+
+.stop7-head {
+    margin: 0 0 15px;
+    border: 1px solid var(--acento);
+    background:
+        color-mix(in srgb, var(--bckg-2) 50%, transparent);
+    padding: 7px 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+}
+
+.stop7-text {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.stop7-div {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stop7-ico {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid var(--acento);
+    color: var(--acento);
+    background:
+        color-mix(in srgb, var(--bckg-2) 50%, transparent);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.stop7-extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stop7-ext {
+    background:
+        color-mix(in srgb, var(--bckg-2) 50%, transparent);
+    border: 1px solid var(--acento);
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.stop7-ext b {
+    color: var(--acentob);
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.stop8 {
+    width: 500px;
+    margin: 10px auto;
+    background: var(--bckg-2);
+    padding-bottom: 32px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 320) s l);
+}
+
+.stop8-head {
+    min-height: 200px;
+    background: linear-gradient(45deg, var(--acento), var(--acentob));
+    padding: 10px;
+    position: relative;
+}
+
+body.day .stop8-head {
+    color: #eee;
+}
+
+.stop8-headd {
+    position: absolute;
+    inset: 20px;
+    border: 1px solid var(--bckg-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+}
+
+.stop8-headd>i {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: serif;
+    letter-spacing: 11px;
+    color: var(--bckg-2);
+    line-height: 45px;
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+
+.stop8-headd>u {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 800;
+    letter-spacing: 9px;
+    border: none !important;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.stop8-text {
+    margin: 30px;
+    border: 1px solid var(--cicon);
+    background: var(--bckg-1);
+    padding: 25px;
+}
+
+.stop8-footer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--cicon);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stop8-footer>span {
+    background: var(--bckg-1);
+    border: 1px solid var(--cicon);
+    padding: 5px 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    flex: auto;
+}
+
+
+.stop7-text u,
+.stop8-text u {
+    position: relative;
+    background: var(--bckg-1);
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, var(--acento), var(--acentob)) 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: color-mix(in srgb, var(--color-text) 80%, transparent);
+}
+
+.stop7-text i,
+.stop7-text strike,
+.stop7-text a,
+.stop8-text i,
+.stop8-text strike,
+.stop8-text a {
+    color: var(--acento);
+    font-family: Montserrat, sans-serif;
+}
+
+.stop7-text i,
+.stop8-text i {
+    font-style: italic;
+}
+
+.stop7-text a,
+.stop8-text a {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(40deg, var(--acentob), var(--acento));
+    background-size: 100%;
+    font-weight: 800;
+    transition: all .7s ease-in-out;
+}
+
+.stop7-text a:hover,
+.stop8-text a:hover {
+    background-size: 500%;
+    transition: all .7s ease-in-out;
+}
+
+.stop7 br,
+.stop8 br {
+    display: none;
+}
+
+.stop8-text br,
+.stop7-text br {
+    display: inline;
+}
+
+body.day .stop7,
+body.day .stop6,
+body.day .stop8 {
+    color: #777;
+}
+
 /**Extras**/
 .e-sppp8-txt u,
 .e-sppp7-txt u,
