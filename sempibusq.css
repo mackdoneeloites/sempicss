@@ -31,7 +31,11 @@ dl.codebox {
     max-width: 1045px;
 }
 
+.ery *,
 .ery {
+    box-sizing: border-box;
+    transition: all 0.7s ease-in-out;
+    position: relative;
     --blancorgb: 255, 255, 255;
     --negrorgb: 0, 0, 0;
 }
@@ -39,8 +43,6 @@ dl.codebox {
 body.day .ery {
     --ctext: #666;
 }
-
-body.night .ery {}
 
 
 /*MULETITAS*/
@@ -2983,13 +2985,6 @@ body.night .tseuq3 {
 .tseuq8-card:hover .tseuq8-desc,
 .tseuq8-card:focus-within .tseuq8-desc{
   transform:translateY(0);
-}
-
-.ery *,
-.ery {
-    box-sizing: border-box;
-    transition: all 0.7s ease-in-out;
-    position: relative;
 }
 
 .tseuq9 {
