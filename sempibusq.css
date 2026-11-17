@@ -1756,7 +1756,7 @@ p.spbp3-hq {
 
 .tseuq1 {
     width: 580px;
-    height: 400px;
+    height: 435px;
     margin: 15px auto;
     padding: 24px;
     box-sizing: border-box;
@@ -1798,7 +1798,7 @@ p.spbp3-hq {
 
 .tseuq1-photo {
     width: 205px;
-    height: 230px;
+    height: 250px;
     position: absolute!important;
     right: 25px;
     bottom: 24px;
@@ -1853,7 +1853,7 @@ p.spbp3-hq {
 }
 
 .tseuq1-text {
-    height: 135px;
+    height: 170px;
     overflow: auto;
     padding-right: 8px;
     font-family: arial, monospace;
@@ -1874,7 +1874,7 @@ p.spbp3-hq {
 .tseuq1-code {
     position: absolute;
     left: 24px;
-    bottom: 25px;
+    bottom: -5px;
     font-family: 'Archivo Black', sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
@@ -1889,7 +1889,7 @@ p.spbp3-hq {
 
 .tseuq1:nth-child(2n) .tseuq1-photo {
     width: 205px;
-    height: 230px;
+    height: 250px;
     position: absolute;
     left: 25px;
     bottom: 24px;
