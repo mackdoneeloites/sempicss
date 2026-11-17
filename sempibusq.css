@@ -36,6 +36,8 @@ dl.codebox {
     box-sizing: border-box;
     transition: all 0.7s ease-in-out;
     position: relative;
+    --acento: var(--accent);
+    --acentob: hsl(from var(--acento) calc(h + 25) s l);
     --blancorgb: 255, 255, 255;
     --negrorgb: 0, 0, 0;
 }
