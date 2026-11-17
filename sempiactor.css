@@ -31,17 +31,6 @@ dl.codebox {
     max-width: 1045px;
 }
 
-.ery {
-    --blancorgb: 255, 255, 255;
-    --negrorgb: 0, 0, 0;
-}
-
-body.day .ery {
-    --ctext: #666;
-}
-
-body.night .ery {}
-
 /**PELICULAS & SERIES**/
 .spcast *,
 .spcast *::before,
@@ -72,6 +61,8 @@ body.day .spcast-ifihr {
     outline: 3px solid rgba(var(--negrorgb), 0.25);
     font-family: "Poppins", sans-serif;
     text-shadow: var(--txsh);
+    --blancorgb: 255, 255, 255;
+    --negrorgb: 0, 0, 0;
 }
 
 .spcast:before {
