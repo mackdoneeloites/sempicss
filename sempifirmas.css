@@ -1151,6 +1151,12 @@ body.day .singy .ntm:before {
     inset: 1px;
 }
 
+.firma5::after {
+    inset: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .firma5:before,
 .tt-oy:before,
 .firma8:before {
