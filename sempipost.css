@@ -40,8 +40,6 @@ body.day .ery {
     --ctext: #666;
 }
 
-body.night .ery {}
-
 /*MULETITAS*/
 .sp-rol {
     background: var(--accent);
@@ -2924,8 +2922,8 @@ padding:7px 12px;
     display: inline;
 }
 
-.ery *,
-.ery {
+.ery.stop6 *,
+.ery.stop6  {
     box-sizing: border-box;
     transition: all 0.7s ease-in-out;
     position: relative;
@@ -3086,6 +3084,13 @@ body.day .stop6:after {
     display: inline;
 }
 
+.ery.stop7 *,
+.ery.stop7  {
+    box-sizing: border-box;
+    transition: all 0.7s ease-in-out;
+    position: relative;
+}
+
 .stop7 {
     position: relative;
     isolation: isolate;
@@ -3210,6 +3215,13 @@ body.day .stop6:after {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
+}
+
+.ery.stop8 *,
+.ery.stop8  {
+    box-sizing: border-box;
+    transition: all 0.7s ease-in-out;
+    position: relative;
 }
 
 .stop8 {
