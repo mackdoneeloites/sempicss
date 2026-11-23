@@ -3127,7 +3127,7 @@ body.day .stop6:after {
 }
 
 .stop7-ft {
-    position: absolute;
+    position: absolute!important;
     left: 12px;
     bottom: 25px;
     writing-mode: vertical-rl;
@@ -3246,7 +3246,7 @@ body.day .stop6:after {
 }
 
 .stop8-headd {
-    position: absolute;
+    position: absolute!important;
     inset: 20px;
     border: 1px solid var(--bckg-2);
     display: flex;
