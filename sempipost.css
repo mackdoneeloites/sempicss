@@ -3410,19 +3410,17 @@ z-index: -1;
 pointer-events: none;
 border: 1px solid #73737375;
 border-radius: 100%;
-width: 390px;
-height: 390px;
+width: 400px;
+height: 400px;
 }
 
 .stop9:before {
-top: -245px;
-right: -310px
+top: -220px;
+right: -310px;
 }
 .stop9:after {
 top: -220px;
-left: -335px;
-width: 400px;
-height: 400px;
+left: -310px;
 }
 
 .stop9-fr {
