@@ -3518,12 +3518,12 @@ left: 50%;
 height: 40px;
 width: 1px;
 background: var(--acento);
-opacity: .7
+opacity: .7;
 }
 
 .stop10-head {
 text-align: center;
-margin-bottom: 57px
+margin-bottom: 25px;
 }
 
 .stop10-title {
@@ -3532,6 +3532,7 @@ font-size:55px;
 font-weight:500;
 letter-spacing: -2.5px;
 color: var(--acento);
+line-height: 60px;
 }
 
 .stop10-sub {
