@@ -23,7 +23,7 @@ body {
 /*Thiago*/
 .thiago {
     margin: 25px auto;
-    width: 995px;
+    max-width: 995px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
