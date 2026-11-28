@@ -3622,11 +3622,11 @@ font-size: 12px;
 .tseuq12 br{display:none;}
 .tseuq12-text br, .tseuq12-header br{display:inline;}
 
-.tseuq12-text::-webkit-scrollbar{
+.tseuq12-paper::-webkit-scrollbar{
     width: 3px!important;
     height: 3px!important;
 }
 
-.tseuq12-text::-webkit-scrollbar-thumb{
+.tseuq12-paper::-webkit-scrollbar-thumb{
     background: var(--acento);
 }
