@@ -3568,13 +3568,17 @@ font-family: 'Barlow Condensed', sans-serif;
 text-transform: uppercase;
 color: var(--acento);
 display:block;
+margin-bottom: 10px;
 }
+
 .tseuq12-text {
 text-align: justify;
 }
+
 .tseuq12-notes {
 border-top: 1px solid var(--acentob);
 padding-top: 5px;
+margin-top: 10px;
 font-size: 12px;
 }
 
